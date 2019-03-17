@@ -473,7 +473,7 @@ searchbar > revealer > box { margin: -6px; padding: 6px; }
 
 .inline-toolbar, searchbar > revealer > box, .location-bar { background-color: #0f0f0f; }
 
-.titlebar:not(headerbar), headerbar { padding: 0 4px; min-height: 38px; border-width: 0; border-style: solid; border-color: #020202; background-color: #303030; }
+.titlebar:not(headerbar), headerbar { padding: 0 4px; min-height: 38px; border-width: 0; border-style: solid; border-color: #020202; background-color: #303030; box-shadow: inset 0 1px #353535; }
 
 .titlebar:backdrop:not(headerbar), headerbar:backdrop { border-color: #020202; background-image: none; color: #8d8d8d; }
 
@@ -481,7 +481,7 @@ searchbar > revealer > box { margin: -6px; padding: 6px; }
 
 .titlebar:not(headerbar) .subtitle, headerbar .subtitle { font-size: smaller; padding-left: 12px; padding-right: 12px; }
 
-.selection-mode .titlebar:not(headerbar), .selection-mode.titlebar:not(headerbar), .selection-mode headerbar, headerbar.selection-mode { color: #ffffff; text-shadow: 0 -1px rgba(0, 0, 0, 0.5); border-color: #1e3965; background-color: #3665b3; }
+.selection-mode .titlebar:not(headerbar), .selection-mode.titlebar:not(headerbar), .selection-mode headerbar, headerbar.selection-mode { color: #ffffff; text-shadow: 0 -1px rgba(0, 0, 0, 0.5); border-color: #1e3965; background-color: #3665b3; box-shadow: inset 0 1px #3869bb; }
 
 .selection-mode .titlebar:backdrop:not(headerbar), .selection-mode.titlebar:backdrop:not(headerbar), .selection-mode headerbar:backdrop, headerbar.selection-mode:backdrop { background-color: #3665b3; background-image: none; box-shadow: inset 0 1px rgba(68, 111, 184, 0.46); }
 
@@ -531,7 +531,7 @@ searchbar > revealer > box { margin: -6px; padding: 6px; }
 
 .titlebar:not(headerbar) separator, headerbar separator { background-color: transparent; }
 
-.titlebar:not(headerbar) separator:backdrop, headerbar separator:backdrop { background-color: #303030; }
+.titlebar:not(headerbar) separator:backdrop, headerbar separator:backdrop { background-color: #303030; box-shadow: inset 0 1px #353535; }
 
 .titlebar:not(headerbar) separator.titlebutton, headerbar separator.titlebutton { opacity: 0; }
 
@@ -599,7 +599,7 @@ window.tiled headerbar, window.tiled headerbar:first-child, window.tiled headerb
 
 window.csd > .titlebar:not(headerbar) { padding: 0; background-color: transparent; background-image: none; border-style: none; border-color: transparent; box-shadow: none; }
 
-.titlebar:not(headerbar) separator { background-color: #303030; }
+.titlebar:not(headerbar) separator { background-color: #303030; box-shadow: inset 0 1px #353535; }
 
 filechooser .path-bar.linked > button { border-color: transparent; background-color: transparent; background-image: none; box-shadow: none; box-shadow: inset 0 1px rgba(255, 255, 255, 0), 0 1px rgba(242, 242, 242, 0); text-shadow: none; -gtk-icon-shadow: none; }
 
@@ -923,7 +923,7 @@ treeview ~ scrollbar.vertical { border-top: 1px solid #020202; margin-top: -1px;
 
 switch { transition: background-color 100ms cubic-bezier(0, 0, 0.2, 1), opacity 250ms cubic-bezier(0, 0, 0.2, 1); margin: 0; padding: 0; border: 1px solid #020202; border-radius: 0; background-color: #1b1b1b; background-clip: padding-box; font-size: 0; }
 
-switch:checked { background-color: rgba(54, 101, 179, 0.5); }
+switch:checked { background-color: rgba(54, 101, 179, 0.5); border-color: #1e3965; }
 
 switch:disabled { opacity: 0.5; }
 
@@ -1291,7 +1291,7 @@ calendar.highlight { color: #8d8d8d; }
 
 calendar:indeterminate { color: alpha(currentColor,0.1); }
 
-messagedialog .titlebar { min-height: 20px; background-image: none; background-color: #282828; border-style: none; border-top-left-radius: 0; border-top-right-radius: 0; background-color: #303030; }
+messagedialog .titlebar { min-height: 20px; background-image: none; background-color: #282828; border-style: none; border-top-left-radius: 0; border-top-right-radius: 0; background-color: #303030; box-shadow: inset 0 1px #353535; }
 
 messagedialog.csd.background { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
 
@@ -1509,7 +1509,7 @@ messagedialog.csd decoration { border-radius: 0; box-shadow: 0 1px 2px rgba(0, 0
 
 .ssd .titlebar.default-decoration button.titlebutton, headerbar button.titlebutton, .titlebar button.titlebutton, #MozillaGtkWidget.background.default-decoration button.titlebutton, #MozillaGtkWidget.background headerbar.titlebar button.titlebutton { min-width: 30px; min-height: 20px; padding: 0; margin: 2px; border-radius: 1.5px; }
 
-.ssd .titlebar { border-width: 0; background-color: #303030; box-shadow: inset 0 -1px #020202; padding: 0 4px; }
+.ssd .titlebar { border-width: 0; background-color: #303030; box-shadow: inset 0 -1px #020202, inset 0 1px #353535; padding: 0 4px; }
 
 .ssd .titlebar.default-decoration button.titlebutton { transition-duration: 100ms; }
 

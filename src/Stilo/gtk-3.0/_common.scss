@@ -1590,7 +1590,7 @@ headerbar { // headerbar border rounding
     box-shadow: none;
   }
 
-  separator { @include headerbar_fill; }
+  separator { @include headerbar_fill; } // makes the separators invisible
 
   @extend %titlebar;
 }
@@ -2352,7 +2352,10 @@ switch {
   background-clip: padding-box;
   font-size: 0;
 
-  &:checked { background-color: transparentize($selected_bg_color, 0.5); }
+  &:checked {
+    background-color: transparentize($selected_bg_color, 0.5);
+    border-color: $selected_borders_color;
+  }
 
   &:disabled { opacity: 0.5; }
 

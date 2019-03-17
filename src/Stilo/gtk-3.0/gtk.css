@@ -931,7 +931,7 @@ treeview ~ scrollbar.vertical { border-top: 1px solid #bcbcbc; margin-top: -1px;
 
 switch { transition: background-color 100ms cubic-bezier(0, 0, 0.2, 1), opacity 250ms cubic-bezier(0, 0, 0.2, 1); margin: 0; padding: 0; border: 1px solid #bcbcbc; border-radius: 0; background-color: #d5d5d5; background-clip: padding-box; font-size: 0; }
 
-switch:checked { background-color: rgba(54, 101, 179, 0.5); }
+switch:checked { background-color: rgba(54, 101, 179, 0.5); border-color: #1e3965; }
 
 switch:disabled { opacity: 0.5; }
 

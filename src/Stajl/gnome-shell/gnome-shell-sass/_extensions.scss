@@ -1,0 +1,335 @@
+$_running_color: transparentize(white,0.4);
+$_running_top: inset 0 2px $_running_color;
+$_running_bottom: inset 0 -2px $_running_color;
+$_running_left: inset 2px 0 $_running_color;
+$_running_right: inset -2px 0 $_running_color;
+
+$_hover_color: transparentize(white,0.2);
+$_hover_effect_top: inset 0 2px $_hover_color;
+$_hover_effect_bottom: inset 0 -2px $_hover_color;
+$_hover_effect_left: inset 2px 0 $_hover_color;
+$_hover_effect_right: inset -2px 0 $_hover_color;
+
+$_selected_top: inset 0 2px $selected_bg_color;
+$_selected_bottom: inset 0 -2px $selected_bg_color;
+$_selected_left: inset 2px 0 $selected_bg_color;
+$_selected_right: inset -2px 0 $selected_bg_color;
+
+$_panel_shade: transparentize(black,0.66);
+$_panel_top: inset 0 2px $_panel_shade;
+$_panel_bottom: inset 0 -2px $_panel_shade;
+$_panel_left: inset 2px 0 $_panel_shade;
+$_panel_right: inset -2px 0 $_panel_shade;
+
+$panel_color: darken($bg_color, 5%);
+
+// Trick due to St limitations. It needs a background to draw a box-shadow
+%panel_fix {
+  background-gradient-direction: vertical;
+  background-gradient-start: transparent;
+  background-gradient-end: transparent;
+}
+
+%panel_bg {
+  background-gradient-direction: vertical;
+  background-gradient-start: $panel_color;
+  background-gradient-end: $panel_color;
+}
+
+// Dash to Panel extension styling
+
+#panel.dashtopanelMainPanel {
+  @extend %panel_bg;
+
+  @each $o in (Bottom), (Top) {
+    &.dashtopanel#{$o} {
+      @if $o==Bottom { box-shadow: inset 0 1px lighten($panel_color, 2%); }
+      @else if $o==Top { box-shadow: $_panel_top; }
+    }
+  }
+
+  .panel-button {
+    &:hover { background-color: transparentize(white,0.9); }
+    &:active, &:overview, &:focus { background-color: $selected_bg_color; }
+    text-shadow: black 0 1px 1px;
+  }
+
+  .dash-item-container > * { padding: 0 4px; }
+
+  // panel dash icon
+  @each $d in hover, focus, active, checked, overview {
+    .show-apps .overview-icon {
+      background-image: url("d2p-activities.svg");
+      background-position: center center;
+      border: none;
+      color: transparent;
+      border-radius: 0;
+      margin: 0;
+      transition-duration: 100ms;
+    }
+
+    // FIXME: The icon in the overview is still showing
+    .show-apps:#{$d} .overview-icon {
+      background-image: url("d2p-activities-active.svg");
+      background-color: $panel_color;
+      background-position: center center;
+      color: transparent;
+    }
+  }
+
+  // clock and system menu area
+  & > #panelRight {
+    box-shadow: inset 1px 0 $panel_color;
+    .panel-button:hover { box-shadow: none; }
+  }
+  
+  .showdesktop-button { padding-right: 8px; }
+}
+
+// Dash to dock extension styling
+
+@each $p in (left), (right), (bottom), (top) {
+  #dashtodockContainer {
+    border-radius: 0;
+
+    &.extended .show-apps {
+      // FIXME: Figure out if there is a way to extend the box to the edges
+      //&:hover { background-color: transparentize(black,0.3); }
+      transition-duration: 100ms;
+      //.overview-icon {
+        //border: none;
+        //color: transparentize(white, 0.4);
+      //}
+      //&:active, &:checked, &:overview, &:hover {
+        //.overview-icon {
+          //background-color: transparent;
+          //box-shadow: none;
+          //color: white;
+        //}
+      //}
+    }
+
+    &.#{$p}.extended {
+      @extend %panel_fix;
+      @if $p==left { box-shadow: $_panel_left; }
+      @else if $p==right { box-shadow: $_panel_right; }
+      @else if $p==bottom { box-shadow: $_panel_bottom; }
+      @else if $p==top { box-shadow: $_panel_top; }
+    }
+
+    &.shrink.#{$p} #dash,
+    &.dashtodock.#{$p} #dash {
+      // Seems the border can't be removed with a theme
+      // Need to change it in ~/.local/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/stylsheet.css
+      border: 0 !important;
+      padding: 0;
+      background-color: $panel_color;
+    }
+
+    &.extended {
+      border: 0;
+      border-radius: 0;
+    }
+
+    &.bottom #dash .app-well-app-running-dot {
+      width: 44px;
+      height: 3px;
+      margin-bottom: 0;
+    }
+
+    #dash .app-well-app-running-dot {
+      background-color: transparent;
+    }
+
+    &.running-dots .dash-item-container > StButton,
+    &.dashtodock .dash-item-container > StButton {
+      background-size: contain;
+    }
+
+    &.shrink .dash-item-container > StButton,
+    &.dashtodock .dash-item-container > StButton {
+      padding: 2px 4px !important;
+    }
+
+    @each $n in (1), (2), (3), (4) {
+      &.#{$p} #dash .running#{$n} {
+        @extend %panel_fix;
+        @if $p==left {
+          @if $n==1 { box-shadow: inset 2px 0 transparentize(white, 0.6); }
+          @else if $n>=2 { box-shadow: inset 4px 0 transparentize(white, 0.6); }
+        }
+        @if $p==right {
+          @if $n==1 { box-shadow: inset -2px 0 transparentize(white, 0.6); }
+          @else if $n>=2 { box-shadow: inset -4px 0 transparentize(white, 0.6); }
+        }
+        @if $p==bottom {
+          @if $n==1 { box-shadow: inset 0 -2px transparentize(white, 0.6); }
+          @else if $n>=2 { box-shadow: inset 0 -4px transparentize(white, 0.6); }
+        }
+        @if $p==top {
+          @if $n==1 { box-shadow: inset 0 2px transparentize(white, 0.6); }
+          @else if $n>=2 { box-shadow: inset 0 4px transparentize(white, 0.6); }
+        }
+
+        &.focused {
+          @if $p==left {
+            @if $n==1 {
+              box-shadow: inset 2px 0 $selected_bg_color;
+              background-gradient-direction: vertical;
+              background-gradient-start: transparentize(white, 0.9);
+              background-gradient-end: transparentize(white, 0.9);
+              &:hover {
+                box-shadow: inset 2px 0 $selected_bg_color;
+                background-gradient-start: transparentize(white, 0.85);
+                background-gradient-end: transparentize(white, 0.85);
+              }
+            }
+            @else if $n>=2 {
+              box-shadow: inset 4px 0 $selected_bg_color;
+              background-gradient-direction: vertical;
+              background-gradient-start: transparentize(white, 0.9);
+              background-gradient-end: transparentize(white, 0.9);
+              &:hover {
+                box-shadow: inset 4px 0 $selected_bg_color;
+                background-gradient-start: transparentize(white, 0.85);
+                background-gradient-end: transparentize(white, 0.85);
+              }
+            }
+          }
+          @else if $p==right {
+            @if $n==1 {
+              box-shadow: inset -2px 0 $selected_bg_color;
+              background-gradient-direction: vertical;
+              background-gradient-start: transparentize(white, 0.9);
+              background-gradient-end: transparentize(white, 0.9);
+              &:hover {
+                box-shadow: inset -2px 0 $selected_bg_color;
+                background-gradient-start: transparentize(white, 0.85);
+                background-gradient-end: transparentize(white, 0.85);
+              }
+            }
+           @else if $n>=2 {
+              box-shadow: inset -4px 0 $selected_bg_color;
+              background-gradient-direction: vertical;
+              background-gradient-start: transparentize(white, 0.9);
+              background-gradient-end: transparentize(white, 0.9);
+              &:hover {
+                box-shadow: inset -4px 0 $selected_bg_color;
+                background-gradient-start: transparentize(white, 0.85);
+                background-gradient-end: transparentize(white, 0.85);
+              }
+            }
+          }
+          @else if $p==bottom {
+            @if $n==1 {
+              box-shadow: inset 0 -2px $selected_bg_color;
+              background-gradient-direction: vertical;
+              background-gradient-start: transparentize(white, 0.9);
+              background-gradient-end: transparentize(white, 0.9);
+              &:hover {
+                box-shadow: inset 0 -2px $selected_bg_color;
+                background-gradient-start: transparentize(white, 0.85);
+                background-gradient-end: transparentize(white, 0.85);
+              }
+            }
+            @else if $n>=2 {
+              box-shadow: inset 0 -4px $selected_bg_color;
+              background-gradient-direction: vertical;
+              background-gradient-start: transparentize(white, 0.9);
+              background-gradient-end: transparentize(white, 0.9);
+              &:hover {
+                box-shadow: inset 0 -4px $selected_bg_color;
+                background-gradient-start: transparentize(white, 0.85);
+                background-gradient-end: transparentize(white, 0.85);
+              }
+            }
+          }
+          @else if $p==top {
+            @if $n==1 {
+              box-shadow: inset 0 2px $selected_bg_color;
+              background-gradient-direction: vertical;
+              background-gradient-start: transparentize(white, 0.9);
+              background-gradient-end: transparentize(white, 0.9);
+              &:hover {
+                box-shadow: inset 0 2px $selected_bg_color;
+                background-gradient-start: transparentize(white, 0.85);
+                background-gradient-end: transparentize(white, 0.85);
+              }
+            }
+            @else if $n>=2 {
+              box-shadow: inset 0 4px $selected_bg_color;
+              background-gradient-direction: vertical;
+              background-gradient-start: transparentize(white, 0.9);
+              background-gradient-end: transparentize(white, 0.9);
+              &:hover {
+                box-shadow: inset 0 4px $selected_bg_color;
+                background-gradient-start: transparentize(white, 0.85);
+                background-gradient-end: transparentize(white, 0.85);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.#{$p} #dash .app-well-app {
+      transition-duration: 100ms;
+      &:hover {
+        @extend %panel_fix;
+        @if $p==left { box-shadow: inset 2px 0 white; }
+        @else if $p==right { box-shadow: inset -2px 0 white; }
+        @else if $p==bottom { box-shadow: inset 0 -2px white; }
+        @else if $p==top { box-shadow: inset 0 2px white; }
+      }
+    }
+
+    &.#{$p} #dash .app-well-app {
+      padding: 0px;
+
+      // Increase the value to increase the space between the icons
+      margin: 2px;
+      @if $p==left or $p==right {
+        margin-left: 0;
+        margin-right: 0;
+      }
+      @else if $p==bottom or $p==top {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      & .overview-icon { margin: 0; }
+
+      &.focused .overview-icon {
+        border-radius: 0;
+        // This fixes the hardcoded(?) bg when running dots are activated
+        // Some options with dash to dock's appearance may look a bit wierd. (Metro style for example.)
+        // FIXME: Figure out a way to properly ignore the included styles for better user choice.
+        border-image: url('transparent.png');
+      }
+
+      &:hover .overview-icon {
+        background: none;
+      }
+
+      &:active .overview-icon,
+      &:focus .overview-icon,
+      &:selected .overview-icon {
+        @extend %panel_fix;
+        background: none;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+.bottom #dashtodockDashScrollview,
+.top #dashtodockDashScrollview {
+  // Scrollview style -vertical
+  -st-hfade-offset: 24px;
+}
+
+.left #dashtodockDashScrollview,
+.right #dashtodockDashScrollview {
+  // Scrollview style -horizontal
+  -st-vfade-offset: 24px;
+}

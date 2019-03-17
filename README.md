@@ -6,12 +6,14 @@ Alpha version. Things may change.
 ### Requirements
 GTK 3.30+
 
-<sub>Some or all of these packages may already be installed by default on some distros.</sub>
+Some or all of these packages may already be installed by default on some distros.
 
-* Debian/Ubuntu/Mint - `apt install gtk2-engines-murrine gtk2-engines-pixbuf ttf-ubuntu-font-family`
-* Arch/Manjaro/Antergos - `pacman -S gtk-engine-murrine gtk-engines ttf-ubuntu-font-family`
-* Opensuse - `zypper in gtk2-engine-murrine gtk2-engines ubuntu-fonts`
-* Fedora - `dnf install gtk-murrine-engine gtk2-engines`
+* Debian/Ubuntu/Mint - `apt install gtk2-engines-murrine gtk2-engines-pixbuf fonts-roboto`
+* Arch/Manjaro/Antergos - `pacman -S gtk-engine-murrine gtk-engines ttf-roboto`
+* Opensuse - `zypper in gtk2-engine-murrine gtk2-engines google-roboto-fonts`
+* Fedora - `dnf install gtk-murrine-engine gtk2-engines google-roboto-fonts`
+
+Other distros may have named the above packages differently.
 
 ## Installation
 
