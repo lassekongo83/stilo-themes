@@ -14,7 +14,7 @@
    viewBox="0 0 52.000009 24.000004"
    id="svg4686"
    version="1.1"
-   inkscape:version="0.92.2 2405546, 2018-03-11"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14"
    sodipodi:docname="switch-on.svg">
   <defs
      id="defs4688" />
@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="5.6"
-     inkscape:cx="-45.621406"
+     inkscape:cx="-75.621406"
      inkscape:cy="4.5603743"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
@@ -35,10 +35,10 @@
      fit-margin-left="0"
      fit-margin-right="0"
      fit-margin-bottom="0"
-     inkscape:window-width="1857"
-     inkscape:window-height="926"
-     inkscape:window-x="63"
-     inkscape:window-y="27"
+     inkscape:window-width="1920"
+     inkscape:window-height="919"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata4691">
@@ -66,7 +66,7 @@
          height="24.000004"
          width="52.000008"
          id="rect6975"
-         style="opacity:1;fill:#fb6f55;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+         style="opacity:1;fill:#3665b3;fill-opacity:1;stroke:none;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
       <circle
          r="10.000001"
          cy="520.93365"

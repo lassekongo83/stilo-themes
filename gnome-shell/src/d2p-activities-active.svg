@@ -14,7 +14,7 @@
    viewBox="0 0 31.999998 31.999999"
    id="svg4234"
    version="1.1"
-   inkscape:version="0.92.2 2405546, 2018-03-11"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14"
    sodipodi:docname="d2p-activities-active.svg">
   <defs
      id="defs4236" />
@@ -26,14 +26,14 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="5.6568542"
-     inkscape:cx="41.617692"
+     inkscape:cx="11.919207"
      inkscape:cy="6.015578"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="px"
      inkscape:window-width="1920"
-     inkscape:window-height="921"
+     inkscape:window-height="919"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -68,9 +68,9 @@
          height="3"
          width="3"
          id="rect963"
-         style="fill:#fb6f55;fill-opacity:1" />
+         style="fill:#3665b3;fill-opacity:1" />
       <rect
-         style="fill:#fb6f55;fill-opacity:1"
+         style="fill:#3665b3;fill-opacity:1"
          id="rect967"
          width="3"
          height="3"
@@ -84,9 +84,9 @@
          height="3"
          width="3"
          id="rect969"
-         style="fill:#fb6f55;fill-opacity:1" />
+         style="fill:#3665b3;fill-opacity:1" />
       <rect
-         style="fill:#fb6f55;fill-opacity:1"
+         style="fill:#3665b3;fill-opacity:1"
          id="rect971"
          width="3"
          height="3"
@@ -100,9 +100,9 @@
          height="3"
          width="3"
          id="rect973"
-         style="fill:#fb6f55;fill-opacity:1" />
+         style="fill:#3665b3;fill-opacity:1" />
       <rect
-         style="fill:#fb6f55;fill-opacity:1"
+         style="fill:#3665b3;fill-opacity:1"
          id="rect975"
          width="3"
          height="3"
@@ -116,9 +116,9 @@
          height="3"
          width="3"
          id="rect977"
-         style="fill:#fb6f55;fill-opacity:1" />
+         style="fill:#3665b3;fill-opacity:1" />
       <rect
-         style="fill:#fb6f55;fill-opacity:1"
+         style="fill:#3665b3;fill-opacity:1"
          id="rect979"
          width="3"
          height="3"
@@ -132,7 +132,7 @@
          height="3"
          width="3"
          id="rect981"
-         style="fill:#fb6f55;fill-opacity:1" />
+         style="fill:#3665b3;fill-opacity:1" />
     </g>
   </g>
 </svg>

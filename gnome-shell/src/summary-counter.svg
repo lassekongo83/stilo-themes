@@ -20,7 +20,7 @@
    enable-background="new 0 0 16 16"
    xml:space="preserve"
    sodipodi:version="0.32"
-   inkscape:version="0.92.2 2405546, 2018-03-11"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14"
    sodipodi:docname="summary-counter.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"><metadata
      id="metadata2399"><rdf:RDF><cc:Work
@@ -50,8 +50,8 @@
          inkscape:collect="always"
          stdDeviation="1.3282637"
          id="feGaussianBlur16496-8" /></filter></defs><sodipodi:namedview
-     inkscape:window-height="926"
-     inkscape:window-width="1857"
+     inkscape:window-height="919"
+     inkscape:window-width="1920"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0"
      guidetolerance="10.0"
@@ -63,10 +63,10 @@
      id="base"
      showgrid="false"
      inkscape:zoom="11.313708"
-     inkscape:cx="29.817883"
+     inkscape:cx="14.96864"
      inkscape:cy="6.6685089"
-     inkscape:window-x="63"
-     inkscape:window-y="27"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
      inkscape:current-layer="g16402-8"
      showguides="true"
      inkscape:guide-bbox="true"
@@ -102,7 +102,7 @@
          style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.99785185;stroke-opacity:1" /><ellipse
          ry="7.2727265"
          rx="7.2415142"
-         style="opacity:1;fill:#fb6f55;fill-opacity:1;stroke:none;stroke-width:0.99785185;stroke-opacity:1"
+         style="opacity:1;fill:#3665b3;fill-opacity:1;stroke:none;stroke-width:0.99785185;stroke-opacity:1"
          id="circle4268"
          cx="6.758287"
          cy="9.064106" /></g></g></svg>

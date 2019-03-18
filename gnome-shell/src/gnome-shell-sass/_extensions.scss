@@ -38,52 +38,76 @@ $panel_color: darken($bg_color, 5%);
 
 // Dash to Panel extension styling
 
-#panel.dashtopanelMainPanel {
-  @extend %panel_bg;
+@mixin size($width, $height:$width, $important:false) {
+  $important: if($important, !important, null);
 
-  @each $o in (Bottom), (Top) {
-    &.dashtopanel#{$o} {
-      @if $o==Bottom { box-shadow: inset 0 1px lighten($panel_color, 2%); }
-      @else if $o==Top { box-shadow: $_panel_top; }
-    }
-  }
+  width: $width $important;
+  height: $height $important;
+}
 
-  .panel-button {
-    &:hover { background-color: transparentize(white,0.9); }
-    &:active, &:overview, &:focus { background-color: $selected_bg_color; }
-    text-shadow: black 0 1px 1px;
-  }
+@each $d in Top, Bottom {
+  $low_d: to-lower-case($d);
 
-  .dash-item-container > * { padding: 0 4px; }
+  #panel.dashtopanelMainPanel.dashtopanel#{$d} {
+    @extend %panel_bg;
 
-  // panel dash icon
-  @each $d in hover, focus, active, checked, overview {
-    .show-apps .overview-icon {
-      background-image: url("d2p-activities.svg");
-      background-position: center center;
-      border: none;
-      color: transparent;
-      border-radius: 0;
-      margin: 0;
-      transition-duration: 100ms;
+    .app-well-app-running-dot {
+      //@include size(0);
+      //border-image: none;
+      //background-color: transparent;
+      //border: 0;
     }
 
-    // FIXME: The icon in the overview is still showing
-    .show-apps:#{$d} .overview-icon {
-      background-image: url("d2p-activities-active.svg");
-      background-color: $panel_color;
-      background-position: center center;
-      color: transparent;
+    @each $c in 1, 2, 3, 4 {
+      .running#{$c} {
+        //@extend %panel_fix;
+        //border-image: none;
+        //background-color: transparent;
+        //border: 0;
+        //margin: 2px;
+      }
     }
-  }
 
-  // clock and system menu area
-  & > #panelRight {
-    box-shadow: inset 1px 0 $panel_color;
-    .panel-button:hover { box-shadow: none; }
+    @if $d==Bottom { box-shadow: inset 0 1px lighten($panel_color, 2%); }
+    @else if $d==Top { box-shadow: $_panel_top; }
+
+    .panel-button {
+      &:hover { background-color: transparentize(white,0.9); }
+      &:active, &:overview, &:focus { background-color: $selected_bg_color; }
+      text-shadow: black 0 1px 1px;
+    }
+
+    .dash-item-container > * { padding: 0 4px; }
+
+    // panel dash icon
+    @each $d in hover, focus, active, checked, overview {
+      .show-apps .overview-icon {
+        background-image: url("d2p-activities.svg");
+        background-position: center center;
+        border: none;
+        color: transparent;
+        border-radius: 0;
+        margin: 0;
+        transition-duration: 100ms;
+      }
+
+      // FIXME: The icon in the overview is still showing
+      .show-apps:#{$d} .overview-icon {
+        background-image: url("d2p-activities-active.svg");
+        background-color: $panel_color;
+        background-position: center center;
+        color: transparent;
+      }
+    }
+
+    // clock and system menu area
+    & > #panelRight {
+      box-shadow: inset 1px 0 $panel_color;
+      .panel-button:hover { box-shadow: none; }
+    }
+
+    .showdesktop-button { padding-right: 8px; }
   }
-  
-  .showdesktop-button { padding-right: 8px; }
 }
 
 // Dash to dock extension styling
