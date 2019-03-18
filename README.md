@@ -1,10 +1,12 @@
 # stilo-themes
 Minimalistic GTK themes
 
-Alpha version. Things may change.
+These themes are in development. Things may change.
 
 ### Requirements
 GTK 3.30+
+
+<sub>The theme should work with 3.28 as well, or even 3.22. I just can't guarantee that everything will look right.</sub>
 
 Some or all of these packages may already be installed by default on some distros.
 
