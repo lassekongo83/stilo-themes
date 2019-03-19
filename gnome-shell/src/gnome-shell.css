@@ -1054,7 +1054,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 #dashtodockContainer.left.extended { box-shadow: inset 2px 0 rgba(0, 0, 0, 0.34); }
 
-#dashtodockContainer.shrink.left #dash, #dashtodockContainer.dashtodock.left #dash { border: 0 !important; padding: 0; background-color: #1b1b1b; }
+#dashtodockContainer.shrink.left #dash, #dashtodockContainer.dashtodock.left #dash { border: 0 !important; padding: 0; background-color: rgba(0, 0, 0, 0.8); }
 
 #dashtodockContainer.extended { border: 0; border-radius: 0; }
 
@@ -1110,7 +1110,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 #dashtodockContainer.right.extended { box-shadow: inset -2px 0 rgba(0, 0, 0, 0.34); }
 
-#dashtodockContainer.shrink.right #dash, #dashtodockContainer.dashtodock.right #dash { border: 0 !important; padding: 0; background-color: #1b1b1b; }
+#dashtodockContainer.shrink.right #dash, #dashtodockContainer.dashtodock.right #dash { border: 0 !important; padding: 0; background-color: rgba(0, 0, 0, 0.8); }
 
 #dashtodockContainer.extended { border: 0; border-radius: 0; }
 
@@ -1166,7 +1166,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 #dashtodockContainer.bottom.extended { box-shadow: inset 0 -2px rgba(0, 0, 0, 0.34); }
 
-#dashtodockContainer.shrink.bottom #dash, #dashtodockContainer.dashtodock.bottom #dash { border: 0 !important; padding: 0; background-color: #1b1b1b; }
+#dashtodockContainer.shrink.bottom #dash, #dashtodockContainer.dashtodock.bottom #dash { border: 0 !important; padding: 0; background-color: rgba(0, 0, 0, 0.8); }
 
 #dashtodockContainer.extended { border: 0; border-radius: 0; }
 
@@ -1222,7 +1222,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 #dashtodockContainer.top.extended { box-shadow: inset 0 2px rgba(0, 0, 0, 0.34); }
 
-#dashtodockContainer.shrink.top #dash, #dashtodockContainer.dashtodock.top #dash { border: 0 !important; padding: 0; background-color: #1b1b1b; }
+#dashtodockContainer.shrink.top #dash, #dashtodockContainer.dashtodock.top #dash { border: 0 !important; padding: 0; background-color: rgba(0, 0, 0, 0.8); }
 
 #dashtodockContainer.extended { border: 0; border-radius: 0; }
 

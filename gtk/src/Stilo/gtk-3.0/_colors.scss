@@ -4,18 +4,18 @@
 // When we want to use the dark colors in the light theme
 $dark_bg_color: #282828;
 $dark_fg_color: #f2f2f2;
-$dark_borders_color: darken($dark_bg_color,10%);
+$dark_borders_color: darken($dark_bg_color,12%);
 $dark_base_color: #111;
 
 $base_color: if($variant == 'light', #FFFFFF, $dark_base_color);
-$text_color: if($variant == 'light', #3C3C3C, white);
+$text_color: if($variant == 'light', black, white);
 $bg_color: if($variant == 'light', #e2e2e2, $dark_bg_color);
 $fg_color: if($variant == 'light', #3C3C3C, $dark_fg_color);
 
 $selected_fg_color: #ffffff;
 $selected_bg_color: #3665b3;
 $selected_borders_color: darken($selected_bg_color, 20%);
-$borders_color: if($variant == 'light', darken($bg_color,10%), $dark_borders_color);
+$borders_color: if($variant == 'light', darken($bg_color,12%), $dark_borders_color);
 $borders_edge: if($variant == 'light', white, transparentize($fg_color, 0.9));
 $link_color: if($variant == 'light', darken($selected_bg_color,10%), lighten($selected_bg_color,20%));
 $link_visited_color: if($variant == 'light', darken($selected_bg_color,20%), lighten($selected_bg_color,10%));
@@ -79,6 +79,10 @@ $secondary_borders_color: darken($secondary_bg_color, 8%);
 
 // toolbars/tabbar
 $toolbar_color: darken($bg_color, 8%);
+
+// light selection
+$light_selection: if($dark_header == 'true', lighten($selected_bg_color, 5%), lighten($selected_bg_color, 35%));
+$light_selection_border: if($dark_header == 'true', lighten($selected_bg_color, 8%), lighten($selected_bg_color, 25%));
 
 //title buttons
 $close_button: transparent;

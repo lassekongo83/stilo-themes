@@ -22,6 +22,7 @@ $_panel_left: inset 2px 0 $_panel_shade;
 $_panel_right: inset -2px 0 $_panel_shade;
 
 $panel_color: darken($bg_color, 5%);
+$dock_color: transparentize(black, 0.2);
 
 // Trick due to St limitations. It needs a background to draw a box-shadow
 %panel_fix {
@@ -147,7 +148,7 @@ $panel_color: darken($bg_color, 5%);
       // Need to change it in ~/.local/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/stylsheet.css
       border: 0 !important;
       padding: 0;
-      background-color: $panel_color;
+      background-color: $dock_color;
     }
 
     &.extended {
