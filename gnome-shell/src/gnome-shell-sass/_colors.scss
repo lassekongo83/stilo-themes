@@ -1,12 +1,12 @@
 // When color definition differs for dark and light variant,
 // it gets @if ed depending on $variant
 
-$dark_bg_color: #282828;
+$dark_bg_color: #383838;
 $dark_fg_color: #f2f2f2;
 $dark_borders_color: darken($dark_bg_color,15%);
 
 $base_color: if($variant == 'light', #FFFFFF, #111);
-$bg_color: if($variant == 'light', #dededc, $dark_bg_color);
+$bg_color: if($variant == 'light', #e2e2e2, $dark_bg_color);
 $fg_color: if($variant == 'light', #3C3C3C, $dark_fg_color);
 
 $selected_fg_color: #ffffff;
@@ -47,5 +47,5 @@ $backdrop_borders_color: mix($borders_color, $bg_color, 90%);
 $backdrop_dark_fill: mix($backdrop_borders_color,$backdrop_bg_color, 35%);
 
 //misc
-$close_button: #d35f5f;
-$close_button_hover: #a02c2c;
+$close_button: #c75050;
+$close_button_hover: lighten($close_button, 5%);

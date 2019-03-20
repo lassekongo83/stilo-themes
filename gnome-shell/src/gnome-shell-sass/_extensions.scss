@@ -15,12 +15,6 @@ $_selected_bottom: inset 0 -2px $selected_bg_color;
 $_selected_left: inset 2px 0 $selected_bg_color;
 $_selected_right: inset -2px 0 $selected_bg_color;
 
-$_panel_shade: transparentize(black,0.66);
-$_panel_top: inset 0 2px $_panel_shade;
-$_panel_bottom: inset 0 -2px $_panel_shade;
-$_panel_left: inset 2px 0 $_panel_shade;
-$_panel_right: inset -2px 0 $_panel_shade;
-
 $panel_color: darken($bg_color, 5%);
 $dock_color: transparentize(black, 0.2);
 
@@ -70,7 +64,6 @@ $dock_color: transparentize(black, 0.2);
     }
 
     @if $d==Bottom { box-shadow: inset 0 1px lighten($panel_color, 2%); }
-    @else if $d==Top { box-shadow: $_panel_top; }
 
     .panel-button {
       &:hover { background-color: transparentize(white,0.9); }
@@ -118,29 +111,10 @@ $dock_color: transparentize(black, 0.2);
     border-radius: 0;
 
     &.extended .show-apps {
-      // FIXME: Figure out if there is a way to extend the box to the edges
-      //&:hover { background-color: transparentize(black,0.3); }
       transition-duration: 100ms;
-      //.overview-icon {
-        //border: none;
-        //color: transparentize(white, 0.4);
-      //}
-      //&:active, &:checked, &:overview, &:hover {
-        //.overview-icon {
-          //background-color: transparent;
-          //box-shadow: none;
-          //color: white;
-        //}
-      //}
     }
 
-    &.#{$p}.extended {
-      @extend %panel_fix;
-      @if $p==left { box-shadow: $_panel_left; }
-      @else if $p==right { box-shadow: $_panel_right; }
-      @else if $p==bottom { box-shadow: $_panel_bottom; }
-      @else if $p==top { box-shadow: $_panel_top; }
-    }
+    &.#{$p}.extended { @extend %panel_fix; }
 
     &.shrink.#{$p} #dash,
     &.dashtodock.#{$p} #dash {
@@ -177,120 +151,78 @@ $dock_color: transparentize(black, 0.2);
     }
 
     @each $n in (1), (2), (3), (4) {
+
+      $unfocused: transparentize(white, 0.6);
+      $focused: transparentize(white, 0.9);
+      $focused_hover: transparentize(white, 0.85);
+
       &.#{$p} #dash .running#{$n} {
         @extend %panel_fix;
         @if $p==left {
-          @if $n==1 { box-shadow: inset 2px 0 transparentize(white, 0.6); }
-          @else if $n>=2 { box-shadow: inset 4px 0 transparentize(white, 0.6); }
+          @if $n==1 { box-shadow: inset 2px 0 $unfocused; }
+          @else if $n>=2 { box-shadow: inset 4px 0 $unfocused; }
         }
         @if $p==right {
-          @if $n==1 { box-shadow: inset -2px 0 transparentize(white, 0.6); }
-          @else if $n>=2 { box-shadow: inset -4px 0 transparentize(white, 0.6); }
+          @if $n==1 { box-shadow: inset -2px 0 $unfocused; }
+          @else if $n>=2 { box-shadow: inset -4px 0 $unfocused; }
         }
         @if $p==bottom {
-          @if $n==1 { box-shadow: inset 0 -2px transparentize(white, 0.6); }
-          @else if $n>=2 { box-shadow: inset 0 -4px transparentize(white, 0.6); }
+          @if $n==1 { box-shadow: inset 0 -2px $unfocused; }
+          @else if $n>=2 { box-shadow: inset 0 -4px $unfocused; }
         }
         @if $p==top {
-          @if $n==1 { box-shadow: inset 0 2px transparentize(white, 0.6); }
-          @else if $n>=2 { box-shadow: inset 0 4px transparentize(white, 0.6); }
+          @if $n==1 { box-shadow: inset 0 2px $unfocused; }
+          @else if $n>=2 { box-shadow: inset 0 4px $unfocused; }
         }
 
         &.focused {
+          background-gradient-direction: vertical;
+          background-gradient-start: $focused;
+          background-gradient-end: $focused;
+
+          &:hover {
+            background-gradient-start: $focused_hover;
+            background-gradient-end: $focused_hover;
+          }
+
           @if $p==left {
             @if $n==1 {
               box-shadow: inset 2px 0 $selected_bg_color;
-              background-gradient-direction: vertical;
-              background-gradient-start: transparentize(white, 0.9);
-              background-gradient-end: transparentize(white, 0.9);
-              &:hover {
-                box-shadow: inset 2px 0 $selected_bg_color;
-                background-gradient-start: transparentize(white, 0.85);
-                background-gradient-end: transparentize(white, 0.85);
-              }
+              &:hover { box-shadow: inset 2px 0 $selected_bg_color; }
             }
             @else if $n>=2 {
               box-shadow: inset 4px 0 $selected_bg_color;
-              background-gradient-direction: vertical;
-              background-gradient-start: transparentize(white, 0.9);
-              background-gradient-end: transparentize(white, 0.9);
-              &:hover {
-                box-shadow: inset 4px 0 $selected_bg_color;
-                background-gradient-start: transparentize(white, 0.85);
-                background-gradient-end: transparentize(white, 0.85);
-              }
+              &:hover { box-shadow: inset 4px 0 $selected_bg_color; }
             }
           }
           @else if $p==right {
             @if $n==1 {
               box-shadow: inset -2px 0 $selected_bg_color;
-              background-gradient-direction: vertical;
-              background-gradient-start: transparentize(white, 0.9);
-              background-gradient-end: transparentize(white, 0.9);
-              &:hover {
-                box-shadow: inset -2px 0 $selected_bg_color;
-                background-gradient-start: transparentize(white, 0.85);
-                background-gradient-end: transparentize(white, 0.85);
-              }
+              &:hover { box-shadow: inset -2px 0 $selected_bg_color; }
             }
            @else if $n>=2 {
               box-shadow: inset -4px 0 $selected_bg_color;
-              background-gradient-direction: vertical;
-              background-gradient-start: transparentize(white, 0.9);
-              background-gradient-end: transparentize(white, 0.9);
-              &:hover {
-                box-shadow: inset -4px 0 $selected_bg_color;
-                background-gradient-start: transparentize(white, 0.85);
-                background-gradient-end: transparentize(white, 0.85);
-              }
+              &:hover { box-shadow: inset -4px 0 $selected_bg_color; }
             }
           }
           @else if $p==bottom {
             @if $n==1 {
               box-shadow: inset 0 -2px $selected_bg_color;
-              background-gradient-direction: vertical;
-              background-gradient-start: transparentize(white, 0.9);
-              background-gradient-end: transparentize(white, 0.9);
-              &:hover {
-                box-shadow: inset 0 -2px $selected_bg_color;
-                background-gradient-start: transparentize(white, 0.85);
-                background-gradient-end: transparentize(white, 0.85);
-              }
+              &:hover { box-shadow: inset 0 -2px $selected_bg_color; }
             }
             @else if $n>=2 {
               box-shadow: inset 0 -4px $selected_bg_color;
-              background-gradient-direction: vertical;
-              background-gradient-start: transparentize(white, 0.9);
-              background-gradient-end: transparentize(white, 0.9);
-              &:hover {
-                box-shadow: inset 0 -4px $selected_bg_color;
-                background-gradient-start: transparentize(white, 0.85);
-                background-gradient-end: transparentize(white, 0.85);
-              }
+              &:hover { box-shadow: inset 0 -4px $selected_bg_color; }
             }
           }
           @else if $p==top {
             @if $n==1 {
               box-shadow: inset 0 2px $selected_bg_color;
-              background-gradient-direction: vertical;
-              background-gradient-start: transparentize(white, 0.9);
-              background-gradient-end: transparentize(white, 0.9);
-              &:hover {
-                box-shadow: inset 0 2px $selected_bg_color;
-                background-gradient-start: transparentize(white, 0.85);
-                background-gradient-end: transparentize(white, 0.85);
-              }
+              &:hover { box-shadow: inset 0 2px $selected_bg_color; }
             }
             @else if $n>=2 {
               box-shadow: inset 0 4px $selected_bg_color;
-              background-gradient-direction: vertical;
-              background-gradient-start: transparentize(white, 0.9);
-              background-gradient-end: transparentize(white, 0.9);
-              &:hover {
-                box-shadow: inset 0 4px $selected_bg_color;
-                background-gradient-start: transparentize(white, 0.85);
-                background-gradient-end: transparentize(white, 0.85);
-              }
+              &:hover { box-shadow: inset 0 4px $selected_bg_color; }
             }
           }
         }

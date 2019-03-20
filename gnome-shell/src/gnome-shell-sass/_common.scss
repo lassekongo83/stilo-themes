@@ -716,7 +716,7 @@ StScrollBar {
 // TOP BAR
 
 #panel {
-  background-color: transparentize(black, 0.2);
+  background-color: transparentize(black, 0.1);
   font-weight: bold;
   height: 1.86em;
   border-width: 0;
@@ -1166,7 +1166,7 @@ StScrollBar {
   background-size: 24px;
   background-color: $close_button;
   border-radius: 2px;
-  box-shadow: 0 0 0 1px transparentize(black, 0.1);
+  box-shadow: none;
   border: 0;
   color: transparent;
   height: 24px;
