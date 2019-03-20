@@ -69,6 +69,52 @@ XfceHeading,
   }
 }
 
+#XfceNotifyWindow {
+  @extend %osd;
+  border-radius: $br_w;
+
+  buttonbox { padding: 0; }
+
+  button {
+    @include button(osd);
+    &:hover, &:focus { @include button(osd-hover); }
+    &:active, &:checked { @include button(osd-active); }
+    &:active:hover, &:checked:hover { @include button(osd-active); }
+    &.default { @include button(osd-hover); }
+    &:disabled { @include button(osd-insensitive); }
+
+    border-radius: $br_b;
+    text-shadow: none;
+  }
+
+  entry {
+    @include entry(osd);
+    border-radius: $br_b;
+    text-shadow: none;
+  }
+
+  label#summary {
+    font-weight: bold;
+  }
+
+  progressbar {
+    min-height: 6px;
+    border-radius: $br_b;
+    progress {
+      background-image: none;
+      background-color: $selected_bg_color;
+      border: none;
+      box-shadow: none;
+    }
+    trough {
+      background-color: ligthen($dark_bg_color, 10%);
+      border: none;
+      border-radius: $br_b;
+      padding: 1px 0;
+    }
+  }
+}
+
 // Xfwm4's alt-tab dialog, aka "tabwin"
 #xfwm-tabwin {
   padding: 12px;
@@ -179,9 +225,14 @@ XfceHeading,
     }
     button {
       @include button(undecorated);
-      &:hover, &:checked {
-        background-color: transparent;
-        box-shadow: 0 2px $selected_bg_color;
+      &:hover {
+        background-color: $light_selection;
+        border-color: $light_selection_border;
+      }
+      &:checked, &:checked:hover {
+        background-color: $selected_bg_color;
+        border-color: transparent;
+        &, &:hover, &:backdrop:hover { color: $selected_fg_color; }
       }
     }
   }

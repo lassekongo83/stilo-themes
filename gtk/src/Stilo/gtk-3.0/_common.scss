@@ -1202,10 +1202,6 @@ combobox {
   -GtkWidget-window-dragging: true;
   padding: 4px;
   background-color: $toolbar_color;
-  //&:not(.inline-toolbar):not(.osd) {
-  //  box-shadow: inset 0 1px transparentize(black, 0.96),
-  //              inset 0 2px transparentize(black, 0.98);
-  //}
 }
 
 toolbar {
@@ -2069,7 +2065,7 @@ notebook {
       outline-offset: -4px;
 
       color: $insensitive_fg_color;
-      //font-weight: bold;
+      font-weight: bold;
 
       border-width: 0px;         // for reorderable tabs
       border-color: transparent; //

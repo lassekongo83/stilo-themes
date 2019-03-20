@@ -8,8 +8,8 @@ $_scrollbar_size: 14px;
 $_overlay_size: 6px;
 
 // radius
-$br_b: 0; // Default button and entry border-radius
-$br_w: 0; // Window decoration border-radius
+$br_b: 2px; // Default button and entry border-radius
+$br_w: 5px; // Window decoration border-radius
 $circular_radius: 99px;
 
 // duration
@@ -21,7 +21,7 @@ $longer_duration: 250ms;
 $deceleration_curve: cubic-bezier(0.0, 0.0, 0.2, 1);
 
 // button shadows
-$shadow_normal: 0 1px 2px transparentize(black, 0.7), 0 1px 1px transparentize(black, 0.84);
-$shadow_hover: 0 1px 1px transparentize(black, 0.6), 0 1px 2px transparentize(black, 0.7);
+$shadow_normal: 0 1px 2px transparentize(black, 0.75), 0 1px 1px transparentize(black, 0.84);
+$shadow_hover: 0 1px 1px transparentize(black, 0.6), 0 1px 2px transparentize(black, 0.6);
 $shadow_active: inset 0 0 0 1px transparentize(black, 0.92), inset 0 2px transparentize(black, 0.96);
 $shadow_focus: 0 1px 1px transparentize($selected_bg_color, 0.6), 0 1px 2px transparentize($selected_bg_color, 0.7);
