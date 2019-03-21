@@ -972,9 +972,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 #LookingGlassPropertyInspector { background: rgba(0, 0, 0, 0.8); border: 2px solid grey; border-radius: 0; padding: 6px; }
 
-#dashtodockContainer.left.extended, #dashtodockContainer.left #dash .running1, #dashtodockContainer.left #dash .running2, #dashtodockContainer.left #dash .running3, #dashtodockContainer.left #dash .running4, #dashtodockContainer.left #dash .app-well-app:hover, #dashtodockContainer.left #dash .app-well-app:active .overview-icon, #dashtodockContainer.left #dash .app-well-app:focus .overview-icon, #dashtodockContainer.left #dash .app-well-app:selected .overview-icon, #dashtodockContainer.right.extended, #dashtodockContainer.right #dash .running1, #dashtodockContainer.right #dash .running2, #dashtodockContainer.right #dash .running3, #dashtodockContainer.right #dash .running4, #dashtodockContainer.right #dash .app-well-app:hover, #dashtodockContainer.right #dash .app-well-app:active .overview-icon, #dashtodockContainer.right #dash .app-well-app:focus .overview-icon, #dashtodockContainer.right #dash .app-well-app:selected .overview-icon, #dashtodockContainer.bottom.extended, #dashtodockContainer.bottom #dash .running1, #dashtodockContainer.bottom #dash .running2, #dashtodockContainer.bottom #dash .running3, #dashtodockContainer.bottom #dash .running4, #dashtodockContainer.bottom #dash .app-well-app:hover, #dashtodockContainer.bottom #dash .app-well-app:active .overview-icon, #dashtodockContainer.bottom #dash .app-well-app:focus .overview-icon, #dashtodockContainer.bottom #dash .app-well-app:selected .overview-icon, #dashtodockContainer.top.extended, #dashtodockContainer.top #dash .running1, #dashtodockContainer.top #dash .running2, #dashtodockContainer.top #dash .running3, #dashtodockContainer.top #dash .running4, #dashtodockContainer.top #dash .app-well-app:hover, #dashtodockContainer.top #dash .app-well-app:active .overview-icon, #dashtodockContainer.top #dash .app-well-app:focus .overview-icon, #dashtodockContainer.top #dash .app-well-app:selected .overview-icon { background-gradient-direction: vertical; background-gradient-start: transparent; background-gradient-end: transparent; }
-
-#panel.dashtopanelMainPanel.dashtopanelTop, #panel.dashtopanelMainPanel.dashtopanelBottom { background-gradient-direction: vertical; background-gradient-start: black; background-gradient-end: black; }
+#dashtodockContainer.left.extended, #dashtodockContainer.left #dash .running1, #dashtodockContainer.left #dash .app-well-app:hover, #dashtodockContainer.left #dash .app-well-app:active .overview-icon, #dashtodockContainer.left #dash .app-well-app:focus .overview-icon, #dashtodockContainer.left #dash .app-well-app:selected .overview-icon, #dashtodockContainer.left #dash .running2, #dashtodockContainer.left #dash .running3, #dashtodockContainer.left #dash .running4, #dashtodockContainer.right.extended, #dashtodockContainer.right #dash .running1, #dashtodockContainer.right #dash .app-well-app:hover, #dashtodockContainer.right #dash .app-well-app:active .overview-icon, #dashtodockContainer.right #dash .app-well-app:focus .overview-icon, #dashtodockContainer.right #dash .app-well-app:selected .overview-icon, #dashtodockContainer.right #dash .running2, #dashtodockContainer.right #dash .running3, #dashtodockContainer.right #dash .running4, #dashtodockContainer.top.extended, #dashtodockContainer.top #dash .running1, #dashtodockContainer.top #dash .app-well-app:hover, #dashtodockContainer.top #dash .app-well-app:active .overview-icon, #dashtodockContainer.top #dash .app-well-app:focus .overview-icon, #dashtodockContainer.top #dash .app-well-app:selected .overview-icon, #dashtodockContainer.top #dash .running2, #dashtodockContainer.top #dash .running3, #dashtodockContainer.top #dash .running4, #dashtodockContainer.bottom.extended, #dashtodockContainer.bottom #dash .running1, #dashtodockContainer.bottom #dash .app-well-app:hover, #dashtodockContainer.bottom #dash .app-well-app:active .overview-icon, #dashtodockContainer.bottom #dash .app-well-app:focus .overview-icon, #dashtodockContainer.bottom #dash .app-well-app:selected .overview-icon, #dashtodockContainer.bottom #dash .running2, #dashtodockContainer.bottom #dash .running3, #dashtodockContainer.bottom #dash .running4 { background-gradient-direction: vertical; background-gradient-start: transparent; background-gradient-end: transparent; }
 
 #panel.dashtopanelMainPanel.dashtopanelTop .panel-button { text-shadow: black 0 1px 1px; }
 
@@ -984,33 +982,29 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 #panel.dashtopanelMainPanel.dashtopanelTop .dash-item-container > * { padding: 0 4px; }
 
-#panel.dashtopanelMainPanel.dashtopanelTop .show-apps .overview-icon { background-image: url("d2p-activities.svg"); background-position: center center; border: none; color: transparent; border-radius: 0; margin: 0; transition-duration: 100ms; }
+#panel.dashtopanelMainPanel.dashtopanelTop .show-apps .overview-icon { background-image: url("d2p-activities.svg"); background-position: center center; border: none; color: transparent; margin: 0; transition-duration: 100ms; }
 
-#panel.dashtopanelMainPanel.dashtopanelTop .show-apps:hover .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: black; background-position: center center; color: transparent; }
+#panel.dashtopanelMainPanel.dashtopanelTop .show-apps:hover .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: transparent; background-position: center center; color: transparent; }
 
-#panel.dashtopanelMainPanel.dashtopanelTop .show-apps .overview-icon { background-image: url("d2p-activities.svg"); background-position: center center; border: none; color: transparent; border-radius: 0; margin: 0; transition-duration: 100ms; }
+#panel.dashtopanelMainPanel.dashtopanelTop .show-apps .overview-icon { background-image: url("d2p-activities.svg"); background-position: center center; border: none; color: transparent; margin: 0; transition-duration: 100ms; }
 
-#panel.dashtopanelMainPanel.dashtopanelTop .show-apps:focus .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: black; background-position: center center; color: transparent; }
+#panel.dashtopanelMainPanel.dashtopanelTop .show-apps:focus .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: transparent; background-position: center center; color: transparent; }
 
-#panel.dashtopanelMainPanel.dashtopanelTop .show-apps .overview-icon { background-image: url("d2p-activities.svg"); background-position: center center; border: none; color: transparent; border-radius: 0; margin: 0; transition-duration: 100ms; }
+#panel.dashtopanelMainPanel.dashtopanelTop .show-apps .overview-icon { background-image: url("d2p-activities.svg"); background-position: center center; border: none; color: transparent; margin: 0; transition-duration: 100ms; }
 
-#panel.dashtopanelMainPanel.dashtopanelTop .show-apps:active .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: black; background-position: center center; color: transparent; }
+#panel.dashtopanelMainPanel.dashtopanelTop .show-apps:active .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: transparent; background-position: center center; color: transparent; }
 
-#panel.dashtopanelMainPanel.dashtopanelTop .show-apps .overview-icon { background-image: url("d2p-activities.svg"); background-position: center center; border: none; color: transparent; border-radius: 0; margin: 0; transition-duration: 100ms; }
+#panel.dashtopanelMainPanel.dashtopanelTop .show-apps .overview-icon { background-image: url("d2p-activities.svg"); background-position: center center; border: none; color: transparent; margin: 0; transition-duration: 100ms; }
 
-#panel.dashtopanelMainPanel.dashtopanelTop .show-apps:checked .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: black; background-position: center center; color: transparent; }
+#panel.dashtopanelMainPanel.dashtopanelTop .show-apps:checked .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: transparent; background-position: center center; color: transparent; }
 
-#panel.dashtopanelMainPanel.dashtopanelTop .show-apps .overview-icon { background-image: url("d2p-activities.svg"); background-position: center center; border: none; color: transparent; border-radius: 0; margin: 0; transition-duration: 100ms; }
+#panel.dashtopanelMainPanel.dashtopanelTop .show-apps .overview-icon { background-image: url("d2p-activities.svg"); background-position: center center; border: none; color: transparent; margin: 0; transition-duration: 100ms; }
 
-#panel.dashtopanelMainPanel.dashtopanelTop .show-apps:overview .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: black; background-position: center center; color: transparent; }
-
-#panel.dashtopanelMainPanel.dashtopanelTop > #panelRight { box-shadow: inset 1px 0 black; }
+#panel.dashtopanelMainPanel.dashtopanelTop .show-apps:overview .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: transparent; background-position: center center; color: transparent; }
 
 #panel.dashtopanelMainPanel.dashtopanelTop > #panelRight .panel-button:hover { box-shadow: none; }
 
 #panel.dashtopanelMainPanel.dashtopanelTop .showdesktop-button { padding-right: 8px; }
-
-#panel.dashtopanelMainPanel.dashtopanelBottom { box-shadow: inset 0 1px #050505; }
 
 #panel.dashtopanelMainPanel.dashtopanelBottom .panel-button { text-shadow: black 0 1px 1px; }
 
@@ -1020,27 +1014,25 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 #panel.dashtopanelMainPanel.dashtopanelBottom .dash-item-container > * { padding: 0 4px; }
 
-#panel.dashtopanelMainPanel.dashtopanelBottom .show-apps .overview-icon { background-image: url("d2p-activities.svg"); background-position: center center; border: none; color: transparent; border-radius: 0; margin: 0; transition-duration: 100ms; }
+#panel.dashtopanelMainPanel.dashtopanelBottom .show-apps .overview-icon { background-image: url("d2p-activities.svg"); background-position: center center; border: none; color: transparent; margin: 0; transition-duration: 100ms; }
 
-#panel.dashtopanelMainPanel.dashtopanelBottom .show-apps:hover .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: black; background-position: center center; color: transparent; }
+#panel.dashtopanelMainPanel.dashtopanelBottom .show-apps:hover .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: transparent; background-position: center center; color: transparent; }
 
-#panel.dashtopanelMainPanel.dashtopanelBottom .show-apps .overview-icon { background-image: url("d2p-activities.svg"); background-position: center center; border: none; color: transparent; border-radius: 0; margin: 0; transition-duration: 100ms; }
+#panel.dashtopanelMainPanel.dashtopanelBottom .show-apps .overview-icon { background-image: url("d2p-activities.svg"); background-position: center center; border: none; color: transparent; margin: 0; transition-duration: 100ms; }
 
-#panel.dashtopanelMainPanel.dashtopanelBottom .show-apps:focus .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: black; background-position: center center; color: transparent; }
+#panel.dashtopanelMainPanel.dashtopanelBottom .show-apps:focus .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: transparent; background-position: center center; color: transparent; }
 
-#panel.dashtopanelMainPanel.dashtopanelBottom .show-apps .overview-icon { background-image: url("d2p-activities.svg"); background-position: center center; border: none; color: transparent; border-radius: 0; margin: 0; transition-duration: 100ms; }
+#panel.dashtopanelMainPanel.dashtopanelBottom .show-apps .overview-icon { background-image: url("d2p-activities.svg"); background-position: center center; border: none; color: transparent; margin: 0; transition-duration: 100ms; }
 
-#panel.dashtopanelMainPanel.dashtopanelBottom .show-apps:active .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: black; background-position: center center; color: transparent; }
+#panel.dashtopanelMainPanel.dashtopanelBottom .show-apps:active .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: transparent; background-position: center center; color: transparent; }
 
-#panel.dashtopanelMainPanel.dashtopanelBottom .show-apps .overview-icon { background-image: url("d2p-activities.svg"); background-position: center center; border: none; color: transparent; border-radius: 0; margin: 0; transition-duration: 100ms; }
+#panel.dashtopanelMainPanel.dashtopanelBottom .show-apps .overview-icon { background-image: url("d2p-activities.svg"); background-position: center center; border: none; color: transparent; margin: 0; transition-duration: 100ms; }
 
-#panel.dashtopanelMainPanel.dashtopanelBottom .show-apps:checked .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: black; background-position: center center; color: transparent; }
+#panel.dashtopanelMainPanel.dashtopanelBottom .show-apps:checked .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: transparent; background-position: center center; color: transparent; }
 
-#panel.dashtopanelMainPanel.dashtopanelBottom .show-apps .overview-icon { background-image: url("d2p-activities.svg"); background-position: center center; border: none; color: transparent; border-radius: 0; margin: 0; transition-duration: 100ms; }
+#panel.dashtopanelMainPanel.dashtopanelBottom .show-apps .overview-icon { background-image: url("d2p-activities.svg"); background-position: center center; border: none; color: transparent; margin: 0; transition-duration: 100ms; }
 
-#panel.dashtopanelMainPanel.dashtopanelBottom .show-apps:overview .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: black; background-position: center center; color: transparent; }
-
-#panel.dashtopanelMainPanel.dashtopanelBottom > #panelRight { box-shadow: inset 1px 0 black; }
+#panel.dashtopanelMainPanel.dashtopanelBottom .show-apps:overview .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: transparent; background-position: center center; color: transparent; }
 
 #panel.dashtopanelMainPanel.dashtopanelBottom > #panelRight .panel-button:hover { box-shadow: none; }
 
@@ -1070,6 +1062,36 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 #dashtodockContainer.left #dash .running1.focused:hover { box-shadow: inset 2px 0 #215d9c; }
 
+#dashtodockContainer.left #dash .app-well-app { transition-duration: 100ms; }
+
+#dashtodockContainer.left #dash .app-well-app:hover { box-shadow: inset 2px 0 white; }
+
+#dashtodockContainer.left #dash .app-well-app { padding: 0px; margin: 2px; margin-left: 0; margin-right: 0; }
+
+#dashtodockContainer.left #dash .app-well-app .overview-icon { margin: 0; }
+
+#dashtodockContainer.left #dash .app-well-app.focused .overview-icon { border-radius: 0; border-image: url("transparent.png"); }
+
+#dashtodockContainer.left #dash .app-well-app:hover .overview-icon { background: none; }
+
+#dashtodockContainer.left #dash .app-well-app:active .overview-icon, #dashtodockContainer.left #dash .app-well-app:focus .overview-icon, #dashtodockContainer.left #dash .app-well-app:selected .overview-icon { background: none; box-shadow: none; }
+
+#dashtodockContainer { border-radius: 0; }
+
+#dashtodockContainer.extended .show-apps { transition-duration: 100ms; }
+
+#dashtodockContainer.shrink.left #dash, #dashtodockContainer.dashtodock.left #dash { border: 0 !important; padding: 0; background-color: rgba(0, 0, 0, 0.8); }
+
+#dashtodockContainer.extended { border: 0; border-radius: 0; }
+
+#dashtodockContainer.bottom #dash .app-well-app-running-dot { width: 44px; height: 3px; margin-bottom: 0; }
+
+#dashtodockContainer #dash .app-well-app-running-dot { background-color: transparent; }
+
+#dashtodockContainer.running-dots .dash-item-container > StButton, #dashtodockContainer.dashtodock .dash-item-container > StButton { background-size: contain; }
+
+#dashtodockContainer.shrink .dash-item-container > StButton, #dashtodockContainer.dashtodock .dash-item-container > StButton { padding: 2px 4px !important; }
+
 #dashtodockContainer.left #dash .running2 { box-shadow: inset 4px 0 rgba(255, 255, 255, 0.4); }
 
 #dashtodockContainer.left #dash .running2.focused { background-gradient-direction: vertical; background-gradient-start: rgba(255, 255, 255, 0.1); background-gradient-end: rgba(255, 255, 255, 0.1); box-shadow: inset 4px 0 #215d9c; }
@@ -1078,6 +1100,36 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 #dashtodockContainer.left #dash .running2.focused:hover { box-shadow: inset 4px 0 #215d9c; }
 
+#dashtodockContainer.left #dash .app-well-app { transition-duration: 100ms; }
+
+#dashtodockContainer.left #dash .app-well-app:hover { box-shadow: inset 2px 0 white; }
+
+#dashtodockContainer.left #dash .app-well-app { padding: 0px; margin: 2px; margin-left: 0; margin-right: 0; }
+
+#dashtodockContainer.left #dash .app-well-app .overview-icon { margin: 0; }
+
+#dashtodockContainer.left #dash .app-well-app.focused .overview-icon { border-radius: 0; border-image: url("transparent.png"); }
+
+#dashtodockContainer.left #dash .app-well-app:hover .overview-icon { background: none; }
+
+#dashtodockContainer.left #dash .app-well-app:active .overview-icon, #dashtodockContainer.left #dash .app-well-app:focus .overview-icon, #dashtodockContainer.left #dash .app-well-app:selected .overview-icon { background: none; box-shadow: none; }
+
+#dashtodockContainer { border-radius: 0; }
+
+#dashtodockContainer.extended .show-apps { transition-duration: 100ms; }
+
+#dashtodockContainer.shrink.left #dash, #dashtodockContainer.dashtodock.left #dash { border: 0 !important; padding: 0; background-color: rgba(0, 0, 0, 0.8); }
+
+#dashtodockContainer.extended { border: 0; border-radius: 0; }
+
+#dashtodockContainer.bottom #dash .app-well-app-running-dot { width: 44px; height: 3px; margin-bottom: 0; }
+
+#dashtodockContainer #dash .app-well-app-running-dot { background-color: transparent; }
+
+#dashtodockContainer.running-dots .dash-item-container > StButton, #dashtodockContainer.dashtodock .dash-item-container > StButton { background-size: contain; }
+
+#dashtodockContainer.shrink .dash-item-container > StButton, #dashtodockContainer.dashtodock .dash-item-container > StButton { padding: 2px 4px !important; }
+
 #dashtodockContainer.left #dash .running3 { box-shadow: inset 4px 0 rgba(255, 255, 255, 0.4); }
 
 #dashtodockContainer.left #dash .running3.focused { background-gradient-direction: vertical; background-gradient-start: rgba(255, 255, 255, 0.1); background-gradient-end: rgba(255, 255, 255, 0.1); box-shadow: inset 4px 0 #215d9c; }
@@ -1085,6 +1137,36 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 #dashtodockContainer.left #dash .running3.focused:hover { background-gradient-start: rgba(255, 255, 255, 0.15); background-gradient-end: rgba(255, 255, 255, 0.15); }
 
 #dashtodockContainer.left #dash .running3.focused:hover { box-shadow: inset 4px 0 #215d9c; }
+
+#dashtodockContainer.left #dash .app-well-app { transition-duration: 100ms; }
+
+#dashtodockContainer.left #dash .app-well-app:hover { box-shadow: inset 2px 0 white; }
+
+#dashtodockContainer.left #dash .app-well-app { padding: 0px; margin: 2px; margin-left: 0; margin-right: 0; }
+
+#dashtodockContainer.left #dash .app-well-app .overview-icon { margin: 0; }
+
+#dashtodockContainer.left #dash .app-well-app.focused .overview-icon { border-radius: 0; border-image: url("transparent.png"); }
+
+#dashtodockContainer.left #dash .app-well-app:hover .overview-icon { background: none; }
+
+#dashtodockContainer.left #dash .app-well-app:active .overview-icon, #dashtodockContainer.left #dash .app-well-app:focus .overview-icon, #dashtodockContainer.left #dash .app-well-app:selected .overview-icon { background: none; box-shadow: none; }
+
+#dashtodockContainer { border-radius: 0; }
+
+#dashtodockContainer.extended .show-apps { transition-duration: 100ms; }
+
+#dashtodockContainer.shrink.left #dash, #dashtodockContainer.dashtodock.left #dash { border: 0 !important; padding: 0; background-color: rgba(0, 0, 0, 0.8); }
+
+#dashtodockContainer.extended { border: 0; border-radius: 0; }
+
+#dashtodockContainer.bottom #dash .app-well-app-running-dot { width: 44px; height: 3px; margin-bottom: 0; }
+
+#dashtodockContainer #dash .app-well-app-running-dot { background-color: transparent; }
+
+#dashtodockContainer.running-dots .dash-item-container > StButton, #dashtodockContainer.dashtodock .dash-item-container > StButton { background-size: contain; }
+
+#dashtodockContainer.shrink .dash-item-container > StButton, #dashtodockContainer.dashtodock .dash-item-container > StButton { padding: 2px 4px !important; }
 
 #dashtodockContainer.left #dash .running4 { box-shadow: inset 4px 0 rgba(255, 255, 255, 0.4); }
 
@@ -1132,6 +1214,36 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 #dashtodockContainer.right #dash .running1.focused:hover { box-shadow: inset -2px 0 #215d9c; }
 
+#dashtodockContainer.right #dash .app-well-app { transition-duration: 100ms; }
+
+#dashtodockContainer.right #dash .app-well-app:hover { box-shadow: inset -2px 0 white; }
+
+#dashtodockContainer.right #dash .app-well-app { padding: 0px; margin: 2px; margin-left: 0; margin-right: 0; }
+
+#dashtodockContainer.right #dash .app-well-app .overview-icon { margin: 0; }
+
+#dashtodockContainer.right #dash .app-well-app.focused .overview-icon { border-radius: 0; border-image: url("transparent.png"); }
+
+#dashtodockContainer.right #dash .app-well-app:hover .overview-icon { background: none; }
+
+#dashtodockContainer.right #dash .app-well-app:active .overview-icon, #dashtodockContainer.right #dash .app-well-app:focus .overview-icon, #dashtodockContainer.right #dash .app-well-app:selected .overview-icon { background: none; box-shadow: none; }
+
+#dashtodockContainer { border-radius: 0; }
+
+#dashtodockContainer.extended .show-apps { transition-duration: 100ms; }
+
+#dashtodockContainer.shrink.right #dash, #dashtodockContainer.dashtodock.right #dash { border: 0 !important; padding: 0; background-color: rgba(0, 0, 0, 0.8); }
+
+#dashtodockContainer.extended { border: 0; border-radius: 0; }
+
+#dashtodockContainer.bottom #dash .app-well-app-running-dot { width: 44px; height: 3px; margin-bottom: 0; }
+
+#dashtodockContainer #dash .app-well-app-running-dot { background-color: transparent; }
+
+#dashtodockContainer.running-dots .dash-item-container > StButton, #dashtodockContainer.dashtodock .dash-item-container > StButton { background-size: contain; }
+
+#dashtodockContainer.shrink .dash-item-container > StButton, #dashtodockContainer.dashtodock .dash-item-container > StButton { padding: 2px 4px !important; }
+
 #dashtodockContainer.right #dash .running2 { box-shadow: inset -4px 0 rgba(255, 255, 255, 0.4); }
 
 #dashtodockContainer.right #dash .running2.focused { background-gradient-direction: vertical; background-gradient-start: rgba(255, 255, 255, 0.1); background-gradient-end: rgba(255, 255, 255, 0.1); box-shadow: inset -4px 0 #215d9c; }
@@ -1140,6 +1252,36 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 #dashtodockContainer.right #dash .running2.focused:hover { box-shadow: inset -4px 0 #215d9c; }
 
+#dashtodockContainer.right #dash .app-well-app { transition-duration: 100ms; }
+
+#dashtodockContainer.right #dash .app-well-app:hover { box-shadow: inset -2px 0 white; }
+
+#dashtodockContainer.right #dash .app-well-app { padding: 0px; margin: 2px; margin-left: 0; margin-right: 0; }
+
+#dashtodockContainer.right #dash .app-well-app .overview-icon { margin: 0; }
+
+#dashtodockContainer.right #dash .app-well-app.focused .overview-icon { border-radius: 0; border-image: url("transparent.png"); }
+
+#dashtodockContainer.right #dash .app-well-app:hover .overview-icon { background: none; }
+
+#dashtodockContainer.right #dash .app-well-app:active .overview-icon, #dashtodockContainer.right #dash .app-well-app:focus .overview-icon, #dashtodockContainer.right #dash .app-well-app:selected .overview-icon { background: none; box-shadow: none; }
+
+#dashtodockContainer { border-radius: 0; }
+
+#dashtodockContainer.extended .show-apps { transition-duration: 100ms; }
+
+#dashtodockContainer.shrink.right #dash, #dashtodockContainer.dashtodock.right #dash { border: 0 !important; padding: 0; background-color: rgba(0, 0, 0, 0.8); }
+
+#dashtodockContainer.extended { border: 0; border-radius: 0; }
+
+#dashtodockContainer.bottom #dash .app-well-app-running-dot { width: 44px; height: 3px; margin-bottom: 0; }
+
+#dashtodockContainer #dash .app-well-app-running-dot { background-color: transparent; }
+
+#dashtodockContainer.running-dots .dash-item-container > StButton, #dashtodockContainer.dashtodock .dash-item-container > StButton { background-size: contain; }
+
+#dashtodockContainer.shrink .dash-item-container > StButton, #dashtodockContainer.dashtodock .dash-item-container > StButton { padding: 2px 4px !important; }
+
 #dashtodockContainer.right #dash .running3 { box-shadow: inset -4px 0 rgba(255, 255, 255, 0.4); }
 
 #dashtodockContainer.right #dash .running3.focused { background-gradient-direction: vertical; background-gradient-start: rgba(255, 255, 255, 0.1); background-gradient-end: rgba(255, 255, 255, 0.1); box-shadow: inset -4px 0 #215d9c; }
@@ -1147,6 +1289,36 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 #dashtodockContainer.right #dash .running3.focused:hover { background-gradient-start: rgba(255, 255, 255, 0.15); background-gradient-end: rgba(255, 255, 255, 0.15); }
 
 #dashtodockContainer.right #dash .running3.focused:hover { box-shadow: inset -4px 0 #215d9c; }
+
+#dashtodockContainer.right #dash .app-well-app { transition-duration: 100ms; }
+
+#dashtodockContainer.right #dash .app-well-app:hover { box-shadow: inset -2px 0 white; }
+
+#dashtodockContainer.right #dash .app-well-app { padding: 0px; margin: 2px; margin-left: 0; margin-right: 0; }
+
+#dashtodockContainer.right #dash .app-well-app .overview-icon { margin: 0; }
+
+#dashtodockContainer.right #dash .app-well-app.focused .overview-icon { border-radius: 0; border-image: url("transparent.png"); }
+
+#dashtodockContainer.right #dash .app-well-app:hover .overview-icon { background: none; }
+
+#dashtodockContainer.right #dash .app-well-app:active .overview-icon, #dashtodockContainer.right #dash .app-well-app:focus .overview-icon, #dashtodockContainer.right #dash .app-well-app:selected .overview-icon { background: none; box-shadow: none; }
+
+#dashtodockContainer { border-radius: 0; }
+
+#dashtodockContainer.extended .show-apps { transition-duration: 100ms; }
+
+#dashtodockContainer.shrink.right #dash, #dashtodockContainer.dashtodock.right #dash { border: 0 !important; padding: 0; background-color: rgba(0, 0, 0, 0.8); }
+
+#dashtodockContainer.extended { border: 0; border-radius: 0; }
+
+#dashtodockContainer.bottom #dash .app-well-app-running-dot { width: 44px; height: 3px; margin-bottom: 0; }
+
+#dashtodockContainer #dash .app-well-app-running-dot { background-color: transparent; }
+
+#dashtodockContainer.running-dots .dash-item-container > StButton, #dashtodockContainer.dashtodock .dash-item-container > StButton { background-size: contain; }
+
+#dashtodockContainer.shrink .dash-item-container > StButton, #dashtodockContainer.dashtodock .dash-item-container > StButton { padding: 2px 4px !important; }
 
 #dashtodockContainer.right #dash .running4 { box-shadow: inset -4px 0 rgba(255, 255, 255, 0.4); }
 
@@ -1174,68 +1346,6 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 #dashtodockContainer.extended .show-apps { transition-duration: 100ms; }
 
-#dashtodockContainer.shrink.bottom #dash, #dashtodockContainer.dashtodock.bottom #dash { border: 0 !important; padding: 0; background-color: rgba(0, 0, 0, 0.8); }
-
-#dashtodockContainer.extended { border: 0; border-radius: 0; }
-
-#dashtodockContainer.bottom #dash .app-well-app-running-dot { width: 44px; height: 3px; margin-bottom: 0; }
-
-#dashtodockContainer #dash .app-well-app-running-dot { background-color: transparent; }
-
-#dashtodockContainer.running-dots .dash-item-container > StButton, #dashtodockContainer.dashtodock .dash-item-container > StButton { background-size: contain; }
-
-#dashtodockContainer.shrink .dash-item-container > StButton, #dashtodockContainer.dashtodock .dash-item-container > StButton { padding: 2px 4px !important; }
-
-#dashtodockContainer.bottom #dash .running1 { box-shadow: inset 0 -2px rgba(255, 255, 255, 0.4); }
-
-#dashtodockContainer.bottom #dash .running1.focused { background-gradient-direction: vertical; background-gradient-start: rgba(255, 255, 255, 0.1); background-gradient-end: rgba(255, 255, 255, 0.1); box-shadow: inset 0 -2px #215d9c; }
-
-#dashtodockContainer.bottom #dash .running1.focused:hover { background-gradient-start: rgba(255, 255, 255, 0.15); background-gradient-end: rgba(255, 255, 255, 0.15); }
-
-#dashtodockContainer.bottom #dash .running1.focused:hover { box-shadow: inset 0 -2px #215d9c; }
-
-#dashtodockContainer.bottom #dash .running2 { box-shadow: inset 0 -4px rgba(255, 255, 255, 0.4); }
-
-#dashtodockContainer.bottom #dash .running2.focused { background-gradient-direction: vertical; background-gradient-start: rgba(255, 255, 255, 0.1); background-gradient-end: rgba(255, 255, 255, 0.1); box-shadow: inset 0 -4px #215d9c; }
-
-#dashtodockContainer.bottom #dash .running2.focused:hover { background-gradient-start: rgba(255, 255, 255, 0.15); background-gradient-end: rgba(255, 255, 255, 0.15); }
-
-#dashtodockContainer.bottom #dash .running2.focused:hover { box-shadow: inset 0 -4px #215d9c; }
-
-#dashtodockContainer.bottom #dash .running3 { box-shadow: inset 0 -4px rgba(255, 255, 255, 0.4); }
-
-#dashtodockContainer.bottom #dash .running3.focused { background-gradient-direction: vertical; background-gradient-start: rgba(255, 255, 255, 0.1); background-gradient-end: rgba(255, 255, 255, 0.1); box-shadow: inset 0 -4px #215d9c; }
-
-#dashtodockContainer.bottom #dash .running3.focused:hover { background-gradient-start: rgba(255, 255, 255, 0.15); background-gradient-end: rgba(255, 255, 255, 0.15); }
-
-#dashtodockContainer.bottom #dash .running3.focused:hover { box-shadow: inset 0 -4px #215d9c; }
-
-#dashtodockContainer.bottom #dash .running4 { box-shadow: inset 0 -4px rgba(255, 255, 255, 0.4); }
-
-#dashtodockContainer.bottom #dash .running4.focused { background-gradient-direction: vertical; background-gradient-start: rgba(255, 255, 255, 0.1); background-gradient-end: rgba(255, 255, 255, 0.1); box-shadow: inset 0 -4px #215d9c; }
-
-#dashtodockContainer.bottom #dash .running4.focused:hover { background-gradient-start: rgba(255, 255, 255, 0.15); background-gradient-end: rgba(255, 255, 255, 0.15); }
-
-#dashtodockContainer.bottom #dash .running4.focused:hover { box-shadow: inset 0 -4px #215d9c; }
-
-#dashtodockContainer.bottom #dash .app-well-app { transition-duration: 100ms; }
-
-#dashtodockContainer.bottom #dash .app-well-app:hover { box-shadow: inset 0 -2px white; }
-
-#dashtodockContainer.bottom #dash .app-well-app { padding: 0px; margin: 2px; margin-top: 0; margin-bottom: 0; }
-
-#dashtodockContainer.bottom #dash .app-well-app .overview-icon { margin: 0; }
-
-#dashtodockContainer.bottom #dash .app-well-app.focused .overview-icon { border-radius: 0; border-image: url("transparent.png"); }
-
-#dashtodockContainer.bottom #dash .app-well-app:hover .overview-icon { background: none; }
-
-#dashtodockContainer.bottom #dash .app-well-app:active .overview-icon, #dashtodockContainer.bottom #dash .app-well-app:focus .overview-icon, #dashtodockContainer.bottom #dash .app-well-app:selected .overview-icon { background: none; box-shadow: none; }
-
-#dashtodockContainer { border-radius: 0; }
-
-#dashtodockContainer.extended .show-apps { transition-duration: 100ms; }
-
 #dashtodockContainer.shrink.top #dash, #dashtodockContainer.dashtodock.top #dash { border: 0 !important; padding: 0; background-color: rgba(0, 0, 0, 0.8); }
 
 #dashtodockContainer.extended { border: 0; border-radius: 0; }
@@ -1256,6 +1366,36 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 #dashtodockContainer.top #dash .running1.focused:hover { box-shadow: inset 0 2px #215d9c; }
 
+#dashtodockContainer.top #dash .app-well-app { transition-duration: 100ms; }
+
+#dashtodockContainer.top #dash .app-well-app:hover { box-shadow: inset 0 2px white; }
+
+#dashtodockContainer.top #dash .app-well-app { padding: 0px; margin: 2px; margin-top: 0; margin-bottom: 0; }
+
+#dashtodockContainer.top #dash .app-well-app .overview-icon { margin: 0; }
+
+#dashtodockContainer.top #dash .app-well-app.focused .overview-icon { border-radius: 0; border-image: url("transparent.png"); }
+
+#dashtodockContainer.top #dash .app-well-app:hover .overview-icon { background: none; }
+
+#dashtodockContainer.top #dash .app-well-app:active .overview-icon, #dashtodockContainer.top #dash .app-well-app:focus .overview-icon, #dashtodockContainer.top #dash .app-well-app:selected .overview-icon { background: none; box-shadow: none; }
+
+#dashtodockContainer { border-radius: 0; }
+
+#dashtodockContainer.extended .show-apps { transition-duration: 100ms; }
+
+#dashtodockContainer.shrink.top #dash, #dashtodockContainer.dashtodock.top #dash { border: 0 !important; padding: 0; background-color: rgba(0, 0, 0, 0.8); }
+
+#dashtodockContainer.extended { border: 0; border-radius: 0; }
+
+#dashtodockContainer.bottom #dash .app-well-app-running-dot { width: 44px; height: 3px; margin-bottom: 0; }
+
+#dashtodockContainer #dash .app-well-app-running-dot { background-color: transparent; }
+
+#dashtodockContainer.running-dots .dash-item-container > StButton, #dashtodockContainer.dashtodock .dash-item-container > StButton { background-size: contain; }
+
+#dashtodockContainer.shrink .dash-item-container > StButton, #dashtodockContainer.dashtodock .dash-item-container > StButton { padding: 2px 4px !important; }
+
 #dashtodockContainer.top #dash .running2 { box-shadow: inset 0 4px rgba(255, 255, 255, 0.4); }
 
 #dashtodockContainer.top #dash .running2.focused { background-gradient-direction: vertical; background-gradient-start: rgba(255, 255, 255, 0.1); background-gradient-end: rgba(255, 255, 255, 0.1); box-shadow: inset 0 4px #215d9c; }
@@ -1264,6 +1404,36 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 #dashtodockContainer.top #dash .running2.focused:hover { box-shadow: inset 0 4px #215d9c; }
 
+#dashtodockContainer.top #dash .app-well-app { transition-duration: 100ms; }
+
+#dashtodockContainer.top #dash .app-well-app:hover { box-shadow: inset 0 2px white; }
+
+#dashtodockContainer.top #dash .app-well-app { padding: 0px; margin: 2px; margin-top: 0; margin-bottom: 0; }
+
+#dashtodockContainer.top #dash .app-well-app .overview-icon { margin: 0; }
+
+#dashtodockContainer.top #dash .app-well-app.focused .overview-icon { border-radius: 0; border-image: url("transparent.png"); }
+
+#dashtodockContainer.top #dash .app-well-app:hover .overview-icon { background: none; }
+
+#dashtodockContainer.top #dash .app-well-app:active .overview-icon, #dashtodockContainer.top #dash .app-well-app:focus .overview-icon, #dashtodockContainer.top #dash .app-well-app:selected .overview-icon { background: none; box-shadow: none; }
+
+#dashtodockContainer { border-radius: 0; }
+
+#dashtodockContainer.extended .show-apps { transition-duration: 100ms; }
+
+#dashtodockContainer.shrink.top #dash, #dashtodockContainer.dashtodock.top #dash { border: 0 !important; padding: 0; background-color: rgba(0, 0, 0, 0.8); }
+
+#dashtodockContainer.extended { border: 0; border-radius: 0; }
+
+#dashtodockContainer.bottom #dash .app-well-app-running-dot { width: 44px; height: 3px; margin-bottom: 0; }
+
+#dashtodockContainer #dash .app-well-app-running-dot { background-color: transparent; }
+
+#dashtodockContainer.running-dots .dash-item-container > StButton, #dashtodockContainer.dashtodock .dash-item-container > StButton { background-size: contain; }
+
+#dashtodockContainer.shrink .dash-item-container > StButton, #dashtodockContainer.dashtodock .dash-item-container > StButton { padding: 2px 4px !important; }
+
 #dashtodockContainer.top #dash .running3 { box-shadow: inset 0 4px rgba(255, 255, 255, 0.4); }
 
 #dashtodockContainer.top #dash .running3.focused { background-gradient-direction: vertical; background-gradient-start: rgba(255, 255, 255, 0.1); background-gradient-end: rgba(255, 255, 255, 0.1); box-shadow: inset 0 4px #215d9c; }
@@ -1271,6 +1441,36 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 #dashtodockContainer.top #dash .running3.focused:hover { background-gradient-start: rgba(255, 255, 255, 0.15); background-gradient-end: rgba(255, 255, 255, 0.15); }
 
 #dashtodockContainer.top #dash .running3.focused:hover { box-shadow: inset 0 4px #215d9c; }
+
+#dashtodockContainer.top #dash .app-well-app { transition-duration: 100ms; }
+
+#dashtodockContainer.top #dash .app-well-app:hover { box-shadow: inset 0 2px white; }
+
+#dashtodockContainer.top #dash .app-well-app { padding: 0px; margin: 2px; margin-top: 0; margin-bottom: 0; }
+
+#dashtodockContainer.top #dash .app-well-app .overview-icon { margin: 0; }
+
+#dashtodockContainer.top #dash .app-well-app.focused .overview-icon { border-radius: 0; border-image: url("transparent.png"); }
+
+#dashtodockContainer.top #dash .app-well-app:hover .overview-icon { background: none; }
+
+#dashtodockContainer.top #dash .app-well-app:active .overview-icon, #dashtodockContainer.top #dash .app-well-app:focus .overview-icon, #dashtodockContainer.top #dash .app-well-app:selected .overview-icon { background: none; box-shadow: none; }
+
+#dashtodockContainer { border-radius: 0; }
+
+#dashtodockContainer.extended .show-apps { transition-duration: 100ms; }
+
+#dashtodockContainer.shrink.top #dash, #dashtodockContainer.dashtodock.top #dash { border: 0 !important; padding: 0; background-color: rgba(0, 0, 0, 0.8); }
+
+#dashtodockContainer.extended { border: 0; border-radius: 0; }
+
+#dashtodockContainer.bottom #dash .app-well-app-running-dot { width: 44px; height: 3px; margin-bottom: 0; }
+
+#dashtodockContainer #dash .app-well-app-running-dot { background-color: transparent; }
+
+#dashtodockContainer.running-dots .dash-item-container > StButton, #dashtodockContainer.dashtodock .dash-item-container > StButton { background-size: contain; }
+
+#dashtodockContainer.shrink .dash-item-container > StButton, #dashtodockContainer.dashtodock .dash-item-container > StButton { padding: 2px 4px !important; }
 
 #dashtodockContainer.top #dash .running4 { box-shadow: inset 0 4px rgba(255, 255, 255, 0.4); }
 
@@ -1293,6 +1493,158 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 #dashtodockContainer.top #dash .app-well-app:hover .overview-icon { background: none; }
 
 #dashtodockContainer.top #dash .app-well-app:active .overview-icon, #dashtodockContainer.top #dash .app-well-app:focus .overview-icon, #dashtodockContainer.top #dash .app-well-app:selected .overview-icon { background: none; box-shadow: none; }
+
+#dashtodockContainer { border-radius: 0; }
+
+#dashtodockContainer.extended .show-apps { transition-duration: 100ms; }
+
+#dashtodockContainer.shrink.bottom #dash, #dashtodockContainer.dashtodock.bottom #dash { border: 0 !important; padding: 0; background-color: rgba(0, 0, 0, 0.8); }
+
+#dashtodockContainer.extended { border: 0; border-radius: 0; }
+
+#dashtodockContainer.bottom #dash .app-well-app-running-dot { width: 44px; height: 3px; margin-bottom: 0; }
+
+#dashtodockContainer #dash .app-well-app-running-dot { background-color: transparent; }
+
+#dashtodockContainer.running-dots .dash-item-container > StButton, #dashtodockContainer.dashtodock .dash-item-container > StButton { background-size: contain; }
+
+#dashtodockContainer.shrink .dash-item-container > StButton, #dashtodockContainer.dashtodock .dash-item-container > StButton { padding: 2px 4px !important; }
+
+#dashtodockContainer.bottom #dash .running1 { box-shadow: inset 0 -2px rgba(255, 255, 255, 0.4); }
+
+#dashtodockContainer.bottom #dash .running1.focused { background-gradient-direction: vertical; background-gradient-start: rgba(255, 255, 255, 0.1); background-gradient-end: rgba(255, 255, 255, 0.1); box-shadow: inset 0 -2px #215d9c; }
+
+#dashtodockContainer.bottom #dash .running1.focused:hover { background-gradient-start: rgba(255, 255, 255, 0.15); background-gradient-end: rgba(255, 255, 255, 0.15); }
+
+#dashtodockContainer.bottom #dash .running1.focused:hover { box-shadow: inset 0 -2px #215d9c; }
+
+#dashtodockContainer.bottom #dash .app-well-app { transition-duration: 100ms; }
+
+#dashtodockContainer.bottom #dash .app-well-app:hover { box-shadow: inset 0 -2px white; }
+
+#dashtodockContainer.bottom #dash .app-well-app { padding: 0px; margin: 2px; margin-top: 0; margin-bottom: 0; }
+
+#dashtodockContainer.bottom #dash .app-well-app .overview-icon { margin: 0; }
+
+#dashtodockContainer.bottom #dash .app-well-app.focused .overview-icon { border-radius: 0; border-image: url("transparent.png"); }
+
+#dashtodockContainer.bottom #dash .app-well-app:hover .overview-icon { background: none; }
+
+#dashtodockContainer.bottom #dash .app-well-app:active .overview-icon, #dashtodockContainer.bottom #dash .app-well-app:focus .overview-icon, #dashtodockContainer.bottom #dash .app-well-app:selected .overview-icon { background: none; box-shadow: none; }
+
+#dashtodockContainer { border-radius: 0; }
+
+#dashtodockContainer.extended .show-apps { transition-duration: 100ms; }
+
+#dashtodockContainer.shrink.bottom #dash, #dashtodockContainer.dashtodock.bottom #dash { border: 0 !important; padding: 0; background-color: rgba(0, 0, 0, 0.8); }
+
+#dashtodockContainer.extended { border: 0; border-radius: 0; }
+
+#dashtodockContainer.bottom #dash .app-well-app-running-dot { width: 44px; height: 3px; margin-bottom: 0; }
+
+#dashtodockContainer #dash .app-well-app-running-dot { background-color: transparent; }
+
+#dashtodockContainer.running-dots .dash-item-container > StButton, #dashtodockContainer.dashtodock .dash-item-container > StButton { background-size: contain; }
+
+#dashtodockContainer.shrink .dash-item-container > StButton, #dashtodockContainer.dashtodock .dash-item-container > StButton { padding: 2px 4px !important; }
+
+#dashtodockContainer.bottom #dash .running2 { box-shadow: inset 0 -4px rgba(255, 255, 255, 0.4); }
+
+#dashtodockContainer.bottom #dash .running2.focused { background-gradient-direction: vertical; background-gradient-start: rgba(255, 255, 255, 0.1); background-gradient-end: rgba(255, 255, 255, 0.1); box-shadow: inset 0 -4px #215d9c; }
+
+#dashtodockContainer.bottom #dash .running2.focused:hover { background-gradient-start: rgba(255, 255, 255, 0.15); background-gradient-end: rgba(255, 255, 255, 0.15); }
+
+#dashtodockContainer.bottom #dash .running2.focused:hover { box-shadow: inset 0 -4px #215d9c; }
+
+#dashtodockContainer.bottom #dash .app-well-app { transition-duration: 100ms; }
+
+#dashtodockContainer.bottom #dash .app-well-app:hover { box-shadow: inset 0 -2px white; }
+
+#dashtodockContainer.bottom #dash .app-well-app { padding: 0px; margin: 2px; margin-top: 0; margin-bottom: 0; }
+
+#dashtodockContainer.bottom #dash .app-well-app .overview-icon { margin: 0; }
+
+#dashtodockContainer.bottom #dash .app-well-app.focused .overview-icon { border-radius: 0; border-image: url("transparent.png"); }
+
+#dashtodockContainer.bottom #dash .app-well-app:hover .overview-icon { background: none; }
+
+#dashtodockContainer.bottom #dash .app-well-app:active .overview-icon, #dashtodockContainer.bottom #dash .app-well-app:focus .overview-icon, #dashtodockContainer.bottom #dash .app-well-app:selected .overview-icon { background: none; box-shadow: none; }
+
+#dashtodockContainer { border-radius: 0; }
+
+#dashtodockContainer.extended .show-apps { transition-duration: 100ms; }
+
+#dashtodockContainer.shrink.bottom #dash, #dashtodockContainer.dashtodock.bottom #dash { border: 0 !important; padding: 0; background-color: rgba(0, 0, 0, 0.8); }
+
+#dashtodockContainer.extended { border: 0; border-radius: 0; }
+
+#dashtodockContainer.bottom #dash .app-well-app-running-dot { width: 44px; height: 3px; margin-bottom: 0; }
+
+#dashtodockContainer #dash .app-well-app-running-dot { background-color: transparent; }
+
+#dashtodockContainer.running-dots .dash-item-container > StButton, #dashtodockContainer.dashtodock .dash-item-container > StButton { background-size: contain; }
+
+#dashtodockContainer.shrink .dash-item-container > StButton, #dashtodockContainer.dashtodock .dash-item-container > StButton { padding: 2px 4px !important; }
+
+#dashtodockContainer.bottom #dash .running3 { box-shadow: inset 0 -4px rgba(255, 255, 255, 0.4); }
+
+#dashtodockContainer.bottom #dash .running3.focused { background-gradient-direction: vertical; background-gradient-start: rgba(255, 255, 255, 0.1); background-gradient-end: rgba(255, 255, 255, 0.1); box-shadow: inset 0 -4px #215d9c; }
+
+#dashtodockContainer.bottom #dash .running3.focused:hover { background-gradient-start: rgba(255, 255, 255, 0.15); background-gradient-end: rgba(255, 255, 255, 0.15); }
+
+#dashtodockContainer.bottom #dash .running3.focused:hover { box-shadow: inset 0 -4px #215d9c; }
+
+#dashtodockContainer.bottom #dash .app-well-app { transition-duration: 100ms; }
+
+#dashtodockContainer.bottom #dash .app-well-app:hover { box-shadow: inset 0 -2px white; }
+
+#dashtodockContainer.bottom #dash .app-well-app { padding: 0px; margin: 2px; margin-top: 0; margin-bottom: 0; }
+
+#dashtodockContainer.bottom #dash .app-well-app .overview-icon { margin: 0; }
+
+#dashtodockContainer.bottom #dash .app-well-app.focused .overview-icon { border-radius: 0; border-image: url("transparent.png"); }
+
+#dashtodockContainer.bottom #dash .app-well-app:hover .overview-icon { background: none; }
+
+#dashtodockContainer.bottom #dash .app-well-app:active .overview-icon, #dashtodockContainer.bottom #dash .app-well-app:focus .overview-icon, #dashtodockContainer.bottom #dash .app-well-app:selected .overview-icon { background: none; box-shadow: none; }
+
+#dashtodockContainer { border-radius: 0; }
+
+#dashtodockContainer.extended .show-apps { transition-duration: 100ms; }
+
+#dashtodockContainer.shrink.bottom #dash, #dashtodockContainer.dashtodock.bottom #dash { border: 0 !important; padding: 0; background-color: rgba(0, 0, 0, 0.8); }
+
+#dashtodockContainer.extended { border: 0; border-radius: 0; }
+
+#dashtodockContainer.bottom #dash .app-well-app-running-dot { width: 44px; height: 3px; margin-bottom: 0; }
+
+#dashtodockContainer #dash .app-well-app-running-dot { background-color: transparent; }
+
+#dashtodockContainer.running-dots .dash-item-container > StButton, #dashtodockContainer.dashtodock .dash-item-container > StButton { background-size: contain; }
+
+#dashtodockContainer.shrink .dash-item-container > StButton, #dashtodockContainer.dashtodock .dash-item-container > StButton { padding: 2px 4px !important; }
+
+#dashtodockContainer.bottom #dash .running4 { box-shadow: inset 0 -4px rgba(255, 255, 255, 0.4); }
+
+#dashtodockContainer.bottom #dash .running4.focused { background-gradient-direction: vertical; background-gradient-start: rgba(255, 255, 255, 0.1); background-gradient-end: rgba(255, 255, 255, 0.1); box-shadow: inset 0 -4px #215d9c; }
+
+#dashtodockContainer.bottom #dash .running4.focused:hover { background-gradient-start: rgba(255, 255, 255, 0.15); background-gradient-end: rgba(255, 255, 255, 0.15); }
+
+#dashtodockContainer.bottom #dash .running4.focused:hover { box-shadow: inset 0 -4px #215d9c; }
+
+#dashtodockContainer.bottom #dash .app-well-app { transition-duration: 100ms; }
+
+#dashtodockContainer.bottom #dash .app-well-app:hover { box-shadow: inset 0 -2px white; }
+
+#dashtodockContainer.bottom #dash .app-well-app { padding: 0px; margin: 2px; margin-top: 0; margin-bottom: 0; }
+
+#dashtodockContainer.bottom #dash .app-well-app .overview-icon { margin: 0; }
+
+#dashtodockContainer.bottom #dash .app-well-app.focused .overview-icon { border-radius: 0; border-image: url("transparent.png"); }
+
+#dashtodockContainer.bottom #dash .app-well-app:hover .overview-icon { background: none; }
+
+#dashtodockContainer.bottom #dash .app-well-app:active .overview-icon, #dashtodockContainer.bottom #dash .app-well-app:focus .overview-icon, #dashtodockContainer.bottom #dash .app-well-app:selected .overview-icon { background: none; box-shadow: none; }
 
 .bottom #dashtodockDashScrollview, .top #dashtodockDashScrollview { -st-hfade-offset: 24px; }
 

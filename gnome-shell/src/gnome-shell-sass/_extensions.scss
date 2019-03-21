@@ -44,7 +44,9 @@ $dock_color: transparentize(black, 0.2);
   $low_d: to-lower-case($d);
 
   #panel.dashtopanelMainPanel.dashtopanel#{$d} {
-    @extend %panel_bg;
+    //@extend %panel_bg;
+    //@if $d==Bottom { box-shadow: inset 0 1px transparentize(white, 0.92); }
+    //background-color: transparent;
 
     .app-well-app-running-dot {
       //@include size(0);
@@ -63,8 +65,6 @@ $dock_color: transparentize(black, 0.2);
       }
     }
 
-    @if $d==Bottom { box-shadow: inset 0 1px lighten($panel_color, 2%); }
-
     .panel-button {
       &:hover { background-color: transparentize(white,0.9); }
       &:active, &:overview, &:focus { background-color: $selected_bg_color; }
@@ -78,9 +78,9 @@ $dock_color: transparentize(black, 0.2);
       .show-apps .overview-icon {
         background-image: url("d2p-activities.svg");
         background-position: center center;
+        //background-color: transparentize(black, 0.2);
         border: none;
         color: transparent;
-        border-radius: 0;
         margin: 0;
         transition-duration: 100ms;
       }
@@ -88,7 +88,7 @@ $dock_color: transparentize(black, 0.2);
       // FIXME: The icon in the overview is still showing
       .show-apps:#{$d} .overview-icon {
         background-image: url("d2p-activities-active.svg");
-        background-color: $panel_color;
+        background-color: transparent;
         background-position: center center;
         color: transparent;
       }
@@ -96,7 +96,10 @@ $dock_color: transparentize(black, 0.2);
 
     // clock and system menu area
     & > #panelRight {
-      box-shadow: inset 1px 0 $panel_color;
+      //box-shadow: inset 1px 0 $panel_color;
+      //background-color: transparentize(black, 0.2);
+      //border-radius: 2px;
+      //margin: 4px;
       .panel-button:hover { box-shadow: none; }
     }
 
@@ -106,7 +109,8 @@ $dock_color: transparentize(black, 0.2);
 
 // Dash to dock extension styling
 
-@each $p in (left), (right), (bottom), (top) {
+@each $p in left, right, top, bottom {
+@each $n in 1, 2, 3, 4 {
   #dashtodockContainer {
     border-radius: 0;
 
@@ -150,80 +154,77 @@ $dock_color: transparentize(black, 0.2);
       padding: 2px 4px !important;
     }
 
-    @each $n in (1), (2), (3), (4) {
+    $unfocused: transparentize(white, 0.6);
+    $focused: transparentize(white, 0.9);
+    $focused_hover: transparentize(white, 0.85);
 
-      $unfocused: transparentize(white, 0.6);
-      $focused: transparentize(white, 0.9);
-      $focused_hover: transparentize(white, 0.85);
+    &.#{$p} #dash .running#{$n} {
+      @extend %panel_fix;
+      @if $p==left {
+        @if $n==1 { box-shadow: inset 2px 0 $unfocused; }
+        @else if $n>=2 { box-shadow: inset 4px 0 $unfocused; }
+      }
+      @if $p==right {
+        @if $n==1 { box-shadow: inset -2px 0 $unfocused; }
+        @else if $n>=2 { box-shadow: inset -4px 0 $unfocused; }
+      }
+      @if $p==bottom {
+        @if $n==1 { box-shadow: inset 0 -2px $unfocused; }
+        @else if $n>=2 { box-shadow: inset 0 -4px $unfocused; }
+      }
+      @if $p==top {
+        @if $n==1 { box-shadow: inset 0 2px $unfocused; }
+        @else if $n>=2 { box-shadow: inset 0 4px $unfocused; }
+      }
 
-      &.#{$p} #dash .running#{$n} {
-        @extend %panel_fix;
+      &.focused {
+        background-gradient-direction: vertical;
+        background-gradient-start: $focused;
+        background-gradient-end: $focused;
+
+        &:hover {
+          background-gradient-start: $focused_hover;
+          background-gradient-end: $focused_hover;
+        }
+
         @if $p==left {
-          @if $n==1 { box-shadow: inset 2px 0 $unfocused; }
-          @else if $n>=2 { box-shadow: inset 4px 0 $unfocused; }
-        }
-        @if $p==right {
-          @if $n==1 { box-shadow: inset -2px 0 $unfocused; }
-          @else if $n>=2 { box-shadow: inset -4px 0 $unfocused; }
-        }
-        @if $p==bottom {
-          @if $n==1 { box-shadow: inset 0 -2px $unfocused; }
-          @else if $n>=2 { box-shadow: inset 0 -4px $unfocused; }
-        }
-        @if $p==top {
-          @if $n==1 { box-shadow: inset 0 2px $unfocused; }
-          @else if $n>=2 { box-shadow: inset 0 4px $unfocused; }
-        }
-
-        &.focused {
-          background-gradient-direction: vertical;
-          background-gradient-start: $focused;
-          background-gradient-end: $focused;
-
-          &:hover {
-            background-gradient-start: $focused_hover;
-            background-gradient-end: $focused_hover;
+          @if $n==1 {
+            box-shadow: inset 2px 0 $selected_bg_color;
+            &:hover { box-shadow: inset 2px 0 $selected_bg_color; }
           }
-
-          @if $p==left {
-            @if $n==1 {
-              box-shadow: inset 2px 0 $selected_bg_color;
-              &:hover { box-shadow: inset 2px 0 $selected_bg_color; }
-            }
-            @else if $n>=2 {
-              box-shadow: inset 4px 0 $selected_bg_color;
-              &:hover { box-shadow: inset 4px 0 $selected_bg_color; }
-            }
+          @else if $n>=2 {
+            box-shadow: inset 4px 0 $selected_bg_color;
+            &:hover { box-shadow: inset 4px 0 $selected_bg_color; }
           }
-          @else if $p==right {
-            @if $n==1 {
-              box-shadow: inset -2px 0 $selected_bg_color;
-              &:hover { box-shadow: inset -2px 0 $selected_bg_color; }
-            }
-           @else if $n>=2 {
-              box-shadow: inset -4px 0 $selected_bg_color;
-              &:hover { box-shadow: inset -4px 0 $selected_bg_color; }
-            }
+        }
+        @else if $p==right {
+          @if $n==1 {
+            box-shadow: inset -2px 0 $selected_bg_color;
+            &:hover { box-shadow: inset -2px 0 $selected_bg_color; }
           }
-          @else if $p==bottom {
-            @if $n==1 {
-              box-shadow: inset 0 -2px $selected_bg_color;
-              &:hover { box-shadow: inset 0 -2px $selected_bg_color; }
-            }
-            @else if $n>=2 {
-              box-shadow: inset 0 -4px $selected_bg_color;
-              &:hover { box-shadow: inset 0 -4px $selected_bg_color; }
-            }
+          @else if $n>=2 {
+            box-shadow: inset -4px 0 $selected_bg_color;
+            &:hover { box-shadow: inset -4px 0 $selected_bg_color; }
           }
-          @else if $p==top {
-            @if $n==1 {
-              box-shadow: inset 0 2px $selected_bg_color;
-              &:hover { box-shadow: inset 0 2px $selected_bg_color; }
-            }
-            @else if $n>=2 {
-              box-shadow: inset 0 4px $selected_bg_color;
-              &:hover { box-shadow: inset 0 4px $selected_bg_color; }
-            }
+        }
+        @else if $p==bottom {
+          @if $n==1 {
+            box-shadow: inset 0 -2px $selected_bg_color;
+            &:hover { box-shadow: inset 0 -2px $selected_bg_color; }
+          }
+          @else if $n>=2 {
+            box-shadow: inset 0 -4px $selected_bg_color;
+            &:hover { box-shadow: inset 0 -4px $selected_bg_color; }
+          }
+        }
+        @else if $p==top {
+          @if $n==1 {
+            box-shadow: inset 0 2px $selected_bg_color;
+            &:hover { box-shadow: inset 0 2px $selected_bg_color; }
+          }
+          @else if $n>=2 {
+            box-shadow: inset 0 4px $selected_bg_color;
+            &:hover { box-shadow: inset 0 4px $selected_bg_color; }
           }
         }
       }
@@ -277,6 +278,7 @@ $dock_color: transparentize(black, 0.2);
       }
     }
   }
+}
 }
 
 .bottom #dashtodockDashScrollview,
