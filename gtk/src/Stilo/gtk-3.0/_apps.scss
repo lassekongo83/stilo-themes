@@ -20,6 +20,20 @@
   }
 }
 
+// button used in Nautilus and Thunar path-bar
+%fm_button {
+  @include button(undecorated);
+  &:hover {
+    background-color: $light_selection;
+    border-color: $light_selection_border;
+  }
+  &:checked, &:checked:hover {
+    background-color: $selected_bg_color;
+    border-color: transparent;
+    &, &:hover, &:backdrop:hover { color: $selected_fg_color; }
+  }
+}
+
 //
 // XFCE GTK3 Styling
 //
@@ -223,18 +237,7 @@ XfceHeading,
       border-right: 1px solid $borders_color;
       margin-right: 6px;
     }
-    button {
-      @include button(undecorated);
-      &:hover {
-        background-color: $light_selection;
-        border-color: $light_selection_border;
-      }
-      &:checked, &:checked:hover {
-        background-color: $selected_bg_color;
-        border-color: transparent;
-        &, &:hover, &:backdrop:hover { color: $selected_fg_color; }
-      }
-    }
+    button { @extend %fm_button; }
   }
 }
 
@@ -278,16 +281,30 @@ window.background.chromium {
   .standard-view { border-width: 0; }
   .sidebar .view {
     background-color: $secondary_bg_color;
+    &:hover { background-color: transparentize($selected_bg_color, 0.84); }
     &:selected {
       background-color: $selected_bg_color;
       &:backdrop { background-color: transparentize($selected_bg_color, 0.4); }
     }
   }
 
-  toolbar { border-bottom: 1px solid $borders_color; }
+  toolbar {
+    border-bottom: 1px solid $borders_color;
+
+    entry { margin: 2px; }
+  }
 
   // https://github.com/lassekongo83/plano-theme/issues/37
   .shortcuts-pane { border-top: 0; }
+
+  .path-bar {
+    button {
+      @extend %fm_button;
+
+      border-radius: $br_b;
+      margin: 0 2px;
+    }
+  }
 }
 
 // Nemo

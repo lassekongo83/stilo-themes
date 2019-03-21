@@ -2185,7 +2185,7 @@ scrollbar {
     min-height: $_scrollbar_size;
     margin: -1px;
     border: 1px solid transparent; // Needs to be at a minimum of one pixel or hovering will resize the scrollbar
-    border-radius: 0;
+    border-radius: $circular_radius;
     background-clip: padding-box;
     background-color: $scrollbar_slider_color;
 

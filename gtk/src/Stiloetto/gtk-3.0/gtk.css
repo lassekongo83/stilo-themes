@@ -875,7 +875,7 @@ scrollbar { background-color: whitesmoke; border-width: 0; }
 
 * { -GtkScrollbar-has-backward-stepper: true; -GtkScrollbar-has-forward-stepper: true; }
 
-scrollbar slider { min-width: 14px; min-height: 14px; margin: -1px; border: 1px solid transparent; border-radius: 0; background-clip: padding-box; background-color: #8f8f8f; }
+scrollbar slider { min-width: 14px; min-height: 14px; margin: -1px; border: 1px solid transparent; border-radius: 99px; background-clip: padding-box; background-color: #8f8f8f; }
 
 scrollbar slider:hover { background-color: #5d5d5d; }
 
@@ -1691,6 +1691,14 @@ button.emoji-section:checked label { opacity: 1; }
 
 .budgie-panel button:active:hover, .xfce4-panel button:active:hover, #pulseaudio-button:active:hover, #indicator-button:active:hover, .gnome-panel-menu-bar button:active:hover:not(#tasklist-button), .mate-panel-menu-bar button:active:hover:not(#tasklist-button), .budgie-panel button:checked:hover, .xfce4-panel button:checked:hover, #pulseaudio-button:checked:hover, #indicator-button:checked:hover, .gnome-panel-menu-bar button:checked:hover:not(#tasklist-button), .mate-panel-menu-bar button:checked:hover:not(#tasklist-button) { background-color: #315ca3; }
 
+.nautilus-window .path-bar button, .thunar .path-bar button { border-color: transparent; background-color: transparent; background-image: none; box-shadow: none; box-shadow: inset 0 1px rgba(255, 255, 255, 0), 0 1px rgba(255, 255, 255, 0); text-shadow: none; -gtk-icon-shadow: none; }
+
+.nautilus-window .path-bar button:hover, .thunar .path-bar button:hover { background-color: #b3c7e8; border-color: #8caadc; }
+
+.nautilus-window .path-bar button:checked, .thunar .path-bar button:checked, .nautilus-window .path-bar button:checked:hover, .thunar .path-bar button:checked:hover { background-color: #3665b3; border-color: transparent; }
+
+.nautilus-window .path-bar button:checked, .thunar .path-bar button:checked, .nautilus-window .path-bar button:checked:hover, .thunar .path-bar button:checked:hover, .nautilus-window .path-bar button:checked:backdrop:hover, .thunar .path-bar button:checked:backdrop:hover, .nautilus-window .path-bar button:checked:hover, .thunar .path-bar button:checked:hover, .nautilus-window .path-bar button:checked:hover:hover, .thunar .path-bar button:checked:hover:hover, .nautilus-window .path-bar button:checked:hover:backdrop:hover, .thunar .path-bar button:checked:hover:backdrop:hover { color: #ffffff; }
+
 CatfishWindow .pane-separator { background-color: #e6e6e6; }
 
 XfceHeading, .XfceHeading { margin: 0; padding: 0; border-width: 0; background-image: none; background-color: #e2e2e2; color: black; text-shadow: none; }
@@ -1777,14 +1785,6 @@ XfceHeading, .XfceHeading { margin: 0; padding: 0; border-width: 0; background-i
 
 .nautilus-window .path-bar .dim-label, .nautilus-window .path-bar label.separator, .nautilus-window .path-bar .titlebar:not(headerbar) .subtitle, .titlebar:not(headerbar) .nautilus-window .path-bar .subtitle, .nautilus-window .path-bar headerbar .subtitle, headerbar .nautilus-window .path-bar .subtitle { color: transparent; border-right: 1px solid #bebebe; margin-right: 6px; }
 
-.nautilus-window .path-bar button { border-color: transparent; background-color: transparent; background-image: none; box-shadow: none; box-shadow: inset 0 1px rgba(255, 255, 255, 0), 0 1px rgba(255, 255, 255, 0); text-shadow: none; -gtk-icon-shadow: none; }
-
-.nautilus-window .path-bar button:hover { background-color: #b3c7e8; border-color: #8caadc; }
-
-.nautilus-window .path-bar button:checked, .nautilus-window .path-bar button:checked:hover { background-color: #3665b3; border-color: transparent; }
-
-.nautilus-window .path-bar button:checked, .nautilus-window .path-bar button:checked:hover, .nautilus-window .path-bar button:checked:backdrop:hover, .nautilus-window .path-bar button:checked:hover, .nautilus-window .path-bar button:checked:hover:hover, .nautilus-window .path-bar button:checked:hover:backdrop:hover { color: #ffffff; }
-
 .disk-space-display { border-style: solid; border-width: 2px; }
 
 .disk-space-display.unknown { background-color: #afafaf; border-color: #969696; }
@@ -1805,13 +1805,19 @@ window.background.chromium menubar { color: #3C3C3C; }
 
 .thunar .sidebar .view, .thunar .sidebar iconview { background-color: #f1f1f1; }
 
+.thunar .sidebar .view:hover, .thunar .sidebar iconview:hover { background-color: rgba(54, 101, 179, 0.16); }
+
 .thunar .sidebar .view:selected, .thunar .sidebar iconview:selected { background-color: #3665b3; }
 
 .thunar .sidebar .view:selected:backdrop, .thunar .sidebar iconview:selected:backdrop { background-color: rgba(54, 101, 179, 0.6); }
 
 .thunar toolbar { border-bottom: 1px solid #bebebe; }
 
+.thunar toolbar entry { margin: 2px; }
+
 .thunar .shortcuts-pane { border-top: 0; }
+
+.thunar .path-bar button { border-radius: 2px; margin: 0 2px; }
 
 .nemo-window .nemo-window-pane widget.entry { border: 1px solid; border-radius: 2px; border-color: #3665b3; box-shadow: 0 1px 1px rgba(54, 101, 179, 0.4), 0 1px 2px rgba(54, 101, 179, 0.3); }
 
