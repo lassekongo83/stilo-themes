@@ -32,7 +32,7 @@ $asset_suffix: if($variant=='dark', '-dark', '');
   outline-style: dashed;
   outline-offset: -3px;
   outline-width: 1px;
-  -gtk-outline-radius: 2px;
+  -gtk-outline-radius: $br_b - 2;
 
   -gtk-secondary-caret-color: $selected_bg_color
 }
@@ -1333,7 +1333,9 @@ headerbar {
       &:hover { @include button(hover, $selected_bg_color, $selected_fg_color); }
 
       &:active,
-      &:checked { @include button(active, $selected_bg_color, $selected_fg_color); }
+      &:checked,
+      &.toggle:checked,
+      &.toggle:active { @include button(active, $selected_bg_color, $selected_fg_color); }
 
       &.flat { &:backdrop, &:disabled, &:backdrop:disabled { @include button(undecorated); }}
 

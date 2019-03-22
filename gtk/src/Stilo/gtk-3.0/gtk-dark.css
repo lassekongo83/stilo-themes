@@ -1,4 +1,4 @@
-* { padding: 0; -GtkToolButton-icon-spacing: 4; -GtkTextView-error-underline-color: #e53935; -GtkScrolledWindow-scrollbar-spacing: 0; -GtkToolItemGroup-expander-size: 11; -GtkWidget-text-handle-width: 20; -GtkWidget-text-handle-height: 24; -GtkDialog-button-spacing: 4; -GtkDialog-action-area-border: 0; outline-color: alpha(currentColor,0.3); outline-style: dashed; outline-offset: -3px; outline-width: 1px; -gtk-outline-radius: 2px; -gtk-secondary-caret-color: #3665b3; }
+* { padding: 0; -GtkToolButton-icon-spacing: 4; -GtkTextView-error-underline-color: #e53935; -GtkScrolledWindow-scrollbar-spacing: 0; -GtkToolItemGroup-expander-size: 11; -GtkWidget-text-handle-width: 20; -GtkWidget-text-handle-height: 24; -GtkDialog-button-spacing: 4; -GtkDialog-action-area-border: 0; outline-color: alpha(currentColor,0.3); outline-style: dashed; outline-offset: -3px; outline-width: 1px; -gtk-outline-radius: 0; -gtk-secondary-caret-color: #3665b3; }
 
 .background { color: #f2f2f2; background-color: #383838; }
 
@@ -491,7 +491,7 @@ searchbar > revealer > box { margin: -6px; padding: 6px; }
 
 .selection-mode .titlebar:not(headerbar) button:hover, .selection-mode.titlebar:not(headerbar) button:hover, .selection-mode headerbar button:hover, headerbar.selection-mode button:hover { color: #ffffff; background-color: #5985cd; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.4); }
 
-.selection-mode .titlebar:not(headerbar) button:active, .selection-mode .titlebar:not(headerbar) button:checked, .selection-mode.titlebar:not(headerbar) button:active, .selection-mode.titlebar:not(headerbar) button:checked, .selection-mode headerbar button:active, .selection-mode headerbar button:checked, headerbar.selection-mode button:active, headerbar.selection-mode button:checked { color: #ffffff; outline-color: rgba(255, 255, 255, 0.3); background-color: #2d5394; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08), inset 0 2px rgba(0, 0, 0, 0.04); border-color: #050505; border-top-color: black; }
+.selection-mode .titlebar:not(headerbar) button:active, .selection-mode .titlebar:not(headerbar) button:checked, .selection-mode .titlebar:not(headerbar) button.toggle:checked, .selection-mode .titlebar:not(headerbar) button.toggle:active, .selection-mode.titlebar:not(headerbar) button:active, .selection-mode.titlebar:not(headerbar) button:checked, .selection-mode.titlebar:not(headerbar) button.toggle:checked, .selection-mode.titlebar:not(headerbar) button.toggle:active, .selection-mode headerbar button:active, .selection-mode headerbar button:checked, .selection-mode headerbar button.toggle:checked, .selection-mode headerbar button.toggle:active, headerbar.selection-mode button:active, headerbar.selection-mode button:checked, headerbar.selection-mode button.toggle:checked, headerbar.selection-mode button.toggle:active { color: #ffffff; outline-color: rgba(255, 255, 255, 0.3); background-color: #2d5394; box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08), inset 0 2px rgba(0, 0, 0, 0.04); border-color: #050505; border-top-color: black; }
 
 .selection-mode .titlebar:not(headerbar) button.flat:backdrop, .selection-mode .titlebar:not(headerbar) button.flat:disabled, .selection-mode .titlebar:not(headerbar) button.flat:backdrop:disabled, .selection-mode.titlebar:not(headerbar) button.flat:backdrop, .selection-mode.titlebar:not(headerbar) button.flat:disabled, .selection-mode.titlebar:not(headerbar) button.flat:backdrop:disabled, .selection-mode headerbar button.flat:backdrop, .selection-mode headerbar button.flat:disabled, .selection-mode headerbar button.flat:backdrop:disabled, headerbar.selection-mode button.flat:backdrop, headerbar.selection-mode button.flat:disabled, headerbar.selection-mode button.flat:backdrop:disabled { border-color: transparent; background-color: transparent; background-image: none; box-shadow: none; box-shadow: inset 0 1px rgba(255, 255, 255, 0), 0 1px rgba(242, 242, 242, 0); text-shadow: none; -gtk-icon-shadow: none; }
 
@@ -1685,6 +1685,14 @@ button.emoji-section:checked label { opacity: 1; }
 
 .budgie-panel button:active:hover, .xfce4-panel button:active:hover, #pulseaudio-button:active:hover, #indicator-button:active:hover, .gnome-panel-menu-bar button:active:hover:not(#tasklist-button), .mate-panel-menu-bar button:active:hover:not(#tasklist-button), .budgie-panel button:checked:hover, .xfce4-panel button:checked:hover, #pulseaudio-button:checked:hover, #indicator-button:checked:hover, .gnome-panel-menu-bar button:checked:hover:not(#tasklist-button), .mate-panel-menu-bar button:checked:hover:not(#tasklist-button) { background-color: #315ca3; }
 
+.nautilus-window .path-bar button, .thunar .path-bar button { border-color: transparent; background-color: transparent; background-image: none; box-shadow: none; box-shadow: inset 0 1px rgba(255, 255, 255, 0), 0 1px rgba(242, 242, 242, 0); text-shadow: none; -gtk-icon-shadow: none; }
+
+.nautilus-window .path-bar button:hover, .thunar .path-bar button:hover { background-color: #3e71c5; border-color: #4a79c8; }
+
+.nautilus-window .path-bar button:checked, .thunar .path-bar button:checked, .nautilus-window .path-bar button:checked:hover, .thunar .path-bar button:checked:hover { background-color: #3665b3; border-color: transparent; }
+
+.nautilus-window .path-bar button:checked, .thunar .path-bar button:checked, .nautilus-window .path-bar button:checked:hover, .thunar .path-bar button:checked:hover, .nautilus-window .path-bar button:checked:backdrop:hover, .thunar .path-bar button:checked:backdrop:hover, .nautilus-window .path-bar button:checked:hover, .thunar .path-bar button:checked:hover, .nautilus-window .path-bar button:checked:hover:hover, .thunar .path-bar button:checked:hover:hover, .nautilus-window .path-bar button:checked:hover:backdrop:hover, .thunar .path-bar button:checked:hover:backdrop:hover { color: #ffffff; }
+
 CatfishWindow .pane-separator { background-color: black; }
 
 XfceHeading, .XfceHeading { margin: 0; padding: 0; border-width: 0; background-image: none; background-color: #383838; color: white; text-shadow: none; }
@@ -1771,14 +1779,6 @@ XfceHeading, .XfceHeading { margin: 0; padding: 0; border-width: 0; background-i
 
 .nautilus-window .path-bar .dim-label, .nautilus-window .path-bar label.separator, .nautilus-window .path-bar .titlebar:not(headerbar) .subtitle, .titlebar:not(headerbar) .nautilus-window .path-bar .subtitle, .nautilus-window .path-bar headerbar .subtitle, headerbar .nautilus-window .path-bar .subtitle { color: transparent; border-right: 1px solid #191919; margin-right: 6px; }
 
-.nautilus-window .path-bar button { border-color: transparent; background-color: transparent; background-image: none; box-shadow: none; box-shadow: inset 0 1px rgba(255, 255, 255, 0), 0 1px rgba(242, 242, 242, 0); text-shadow: none; -gtk-icon-shadow: none; }
-
-.nautilus-window .path-bar button:hover { background-color: #3e71c5; border-color: #4a79c8; }
-
-.nautilus-window .path-bar button:checked, .nautilus-window .path-bar button:checked:hover { background-color: #3665b3; border-color: transparent; }
-
-.nautilus-window .path-bar button:checked, .nautilus-window .path-bar button:checked:hover, .nautilus-window .path-bar button:checked:backdrop:hover, .nautilus-window .path-bar button:checked:hover, .nautilus-window .path-bar button:checked:hover:hover, .nautilus-window .path-bar button:checked:hover:backdrop:hover { color: #ffffff; }
-
 .disk-space-display { border-style: solid; border-width: 2px; }
 
 .disk-space-display.unknown { background-color: #050505; border-color: black; }
@@ -1799,13 +1799,19 @@ window.background.chromium menubar { color: #f2f2f2; }
 
 .thunar .sidebar .view, .thunar .sidebar iconview { background-color: #252525; }
 
+.thunar .sidebar .view:hover, .thunar .sidebar iconview:hover { background-color: rgba(54, 101, 179, 0.16); }
+
 .thunar .sidebar .view:selected, .thunar .sidebar iconview:selected { background-color: #3665b3; }
 
 .thunar .sidebar .view:selected:backdrop, .thunar .sidebar iconview:selected:backdrop { background-color: rgba(54, 101, 179, 0.6); }
 
 .thunar toolbar { border-bottom: 1px solid #191919; }
 
+.thunar toolbar entry { margin: 2px; }
+
 .thunar .shortcuts-pane { border-top: 0; }
+
+.thunar .path-bar button { border-radius: 0; margin: 0 2px; }
 
 .nemo-window .nemo-window-pane widget.entry { border: 1px solid; border-radius: 0; border-color: #3665b3; box-shadow: 0 1px 1px rgba(54, 101, 179, 0.4), 0 1px 2px rgba(54, 101, 179, 0.3); }
 

@@ -33,13 +33,6 @@ $dock_color: transparentize(black, 0.2);
 
 // Dash to Panel extension styling
 
-@mixin size($width, $height:$width, $important:false) {
-  $important: if($important, !important, null);
-
-  width: $width $important;
-  height: $height $important;
-}
-
 @each $d in Top, Bottom {
   $low_d: to-lower-case($d);
 
@@ -48,22 +41,20 @@ $dock_color: transparentize(black, 0.2);
     //@if $d==Bottom { box-shadow: inset 0 1px transparentize(white, 0.92); }
     //background-color: transparent;
 
-    .app-well-app-running-dot {
-      //@include size(0);
-      //border-image: none;
-      //background-color: transparent;
-      //border: 0;
-    }
+    // FIXME: This is a headache. It's probably not possible to override the default focused style.
+    //@each $c in 1, 2, 3, 4 {
+      //.app-well-app {
+        //> StWidget,
+        //&:hover > StWidget {
+          //border-image: url("transparent.png");
+        //}
 
-    @each $c in 1, 2, 3, 4 {
-      .running#{$c} {
-        //@extend %panel_fix;
-        //border-image: none;
-        //background-color: transparent;
-        //border: 0;
-        //margin: 2px;
-      }
-    }
+        //&.running#{$c} {
+          //> StWidget,
+          //&.focused > StWidget { border-image: url("transparent.png"); }
+        //}
+      //}
+    //}
 
     .panel-button {
       &:hover { background-color: transparentize(white,0.9); }
