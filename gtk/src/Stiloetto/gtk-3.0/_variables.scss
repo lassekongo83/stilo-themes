@@ -1,6 +1,6 @@
-// sizes
-$titlebutton_w: 30px; // Titlebutton width
-$titlebutton_h: 20px; // Titlebutton height
+// titlebutton sizes
+$titlebutton-width: 30px;
+$titlebutton-height: 20px;
 
 // scrollbars
 $_slider_min_length: 40px;
@@ -8,8 +8,8 @@ $_scrollbar_size: 14px;
 $_overlay_size: 6px;
 
 // radius
-$br_b: 2px; // Default button and entry border-radius
-$br_w: 5px; // Window decoration border-radius
+$button-radius: 0; // Default button and entry border-radius
+$window-radius: 0; // Window decoration border-radius
 $circular_radius: 99px;
 
 // duration

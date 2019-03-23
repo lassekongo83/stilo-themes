@@ -76,7 +76,6 @@ $dock_color: transparentize(black, 0.2);
         transition-duration: 100ms;
       }
 
-      // FIXME: The icon in the overview is still showing
       .show-apps:#{$d} .overview-icon {
         background-image: url("d2p-activities-active.svg");
         background-color: transparent;
@@ -84,6 +83,8 @@ $dock_color: transparentize(black, 0.2);
         color: transparent;
       }
     }
+
+    .show-apps-icon { color: transparent; } // Makes sure that no default icon from the icon theme is showing
 
     // clock and system menu area
     & > #panelRight {
@@ -94,7 +95,11 @@ $dock_color: transparentize(black, 0.2);
       .panel-button:hover { box-shadow: none; }
     }
 
-    .showdesktop-button { padding-right: 8px; }
+    .showdesktop-button { 
+      padding-right: 8px;
+      //border-image: url("transparent.png");
+    }
+    //.showdesktop-button-hovered { border-image: url("transparent.png"); }
   }
 }
 
@@ -113,7 +118,7 @@ $dock_color: transparentize(black, 0.2);
 
     &.shrink.#{$p} #dash,
     &.dashtodock.#{$p} #dash {
-      // Seems the border can't be removed with a theme
+      // Seems the border can't be removed with a theme (perhaps with a border image though)
       // Need to change it in ~/.local/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/stylsheet.css
       border: 0 !important;
       padding: 0;
@@ -256,13 +261,9 @@ $dock_color: transparentize(black, 0.2);
         border-image: url('transparent.png');
       }
 
-      &:hover .overview-icon {
-        background: none;
-      }
-
+      &:hover .overview-icon,
       &:active .overview-icon,
-      &:focus .overview-icon,
-      &:selected .overview-icon {
+      &:focus .overview-icon {
         @extend %panel_fix;
         background: none;
         box-shadow: none;

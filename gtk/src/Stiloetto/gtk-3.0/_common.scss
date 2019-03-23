@@ -32,7 +32,7 @@ $asset_suffix: if($variant=='dark', '-dark', '');
   outline-style: dashed;
   outline-offset: -3px;
   outline-width: 1px;
-  -gtk-outline-radius: $br_b - 2;
+  -gtk-outline-radius: $button-radius - 2;
 
   -gtk-secondary-caret-color: $selected_bg_color
 }
@@ -227,7 +227,7 @@ entry {
     padding-left: 8px;
     padding-right: 8px;
     border: 1px solid;
-    border-radius: $br_b;
+    border-radius: $button-radius;
     transition: none;
 
     @include entry(normal);
@@ -461,7 +461,7 @@ button {
     min-width: 16px;
     padding: 4px 4px;
     border: 1px solid;
-    border-radius: $br_b;
+    border-radius: $button-radius;
 
     @include button(normal);
 
@@ -553,7 +553,7 @@ button {
     &.image-button { min-width: 32px; }
 
     color: $osd_fg_color;
-    border-radius: $br_b;
+    border-radius: $button-radius;
     outline-color: transparentize($osd_fg_color, 0.7);  //FIXME: define a color var?
 
     @include button(osd);
@@ -716,7 +716,7 @@ button {
 
   //inline-toolbar buttons
   .inline-toolbar &, .inline-toolbar &:backdrop {
-    border-radius: $br_b;
+    border-radius: $button-radius;
     border-width: 1px;
     @extend %linked;
   }
@@ -800,8 +800,8 @@ toolbar.inline-toolbar toolbutton {
 }
 
 %linked_left {
-  border-top-left-radius: $br_b;
-  border-bottom-left-radius: $br_b;
+  border-top-left-radius: $button-radius;
+  border-bottom-left-radius: $button-radius;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
   //border-right-style: none;
@@ -811,8 +811,8 @@ toolbar.inline-toolbar toolbutton {
 %linked_right {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  border-top-right-radius: $br_b;
-  border-bottom-right-radius: $br_b;
+  border-top-right-radius: $button-radius;
+  border-bottom-right-radius: $button-radius;
   //border-right-style: solid;
 }
 
@@ -825,7 +825,7 @@ toolbar.inline-toolbar toolbutton {
   &:last-child { @extend %linked_right; }
 
   &:only-child {
-    border-radius: $br_b;
+    border-radius: $button-radius;
     border-style: solid;
   }
 }
@@ -845,7 +845,7 @@ toolbar.inline-toolbar toolbutton {
   }
 
   &:only-child {
-    border-radius: $br_b;
+    border-radius: $button-radius;
     border-style: solid;
   }
 }
@@ -858,17 +858,17 @@ toolbar.inline-toolbar toolbutton {
 %linked_vertical {
   @extend %linked_vertical_middle;
   &:first-child {
-    border-top-left-radius: $br_b;
-    border-top-right-radius: $br_b;
+    border-top-left-radius: $button-radius;
+    border-top-right-radius: $button-radius;
     border-radius: 0px;
   }
   &:last-child {
-    border-bottom-left-radius: $br_b;
-    border-bottom-right-radius: $br_b;
+    border-bottom-left-radius: $button-radius;
+    border-bottom-right-radius: $button-radius;
     border-style: solid;
   }
   &:only-child {
-    border-radius: $br_b;
+    border-radius: $button-radius;
     border-style: solid;
   }
 }
@@ -889,7 +889,7 @@ modelbutton.flat,
   min-height: 26px;
   padding-left: 5px;
   padding-right: 5px;
-  border-radius: $br_b;
+  border-radius: $button-radius;
   outline-offset: -2px;
 
   @extend %undecorated_button;
@@ -1080,9 +1080,9 @@ spinbutton {
         box-shadow: none;
       }
 
-      &:last-child { border-radius: 0 $br_b $br_b 0; }
+      &:last-child { border-radius: 0 $button-radius $button-radius 0; }
 
-      &:dir(rtl):first-child { border-radius: 0 $br_b $br_b 0; }
+      &:dir(rtl):first-child { border-radius: 0 $button-radius $button-radius 0; }
     }
   }
 
@@ -1119,12 +1119,12 @@ spinbutton {
     }
 
     %top_button {
-      border-radius: $br_b $br_b 0 0;
+      border-radius: $button-radius $button-radius 0 0;
       border-style: solid solid none solid;
     }
 
     %bottom_button {
-      border-radius: 0 0 $br_b $br_b;
+      border-radius: 0 0 $button-radius $button-radius;
       border-style: none solid solid solid;
     }
   }
@@ -1216,7 +1216,7 @@ toolbar {
   &.osd {
     padding: 13px;
     border: none;
-    border-radius: $br_b;
+    border-radius: $button-radius;
     background-color: $osd_bg_color;
     
     &.left,
@@ -1247,7 +1247,7 @@ toolbar {
 
   padding: 3px;
   border-width: 0 1px 1px;
-  border-radius: 0 0 $br_b $br_b;
+  border-radius: 0 0 $button-radius $button-radius;
 }
 
 searchbar > revealer > box,
@@ -1415,8 +1415,8 @@ headerbar {
     min-height: 28px;
 
     button.titlebutton {
-      min-height: $titlebutton_h;
-      min-width: $titlebutton_w;
+      min-height: $titlebutton-height;
+      min-width: $titlebutton-width;
       margin: 0;
       padding: 0;
     }
@@ -1450,7 +1450,7 @@ headerbar {
   button {
     color: if($dark_header=='true', $dark_fg_color, $fg_color);
     border-width: if($dark_header=='true' or $variant=='dark', 0, 1px);
-    border-radius: $br_b;
+    border-radius: $button-radius;
     @include button(headerbutton-normal);
     &:hover { @include button(headerbutton-hover); }
     &:focus, &.default { @include button(headerbutton-focus); }
@@ -1475,7 +1475,7 @@ headerbar {
   // Linked headerbar buttons
   .linked:not(entry) {
     button:not(:last-child):not(:only-child) { border-right-style: solid; }
-    button:not(:only-child) { border-radius: $br_b; }
+    button:not(:only-child) { border-radius: $button-radius; }
   }
 
   @if($dark_header=='true') {
@@ -1518,14 +1518,14 @@ headerbar {
 }
 
 .titlebar {
-  border-top-left-radius: $br_w;
-  border-top-right-radius: $br_w;
+  border-top-left-radius: $window-radius;
+  border-top-right-radius: $window-radius;
 }
 
 .background .titlebar {
   &:backdrop, & {
-    border-top-left-radius: $br_w;
-    border-top-right-radius: $br_w;
+    border-top-left-radius: $window-radius;
+    border-top-right-radius: $window-radius;
   }
 }
 
@@ -1545,14 +1545,14 @@ headerbar {
 headerbar { // headerbar border rounding
 
   window separator:first-child + &,
-  window &:first-child { &:backdrop, & { border-top-left-radius: $br_w; }}
-  window &:last-child { &:backdrop, & { border-top-right-radius: $br_w; }}
+  window &:first-child { &:backdrop, & { border-top-left-radius: $window-radius; }}
+  window &:last-child { &:backdrop, & { border-top-right-radius: $window-radius; }}
 
   window stack & { // tackles the stacked headerbars case
     &:first-child, &:last-child {
       &:backdrop, & {
-        border-top-left-radius: $br_w;
-        border-top-right-radius: $br_w;
+        border-top-left-radius: $window-radius;
+        border-top-right-radius: $window-radius;
       }
     }
   }
@@ -1713,7 +1713,7 @@ treeview.view {
     @if $variant == light { color: $base_color; }
 
     border: 1px solid $selected_borders_color;
-    border-radius: $br_w;
+    border-radius: $window-radius;
     background-color: $selected_bg_color;
     background-image: none;
     box-shadow: inset 0 1px if($variant=='light', transparentize(white, 0.7),
@@ -1723,7 +1723,7 @@ treeview.view {
 
     &:selected {
       &:focus, & {
-        border-radius: $br_w;
+        border-radius: $window-radius;
 
         @if $variant == 'light' {
           color: $selected_bg_color;
@@ -1740,14 +1740,14 @@ treeview.view {
 
   &.trough { // progress bar trough in treeviews
     background-color: transparentize($fg_color, 0.9);
-    border-radius: $br_w;
+    border-radius: $window-radius;
 
     &:selected {
       &:focus, & {
         background-color: if($variant == 'light',
                              transparentize($selected_fg_color, 0.7),
                              darken($selected_bg_color, 10%));
-        border-radius: $br_w;
+        border-radius: $window-radius;
 
         @if $variant == 'light' {
           border-width: 1px 0;
@@ -1964,7 +1964,7 @@ menuitem {
 
 popover.background {
   padding: 2px;
-  border-radius: $br_w;
+  border-radius: $window-radius;
   background-color: $popover_bg_color;
 
   .csd &, & { border: 1px solid $borders_color; }
@@ -2417,7 +2417,7 @@ switch {
     min-height: 32px;
     color: #{$check_color};
     background-color: #{$check_background};
-    border-radius: $br_b;
+    border-radius: $button-radius;
     background-image: none;
     transition: $shortest_duration;
     box-shadow: none;
@@ -2496,7 +2496,7 @@ radio {
 
 %check,
 check {
-  border-radius: $br_b;
+  border-radius: $button-radius;
 
   &:checked { -gtk-icon-source: image(-gtk-recolor(url("assets/check-symbolic.svg")),
                                       -gtk-recolor(url("assets/check-symbolic.symbolic.png"))); }
@@ -3116,7 +3116,7 @@ row {
   @extend %osd;
 
   padding: 10px;
-  border-radius: 0 0 $br_b $br_b;
+  border-radius: 0 0 $button-radius $button-radius;
   background-color: $osd_bg_color;
   background-image: none;
   background-clip: padding-box;
@@ -3156,7 +3156,7 @@ calendar {
   &:selected {
     @extend %selected_items;
 
-    border-radius: $br_b;
+    border-radius: $button-radius;
   }
 
   &.header {
@@ -3190,16 +3190,16 @@ messagedialog { // Message Dialog styling
     background-image: none;
     background-color: $bg_color;
     border-style: none;
-    border-top-left-radius: $br_w;
-    border-top-right-radius: $br_w;
+    border-top-left-radius: $window-radius;
+    border-top-right-radius: $window-radius;
     @include headerbar_fill;
   }
 
   &.csd { // rounded bottom border styling for csd version
     &.background {
       // bigger radius for better antialiasing
-      border-bottom-left-radius: $br_w;
-      border-bottom-right-radius: $br_w;
+      border-bottom-left-radius: $window-radius;
+      border-bottom-right-radius: $window-radius;
     }
 
     .dialog-action-area button {
@@ -3217,13 +3217,13 @@ messagedialog { // Message Dialog styling
       }
 
       &:first-child {
-        border-bottom-left-radius: $br_b;
-        -gtk-outline-bottom-left-radius: $br_b;
+        border-bottom-left-radius: $button-radius;
+        -gtk-outline-bottom-left-radius: $button-radius;
       }
 
       &:last-child {
-        border-bottom-right-radius: $br_b;
-        -gtk-outline-bottom-right-radius: $br_b;
+        border-bottom-right-radius: $button-radius;
+        -gtk-outline-bottom-right-radius: $button-radius;
       }
     }
   }
@@ -3680,14 +3680,14 @@ colorchooser .popover.osd { border-radius: 0; }
 
   .osd & button.flat {  //FIXME: quick hack, redo properly
     border-style: none;
-    border-radius: $br_b;
+    border-radius: $button-radius;
   }
 
   button { // +/- buttons on GtkVolumeButton popup
     &:hover {
       @extend %undecorated_button;
       background-color: transparentize($fg_color, 0.9);
-      border-radius: $br_b;
+      border-radius: $button-radius;
     }
   }
 }
@@ -3697,7 +3697,7 @@ colorchooser .popover.osd { border-radius: 0; }
 //--------------------//
 
 decoration {
-  border-radius: $br_w $br_w 0 0;
+  border-radius: $window-radius $window-radius 0 0;
   border-width: 0px;
 
   // this needs to be transparent
@@ -3735,7 +3735,7 @@ decoration {
 
   // server-side decorations as used by mutter
   .ssd {
-    border-radius: $br_w $br_w 0 0;
+    border-radius: $window-radius $window-radius 0 0;
     &.maximized { border-radius: 0; }
     border: none;
   }
@@ -3747,12 +3747,12 @@ decoration {
   }
 
   tooltip.csd & {
-    border-radius: $br_w;
+    border-radius: $window-radius;
     box-shadow: none;
   }
 
   messagedialog.csd & {
-    border-radius: $br_w;
+    border-radius: $window-radius;
     box-shadow: 0 1px 2px transparentize(black, 0.8),
                 0 0 0 1px transparentize($_wm_border, 0.1);
   }
@@ -3767,8 +3767,8 @@ decoration {
 }
 
 %titlebutton {
-  min-width: $titlebutton_w;
-  min-height: $titlebutton_h;
+  min-width: $titlebutton-width;
+  min-height: $titlebutton-height;
   padding: 0;
   margin: 2px;
   border-radius: 1.5px;
@@ -3790,7 +3790,7 @@ headerbar,
   &.default-decoration button.titlebutton { // no vertical padding for ssd buttons
     padding: 0 4px;                         // already handled by the titlebar-padding
     min-width: 0;
-    min-height: $titlebutton_h;
+    min-height: $titlebutton-height;
     margin: 0;
   }
 
