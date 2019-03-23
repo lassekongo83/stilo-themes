@@ -974,6 +974,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 #dashtodockContainer.left.extended, #dashtodockContainer.left #dash .running1, #dashtodockContainer.left #dash .app-well-app:hover, #dashtodockContainer.left #dash .app-well-app:hover .overview-icon, #dashtodockContainer.left #dash .app-well-app:active .overview-icon, #dashtodockContainer.left #dash .app-well-app:focus .overview-icon, #dashtodockContainer.left #dash .running2, #dashtodockContainer.left #dash .running3, #dashtodockContainer.left #dash .running4, #dashtodockContainer.right.extended, #dashtodockContainer.right #dash .running1, #dashtodockContainer.right #dash .app-well-app:hover, #dashtodockContainer.right #dash .app-well-app:hover .overview-icon, #dashtodockContainer.right #dash .app-well-app:active .overview-icon, #dashtodockContainer.right #dash .app-well-app:focus .overview-icon, #dashtodockContainer.right #dash .running2, #dashtodockContainer.right #dash .running3, #dashtodockContainer.right #dash .running4, #dashtodockContainer.top.extended, #dashtodockContainer.top #dash .running1, #dashtodockContainer.top #dash .app-well-app:hover, #dashtodockContainer.top #dash .app-well-app:hover .overview-icon, #dashtodockContainer.top #dash .app-well-app:active .overview-icon, #dashtodockContainer.top #dash .app-well-app:focus .overview-icon, #dashtodockContainer.top #dash .running2, #dashtodockContainer.top #dash .running3, #dashtodockContainer.top #dash .running4, #dashtodockContainer.bottom.extended, #dashtodockContainer.bottom #dash .running1, #dashtodockContainer.bottom #dash .app-well-app:hover, #dashtodockContainer.bottom #dash .app-well-app:hover .overview-icon, #dashtodockContainer.bottom #dash .app-well-app:active .overview-icon, #dashtodockContainer.bottom #dash .app-well-app:focus .overview-icon, #dashtodockContainer.bottom #dash .running2, #dashtodockContainer.bottom #dash .running3, #dashtodockContainer.bottom #dash .running4 { background-gradient-direction: vertical; background-gradient-start: transparent; background-gradient-end: transparent; }
 
+#panel.dashtopanelMainPanel.dashtopanelTop { background-color: #121212; }
+
 #panel.dashtopanelMainPanel.dashtopanelTop .panel-button { text-shadow: black 0 1px 1px; }
 
 #panel.dashtopanelMainPanel.dashtopanelTop .panel-button:hover { background-color: rgba(255, 255, 255, 0.1); }
@@ -984,29 +986,51 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 #panel.dashtopanelMainPanel.dashtopanelTop .show-apps .overview-icon { background-image: url("d2p-activities.svg"); background-position: center center; border: none; color: transparent; margin: 0; transition-duration: 100ms; }
 
-#panel.dashtopanelMainPanel.dashtopanelTop .show-apps:hover .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: transparent; background-position: center center; color: transparent; }
+#panel.dashtopanelMainPanel.dashtopanelTop .show-apps:hover .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: transparent; background-position: center center; color: transparent; box-shadow: none; }
+
+#panel.dashtopanelMainPanel.dashtopanelTop .dash-item-container .show-apps { padding: 4px 2px; transition-duration: 100ms; }
+
+#panel.dashtopanelMainPanel.dashtopanelTop .dash-item-container .show-apps:hover { background-color: rgba(0, 0, 0, 0.8); }
 
 #panel.dashtopanelMainPanel.dashtopanelTop .show-apps .overview-icon { background-image: url("d2p-activities.svg"); background-position: center center; border: none; color: transparent; margin: 0; transition-duration: 100ms; }
 
-#panel.dashtopanelMainPanel.dashtopanelTop .show-apps:focus .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: transparent; background-position: center center; color: transparent; }
+#panel.dashtopanelMainPanel.dashtopanelTop .show-apps:focus .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: transparent; background-position: center center; color: transparent; box-shadow: none; }
+
+#panel.dashtopanelMainPanel.dashtopanelTop .dash-item-container .show-apps { padding: 4px 2px; transition-duration: 100ms; }
+
+#panel.dashtopanelMainPanel.dashtopanelTop .dash-item-container .show-apps:focus { background-color: rgba(0, 0, 0, 0.8); }
 
 #panel.dashtopanelMainPanel.dashtopanelTop .show-apps .overview-icon { background-image: url("d2p-activities.svg"); background-position: center center; border: none; color: transparent; margin: 0; transition-duration: 100ms; }
 
-#panel.dashtopanelMainPanel.dashtopanelTop .show-apps:active .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: transparent; background-position: center center; color: transparent; }
+#panel.dashtopanelMainPanel.dashtopanelTop .show-apps:active .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: transparent; background-position: center center; color: transparent; box-shadow: none; }
+
+#panel.dashtopanelMainPanel.dashtopanelTop .dash-item-container .show-apps { padding: 4px 2px; transition-duration: 100ms; }
+
+#panel.dashtopanelMainPanel.dashtopanelTop .dash-item-container .show-apps:active { background-color: rgba(0, 0, 0, 0.8); }
 
 #panel.dashtopanelMainPanel.dashtopanelTop .show-apps .overview-icon { background-image: url("d2p-activities.svg"); background-position: center center; border: none; color: transparent; margin: 0; transition-duration: 100ms; }
 
-#panel.dashtopanelMainPanel.dashtopanelTop .show-apps:checked .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: transparent; background-position: center center; color: transparent; }
+#panel.dashtopanelMainPanel.dashtopanelTop .show-apps:checked .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: transparent; background-position: center center; color: transparent; box-shadow: none; }
+
+#panel.dashtopanelMainPanel.dashtopanelTop .dash-item-container .show-apps { padding: 4px 2px; transition-duration: 100ms; }
+
+#panel.dashtopanelMainPanel.dashtopanelTop .dash-item-container .show-apps:checked { background-color: rgba(0, 0, 0, 0.8); }
 
 #panel.dashtopanelMainPanel.dashtopanelTop .show-apps .overview-icon { background-image: url("d2p-activities.svg"); background-position: center center; border: none; color: transparent; margin: 0; transition-duration: 100ms; }
 
-#panel.dashtopanelMainPanel.dashtopanelTop .show-apps:overview .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: transparent; background-position: center center; color: transparent; }
+#panel.dashtopanelMainPanel.dashtopanelTop .show-apps:overview .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: transparent; background-position: center center; color: transparent; box-shadow: none; }
+
+#panel.dashtopanelMainPanel.dashtopanelTop .dash-item-container .show-apps { padding: 4px 2px; transition-duration: 100ms; }
+
+#panel.dashtopanelMainPanel.dashtopanelTop .dash-item-container .show-apps:overview { background-color: rgba(0, 0, 0, 0.8); }
 
 #panel.dashtopanelMainPanel.dashtopanelTop .show-apps-icon { color: transparent; }
 
 #panel.dashtopanelMainPanel.dashtopanelTop > #panelRight .panel-button:hover { box-shadow: none; }
 
 #panel.dashtopanelMainPanel.dashtopanelTop .showdesktop-button { padding-right: 8px; }
+
+#panel.dashtopanelMainPanel.dashtopanelBottom { background-color: #121212; }
 
 #panel.dashtopanelMainPanel.dashtopanelBottom .panel-button { text-shadow: black 0 1px 1px; }
 
@@ -1018,23 +1042,43 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 #panel.dashtopanelMainPanel.dashtopanelBottom .show-apps .overview-icon { background-image: url("d2p-activities.svg"); background-position: center center; border: none; color: transparent; margin: 0; transition-duration: 100ms; }
 
-#panel.dashtopanelMainPanel.dashtopanelBottom .show-apps:hover .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: transparent; background-position: center center; color: transparent; }
+#panel.dashtopanelMainPanel.dashtopanelBottom .show-apps:hover .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: transparent; background-position: center center; color: transparent; box-shadow: none; }
+
+#panel.dashtopanelMainPanel.dashtopanelBottom .dash-item-container .show-apps { padding: 4px 2px; transition-duration: 100ms; }
+
+#panel.dashtopanelMainPanel.dashtopanelBottom .dash-item-container .show-apps:hover { background-color: rgba(0, 0, 0, 0.8); }
 
 #panel.dashtopanelMainPanel.dashtopanelBottom .show-apps .overview-icon { background-image: url("d2p-activities.svg"); background-position: center center; border: none; color: transparent; margin: 0; transition-duration: 100ms; }
 
-#panel.dashtopanelMainPanel.dashtopanelBottom .show-apps:focus .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: transparent; background-position: center center; color: transparent; }
+#panel.dashtopanelMainPanel.dashtopanelBottom .show-apps:focus .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: transparent; background-position: center center; color: transparent; box-shadow: none; }
+
+#panel.dashtopanelMainPanel.dashtopanelBottom .dash-item-container .show-apps { padding: 4px 2px; transition-duration: 100ms; }
+
+#panel.dashtopanelMainPanel.dashtopanelBottom .dash-item-container .show-apps:focus { background-color: rgba(0, 0, 0, 0.8); }
 
 #panel.dashtopanelMainPanel.dashtopanelBottom .show-apps .overview-icon { background-image: url("d2p-activities.svg"); background-position: center center; border: none; color: transparent; margin: 0; transition-duration: 100ms; }
 
-#panel.dashtopanelMainPanel.dashtopanelBottom .show-apps:active .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: transparent; background-position: center center; color: transparent; }
+#panel.dashtopanelMainPanel.dashtopanelBottom .show-apps:active .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: transparent; background-position: center center; color: transparent; box-shadow: none; }
+
+#panel.dashtopanelMainPanel.dashtopanelBottom .dash-item-container .show-apps { padding: 4px 2px; transition-duration: 100ms; }
+
+#panel.dashtopanelMainPanel.dashtopanelBottom .dash-item-container .show-apps:active { background-color: rgba(0, 0, 0, 0.8); }
 
 #panel.dashtopanelMainPanel.dashtopanelBottom .show-apps .overview-icon { background-image: url("d2p-activities.svg"); background-position: center center; border: none; color: transparent; margin: 0; transition-duration: 100ms; }
 
-#panel.dashtopanelMainPanel.dashtopanelBottom .show-apps:checked .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: transparent; background-position: center center; color: transparent; }
+#panel.dashtopanelMainPanel.dashtopanelBottom .show-apps:checked .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: transparent; background-position: center center; color: transparent; box-shadow: none; }
+
+#panel.dashtopanelMainPanel.dashtopanelBottom .dash-item-container .show-apps { padding: 4px 2px; transition-duration: 100ms; }
+
+#panel.dashtopanelMainPanel.dashtopanelBottom .dash-item-container .show-apps:checked { background-color: rgba(0, 0, 0, 0.8); }
 
 #panel.dashtopanelMainPanel.dashtopanelBottom .show-apps .overview-icon { background-image: url("d2p-activities.svg"); background-position: center center; border: none; color: transparent; margin: 0; transition-duration: 100ms; }
 
-#panel.dashtopanelMainPanel.dashtopanelBottom .show-apps:overview .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: transparent; background-position: center center; color: transparent; }
+#panel.dashtopanelMainPanel.dashtopanelBottom .show-apps:overview .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: transparent; background-position: center center; color: transparent; box-shadow: none; }
+
+#panel.dashtopanelMainPanel.dashtopanelBottom .dash-item-container .show-apps { padding: 4px 2px; transition-duration: 100ms; }
+
+#panel.dashtopanelMainPanel.dashtopanelBottom .dash-item-container .show-apps:overview { background-color: rgba(0, 0, 0, 0.8); }
 
 #panel.dashtopanelMainPanel.dashtopanelBottom .show-apps-icon { color: transparent; }
 
