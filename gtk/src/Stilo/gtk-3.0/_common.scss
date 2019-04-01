@@ -1601,10 +1601,19 @@ headerbar { // headerbar border rounding
 // can’t simply remove .linked from the widget as that might break other themes.
 // Note also we select on filechooser to avoid interfering with NautilusPathBar.
 filechooser .path-bar.linked > button {
-  @extend %linked_flippable;
+  //@extend %linked_flippable;
   @include button(undecorated);
-  &:hover { box-shadow: inset 0 -2px $borders_color; }
-  &:active, &:checked { box-shadow: inset 0 -2px $selected_bg_color; }
+  border-radius: $button-radius;
+  margin: 0 2px;
+  &:hover {
+    background-color: $light_selection;
+    border-color: $light_selection_border;
+  }
+  &:checked, &:checked:hover {
+    background-color: $selected_bg_color;
+    border-color: transparent;
+    &, &:hover, &:backdrop:hover { color: $selected_fg_color; }
+  }
 }
 
 filechooser {
@@ -3777,7 +3786,7 @@ decoration {
 .ssd .titlebar {
   border-width: 0;
   @include ssd_fill;
-  padding: 0 4px; //2px 4px;
+  padding: 2px 4px;
 
   &.default-decoration button.titlebutton {
     @extend %titlebutton;

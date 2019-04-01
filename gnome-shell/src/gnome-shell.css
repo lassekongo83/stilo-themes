@@ -986,7 +986,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 #panel.dashtopanelMainPanel.dashtopanelTop .show-apps:hover .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: transparent; background-position: center center; color: transparent; box-shadow: none; }
 
-#panel.dashtopanelMainPanel.dashtopanelTop .dash-item-container .show-apps { padding: 4px 2px; transition-duration: 100ms; }
+#panel.dashtopanelMainPanel.dashtopanelTop .dash-item-container .show-apps { padding: 4px 2px 4px 0; transition-duration: 100ms; }
 
 #panel.dashtopanelMainPanel.dashtopanelTop .dash-item-container .show-apps:hover { background-color: rgba(0, 0, 0, 0.8); }
 
@@ -994,7 +994,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 #panel.dashtopanelMainPanel.dashtopanelTop .show-apps:focus .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: transparent; background-position: center center; color: transparent; box-shadow: none; }
 
-#panel.dashtopanelMainPanel.dashtopanelTop .dash-item-container .show-apps { padding: 4px 2px; transition-duration: 100ms; }
+#panel.dashtopanelMainPanel.dashtopanelTop .dash-item-container .show-apps { padding: 4px 2px 4px 0; transition-duration: 100ms; }
 
 #panel.dashtopanelMainPanel.dashtopanelTop .dash-item-container .show-apps:focus { background-color: rgba(0, 0, 0, 0.8); }
 
@@ -1002,7 +1002,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 #panel.dashtopanelMainPanel.dashtopanelTop .show-apps:active .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: transparent; background-position: center center; color: transparent; box-shadow: none; }
 
-#panel.dashtopanelMainPanel.dashtopanelTop .dash-item-container .show-apps { padding: 4px 2px; transition-duration: 100ms; }
+#panel.dashtopanelMainPanel.dashtopanelTop .dash-item-container .show-apps { padding: 4px 2px 4px 0; transition-duration: 100ms; }
 
 #panel.dashtopanelMainPanel.dashtopanelTop .dash-item-container .show-apps:active { background-color: rgba(0, 0, 0, 0.8); }
 
@@ -1010,7 +1010,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 #panel.dashtopanelMainPanel.dashtopanelTop .show-apps:checked .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: transparent; background-position: center center; color: transparent; box-shadow: none; }
 
-#panel.dashtopanelMainPanel.dashtopanelTop .dash-item-container .show-apps { padding: 4px 2px; transition-duration: 100ms; }
+#panel.dashtopanelMainPanel.dashtopanelTop .dash-item-container .show-apps { padding: 4px 2px 4px 0; transition-duration: 100ms; }
 
 #panel.dashtopanelMainPanel.dashtopanelTop .dash-item-container .show-apps:checked { background-color: rgba(0, 0, 0, 0.8); }
 
@@ -1018,7 +1018,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 #panel.dashtopanelMainPanel.dashtopanelTop .show-apps:overview .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: transparent; background-position: center center; color: transparent; box-shadow: none; }
 
-#panel.dashtopanelMainPanel.dashtopanelTop .dash-item-container .show-apps { padding: 4px 2px; transition-duration: 100ms; }
+#panel.dashtopanelMainPanel.dashtopanelTop .dash-item-container .show-apps { padding: 4px 2px 4px 0; transition-duration: 100ms; }
 
 #panel.dashtopanelMainPanel.dashtopanelTop .dash-item-container .show-apps:overview { background-color: rgba(0, 0, 0, 0.8); }
 
@@ -1042,7 +1042,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 #panel.dashtopanelMainPanel.dashtopanelBottom .show-apps:hover .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: transparent; background-position: center center; color: transparent; box-shadow: none; }
 
-#panel.dashtopanelMainPanel.dashtopanelBottom .dash-item-container .show-apps { padding: 4px 2px; transition-duration: 100ms; }
+#panel.dashtopanelMainPanel.dashtopanelBottom .dash-item-container .show-apps { padding: 4px 2px 4px 0; transition-duration: 100ms; }
 
 #panel.dashtopanelMainPanel.dashtopanelBottom .dash-item-container .show-apps:hover { background-color: rgba(0, 0, 0, 0.8); }
 
@@ -1050,7 +1050,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 #panel.dashtopanelMainPanel.dashtopanelBottom .show-apps:focus .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: transparent; background-position: center center; color: transparent; box-shadow: none; }
 
-#panel.dashtopanelMainPanel.dashtopanelBottom .dash-item-container .show-apps { padding: 4px 2px; transition-duration: 100ms; }
+#panel.dashtopanelMainPanel.dashtopanelBottom .dash-item-container .show-apps { padding: 4px 2px 4px 0; transition-duration: 100ms; }
 
 #panel.dashtopanelMainPanel.dashtopanelBottom .dash-item-container .show-apps:focus { background-color: rgba(0, 0, 0, 0.8); }
 
@@ -1058,7 +1058,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 #panel.dashtopanelMainPanel.dashtopanelBottom .show-apps:active .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: transparent; background-position: center center; color: transparent; box-shadow: none; }
 
-#panel.dashtopanelMainPanel.dashtopanelBottom .dash-item-container .show-apps { padding: 4px 2px; transition-duration: 100ms; }
+#panel.dashtopanelMainPanel.dashtopanelBottom .dash-item-container .show-apps { padding: 4px 2px 4px 0; transition-duration: 100ms; }
 
 #panel.dashtopanelMainPanel.dashtopanelBottom .dash-item-container .show-apps:active { background-color: rgba(0, 0, 0, 0.8); }
 
@@ -1066,7 +1066,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 #panel.dashtopanelMainPanel.dashtopanelBottom .show-apps:checked .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: transparent; background-position: center center; color: transparent; box-shadow: none; }
 
-#panel.dashtopanelMainPanel.dashtopanelBottom .dash-item-container .show-apps { padding: 4px 2px; transition-duration: 100ms; }
+#panel.dashtopanelMainPanel.dashtopanelBottom .dash-item-container .show-apps { padding: 4px 2px 4px 0; transition-duration: 100ms; }
 
 #panel.dashtopanelMainPanel.dashtopanelBottom .dash-item-container .show-apps:checked { background-color: rgba(0, 0, 0, 0.8); }
 
@@ -1074,7 +1074,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 #panel.dashtopanelMainPanel.dashtopanelBottom .show-apps:overview .overview-icon { background-image: url("d2p-activities-active.svg"); background-color: transparent; background-position: center center; color: transparent; box-shadow: none; }
 
-#panel.dashtopanelMainPanel.dashtopanelBottom .dash-item-container .show-apps { padding: 4px 2px; transition-duration: 100ms; }
+#panel.dashtopanelMainPanel.dashtopanelBottom .dash-item-container .show-apps { padding: 4px 2px 4px 0; transition-duration: 100ms; }
 
 #panel.dashtopanelMainPanel.dashtopanelBottom .dash-item-container .show-apps:overview { background-color: rgba(0, 0, 0, 0.8); }
 

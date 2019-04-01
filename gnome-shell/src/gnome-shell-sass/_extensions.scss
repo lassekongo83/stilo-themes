@@ -73,7 +73,7 @@ $dock_color: transparentize(black, 0.3);
 
       //.dash-item-container .focused { background-color: red; box-shadow: inset -2px 0 white; }
       .dash-item-container .show-apps {
-        padding: 4px 2px;
+        padding: 4px 2px 4px 0;
         transition-duration: 100ms;
         &:#{$d} { background-color: transparentize(black, 0.2); }
       }
@@ -100,6 +100,6 @@ $dock_color: transparentize(black, 0.3);
 
 // Dash to dock extension styling
 
-#dashtodockContainer #dash {
-  background-color: $dock_color;
+#dashtodockContainer {
+  #dash { background-color: $dock_color; }
 }
