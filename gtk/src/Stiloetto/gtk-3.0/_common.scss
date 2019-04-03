@@ -1855,10 +1855,9 @@ menubar,
     }
 
     &:hover, &:active { //Seems like it :hover even with keyboard focus
-      box-shadow: if($dark_header=='true' or $variant=='dark', inset 0 -2px $selected_bg_color, none);
       color: $selected_fg_color;
       border-radius: 0;
-      background-color: if($dark_header=='true' or $variant=='dark', lighten($dark_bg_color, 14%), $selected_bg_color);
+      background-color: $selected_bg_color;
     }
 
     &:backdrop { color: $backdrop_fg_color; }
@@ -2187,16 +2186,19 @@ scrollbar {
     -GtkScrollbar-has-forward-stepper: true;
   }
 
-  background-color: $scrollbar_bg_color;
+  //background-color: $scrollbar_bg_color;
+  &.vertical, &.vertical button { background: linear-gradient(to right, darken($scrollbar_bg_color, 15%), $scrollbar_bg_color); }
+  &.horizontal, &.horizontal button { background: linear-gradient(to bottom, darken($scrollbar_bg_color, 15%), $scrollbar_bg_color); }
   border-width: 0;
 
   // slider
+
   slider {
-    min-width: $_scrollbar_size;
-    min-height: $_scrollbar_size;
+    min-width: 6px;
+    min-height: 6px;
     margin: -1px;
-    border: 1px solid transparent; // Needs to be at a minimum of one pixel or hovering will resize the scrollbar
-    border-radius: $circular_radius;
+    border: 4px solid transparent;
+    border-radius: 8px;
     background-clip: padding-box;
     background-color: $scrollbar_slider_color;
 
@@ -2213,8 +2215,8 @@ scrollbar {
       min-height: $_overlay_size;
     }
 
-    &.horizontal slider { border-width: 0; }
-    &.vertical slider { border-width: 0; }
+    &.horizontal slider { border-width: 4px; }
+    &.vertical slider { border-width: 4px; }
   }
 
   &.overlay-indicator {
@@ -2223,12 +2225,17 @@ scrollbar {
       opacity: 0.4;
       background-color: transparent;
 
+      trough {
+        background-color: transparentize($scrollbar_bg_color, 0.8);
+        //border-radius: $circular_radius;
+      }
+
       slider {
         margin: 0;
         min-width: $_overlay_size;
         min-height: $_overlay_size;
         background-color: $fg_color;
-        border: 0px solid if($variant == 'light', white, black);
+        border: 3px solid transparent;
       }
 
       button {
