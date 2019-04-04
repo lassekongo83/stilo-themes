@@ -445,7 +445,7 @@ $entry_inner_shadow: inset 0 1px transparentize(black, 0.98), inset 0 2px transp
 // $hc: top highlight color
 // $ov: a background layer for background shorthand (hence no commas!)
 //
-  $gradient: linear-gradient(to top, darken($c, 2%), lighten($c, 1%));
+  $gradient: linear-gradient(to top, darken($c, 2%), lighten($c, 2%));
 
   @if $variant == 'dark' or $dark_header == 'true' { $gradient: linear-gradient(to top, $c, lighten($c, 4%)); }
 

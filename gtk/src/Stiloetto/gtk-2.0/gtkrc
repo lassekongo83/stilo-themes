@@ -1,7 +1,9 @@
 # Author: lassekongo83
-# Theme: Amber
+# Theme: Stiloetto
 # based on "Greybird" by Simon Steinbeiß
 # Description: As is the original theme, this theme is 100% free and open source.
+# This theme is just a placeholder until gtk2 is gone. Not much work will be done to it.
+# It's only here to make sure legacy gtk2 apps have the same colors.
 
 gtk-color-scheme   = "bg_color:#e2e2e2\nselected_bg_color:#3665b3\nbase_color:#ffffff" # Background, base.
 gtk-color-scheme   = "fg_color:#3C3C3C\nselected_fg_color:#ffffff\ntext_color:#000000" # Foreground, text.
@@ -62,14 +64,14 @@ style "default"
     GtkScale::trough-side-details              = 1
 
     GtkScrollbar::min-slider-length            = 42
-    GtkScrollbar::slider-width                 = 14
+    GtkScrollbar::slider-width                 = 6
     GtkScrollbar::activate-slider              = 1
-    GtkScrollbar::trough-border                = 1
+    GtkScrollbar::trough-border                = 4
     GtkScrollbar::has-backward-stepper         = 1
     GtkScrollbar::has-forward-stepper          = 1
 
     GtkScrolledWindow::scrollbar-spacing       = 0
-    GtkScrolledWindow::scrollbars-within-bevel = 1
+    GtkScrolledWindow::scrollbars-within-bevel = 0
 
     GtkMenuBar::internal-padding               = 0
     GtkMenuBar::window-dragging                = 1
@@ -418,7 +420,7 @@ style "progressbar"
         gradient_shades      = {1.0,1.0,1.0,1.0}
         trough_shades        = {1.0, 1.0}
         trough_border_shades = { 1.0, 1.0 }
-        roundness            = 0
+        roundness            = 6
         contrast             = 1.0
         border_shades        = { 1.0, 1.0 }
         lightborder_shade    = 1.0
@@ -429,7 +431,7 @@ style "progressbar"
 
 style "scrollbar"
 {
-    GtkScrollbar::arrow-scaling = 0.5
+    GtkScrollbar::arrow-scaling = 1.0
 
     bg[NORMAL]      = shade (0.8, @bg_color)
     bg[ACTIVE]      = shade (0.5, @bg_color)
@@ -439,9 +441,9 @@ style "scrollbar"
     engine "murrine"
     {
         colorize_scrollbar = FALSE
-        roundness          = 0
+        roundness          = 6
         border_shades      = {1.0, 1.0}
-        trough_shades      = {1.0, 1.0}
+        trough_shades      = {0.92, 1.0}
         contrast           = 0.0
         gradient_shades    = {1.0,1.0,1.0,1.0}
     }
@@ -835,9 +837,5 @@ widget "*swt-toolbar-flat"  style "null"
 
 # EXTERNAL FILES
 include "panel.rc"
-include "check-radio.rc"
 include "buttons.rc"
-include "chromium.rc"
-include "thunar.rc"
-include "caja.rc"
-include "pluma.rc"
+include "check-radio.rc"

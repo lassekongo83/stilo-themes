@@ -4,23 +4,14 @@ gtk2_dir = join_paths(theme_dir, 'gtk-2.0')
 gtk2_theme_data_sources = [
   'gtkrc',
   'buttons.rc',
-  'caja.rc',
   'check-radio.rc',
-  'chromium.rc',
   'panel.rc',
-  'pluma.rc',
-  'thunar.rc',
 ]
 
 gtk2_asset_dir = join_paths(gtk2_dir, 'assets')
 
 # static asset files to copy
 gtk2_asset_data_sources = [
-  'assets/btn.png',
-  'assets/btn-hover.png',
-  'assets/btn-insensitive.png',
-  'assets/btn-active.png',
-  'assets/btn-active-hover.png',
   'assets/radio-unchecked.png',
   'assets/checkbox-unchecked-insensitive.png',
   'assets/radio-unchecked-hover.png',

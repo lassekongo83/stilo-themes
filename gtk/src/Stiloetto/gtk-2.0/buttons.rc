@@ -54,6 +54,30 @@ style "button"
     }
 }
 
+style "murrine-button" {
+  xthickness = 3
+  ythickness = 3 
+
+  bg[NORMAL]      = shade (1.1, @bg_color)
+  bg[PRELIGHT]    = shade (1.6, @bg_color)
+  bg[ACTIVE]      = shade (0.88, @bg_color)
+  bg[SELECTED]    = shade (0.88, @bg_color)
+  bg[INSENSITIVE] = shade (0.88, @bg_color)
+
+  fg[NORMAL]      = @fg_color
+  fg[PRELIGHT]    = @fg_color
+  fg[ACTIVE]      = @fg_color
+  fg[SELECTED]    = @fg_color
+  fg[INSENSITIVE] = mix (0.4, @fg_color, @bg_color)
+
+  engine "murrine" {
+    roundness     = 2
+    reliefstyle   = 4
+    border_shades = { 0.9, 0.6 }
+    shadow_shades = { 0.8, 0.5 }
+  }
+}
+
 style "treeview-header"
 {
     xthickness = 2
@@ -66,5 +90,5 @@ style "treeview-header"
     }
 }
 
-widget_class "*<GtkButton>"                style "button"
-widget_class "*<GtkTreeView>*<GtkButton>*" style:highest "treeview-header"
+widget_class "*<GtkButton>"                          style "murrine-button"
+widget_class "*<GtkTreeView>*<GtkButton>*"           style:highest "treeview-header"
