@@ -2,9 +2,9 @@ style "theme-panel" = "dark" {
   xthickness = 1
   ythickness = 1
 
-  bg[NORMAL]   = shade (0.35, @bg_color_dark)
-  bg[ACTIVE]   = shade (0.65, @bg_color_dark)
-  bg[PRELIGHT] = shade (0.85, @selected_bg_color)
+  bg[NORMAL]   = @panel_bg
+  bg[ACTIVE]   = @panel_bg
+  bg[PRELIGHT] = @selected_bg_color
   bg[SELECTED] = @selected_bg_color
 
   fg[NORMAL]   = shade (0.9, @base_color)
@@ -18,10 +18,6 @@ style "theme-panel" = "dark" {
   text[SELECTED] = shade (0.9, @base_color)
 
   engine "murrine" {
-    reliefstyle     = 0
-    glazestyle      = 0
-    glow_shade      = 1.0
-    highlight_shade = 1.0
     roundness       = 0
     gradient_shades = {1.0,1.0,1.0,1.0}
     contrast        = 0.0
@@ -66,10 +62,10 @@ style "workspace-switcher" = "theme-panel" {
 
 style "window-buttons" = "theme-panel" {
   xthickness = 3
-  ythickness = 3
+  ythickness = 0
 
-  bg[ACTIVE]   = shade (0.65, @selected_bg_color)
-  bg[PRELIGHT] = shade (0.85, @selected_bg_color)
+  bg[ACTIVE]   = @selected_bg_color
+  bg[PRELIGHT] = mix (0.9, @panel_bg, @base_color)
   bg[SELECTED] = shade (0.85, @selected_bg_color)
 
   fg[NORMAL]   = shade (0.7, @base_color)
