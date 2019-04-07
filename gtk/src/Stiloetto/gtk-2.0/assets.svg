@@ -20,6 +20,18 @@
   <defs
      id="defs4">
     <linearGradient
+       id="linearGradient2303"
+       inkscape:collect="always">
+      <stop
+         id="stop2299"
+         offset="0"
+         style="stop-color:#ececec;stop-opacity:1" />
+      <stop
+         id="stop2301"
+         offset="1"
+         style="stop-color:#fefefe;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient
        inkscape:collect="always"
        id="linearGradient3138">
       <stop
@@ -47,11 +59,11 @@
        inkscape:collect="always"
        id="linearGradient3068">
       <stop
-         style="stop-color:#d0d0d0;stop-opacity:1"
+         style="stop-color:#ececec;stop-opacity:1"
          offset="0"
          id="stop3064" />
       <stop
-         style="stop-color:#f4f4f4;stop-opacity:1"
+         style="stop-color:#fefefe;stop-opacity:1"
          offset="1"
          id="stop3066" />
     </linearGradient>
@@ -156,7 +168,7 @@
        y2="858.36218" />
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient3068"
+       xlink:href="#linearGradient2303"
        id="linearGradient3070"
        x1="15"
        y1="1022.8622"
@@ -200,9 +212,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2"
-     inkscape:cx="-1.9067464"
-     inkscape:cy="168.50535"
+     inkscape:zoom="1"
+     inkscape:cx="51.856946"
+     inkscape:cy="18.553353"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -1111,11 +1123,11 @@
          id="rect3102"
          style="fill:#000000;fill-opacity:0;stroke:none;stroke-width:14;stroke-opacity:1" />
       <rect
-         ry="2.9999888"
-         y="1039.3622"
-         x="46"
-         height="5.9999776"
-         width="8"
+         ry="3.9999998"
+         y="1038.3622"
+         x="45"
+         height="7.9999995"
+         width="10"
          id="rect3087"
          style="fill:#8f8f8f;fill-opacity:1;stroke:none;stroke-width:1.26490867;stroke-opacity:1" />
     </g>
@@ -1135,11 +1147,11 @@
          transform="matrix(0,-1,-1,0,0,0)"
          style="fill:#8f8f8f;fill-opacity:1;stroke:none;stroke-width:1.26491046;stroke-opacity:1"
          id="rect3100"
-         width="8.0000229"
-         height="5.9999776"
-         x="-1046.3622"
-         y="-70.999977"
-         ry="2.9999771" />
+         width="9.9998779"
+         height="8"
+         x="-1047.3622"
+         y="-72"
+         ry="4" />
     </g>
     <g
        transform="translate(-2,0.999977)"
@@ -1156,11 +1168,11 @@
       <rect
          style="fill:#666666;fill-opacity:1;stroke:none;stroke-width:1.26490867;stroke-opacity:1"
          id="rect3116"
-         width="8"
-         height="5.9999776"
-         x="46"
-         y="1039.3622"
-         ry="2.9999888" />
+         width="10"
+         height="7.9999995"
+         x="45"
+         y="1038.3622"
+         ry="3.9999998" />
     </g>
     <g
        transform="translate(-4,0.999977)"
@@ -1175,11 +1187,11 @@
          id="rect3120"
          style="fill:#000000;fill-opacity:0;stroke:none;stroke-width:14;stroke-opacity:1" />
       <rect
-         ry="2.9999771"
-         y="-70.999977"
-         x="-1046.3622"
-         height="5.9999776"
-         width="8.0000229"
+         ry="4"
+         y="-72"
+         x="-1047.3622"
+         height="8"
+         width="10"
          id="rect3122"
          style="fill:#666666;fill-opacity:1;stroke:none;stroke-width:1.26491046;stroke-opacity:1"
          transform="matrix(0,-1,-1,0,0,0)" />

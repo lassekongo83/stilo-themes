@@ -81,12 +81,12 @@ $asset_suffix: if($variant=='dark', '-dark', '');
 %view {
   color: $text_color;
   background-color: $base_color;
-  &:hover { background-color: transparentize($selected_bg_color, 0.84); }
+  &:hover, &:backdrop:hover { background-color: $base_hover_color; }
   &:selected {
     border-radius: 0;
     @extend %selected_items;
   }
-  &:backdrop { // Keep for now or selected backdrop color will behave bad when hovering.
+  &:backdrop {
     color: $backdrop_text_color;
     background-color: $backdrop_base_color;
     &:disabled { color: $backdrop_insensitive_color; }
@@ -3349,7 +3349,7 @@ placessidebar {
   separator { border-top: 1px solid $secondary_borders_color; }
 
   .sidebar-row {
-    &:hover { background-color: transparentize($selected_bg_color, 0.84); }
+    &:hover { background-color: $base_hover_color; }
   }
 
   row {
@@ -3910,7 +3910,7 @@ headerbar,
 
 %selected_items {
   background-color: $selected_bg_color;
-  &:backdrop { background-color: transparentize($selected_bg_color, 0.4); } // FIXME: Expecting transition or something???
+  &:backdrop { background-color: transparentize($selected_bg_color, 0.4); }
 
   @at-root %nobg_selected_items, & {
     color: $selected_fg_color;

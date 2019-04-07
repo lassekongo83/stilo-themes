@@ -18,7 +18,7 @@
 
 .view, iconview, .view text, iconview text, textview text, .nautilus-window notebook, .nautilus-window notebook > stack:not(:only-child) searchbar { color: black; background-color: #FFFFFF; }
 
-.view:hover, iconview:hover, .view text:hover, iconview text:hover, textview text:hover, .nautilus-window notebook:hover, .nautilus-window notebook > stack:not(:only-child) searchbar:hover { background-color: rgba(54, 101, 179, 0.16); }
+.view:hover, iconview:hover, .view:backdrop:hover, iconview:backdrop:hover, .view text:hover, iconview text:hover, textview text:hover, .nautilus-window notebook:hover, .nautilus-window notebook > stack:not(:only-child) searchbar:hover, .view text:backdrop:hover, iconview text:backdrop:hover, textview text:backdrop:hover, .nautilus-window notebook:backdrop:hover, .nautilus-window notebook > stack:not(:only-child) searchbar:backdrop:hover { background-color: rgba(60, 60, 60, 0.1); }
 
 .view:selected, iconview:selected, .view text:selected, iconview text:selected, textview text:selected, .nautilus-window notebook:selected, .nautilus-window notebook > stack:not(:only-child) searchbar:selected { border-radius: 0; }
 
@@ -407,7 +407,7 @@ spinbutton:not(.vertical) button { min-height: 16px; margin: 0; padding-bottom: 
 
 spinbutton:not(.vertical) button:dir(rtl) { border-style: none solid none none; }
 
-spinbutton:not(.vertical) button:hover { color: #3C3C3C; background-color: rgba(60, 60, 60, 0.05); }
+spinbutton:not(.vertical) button:hover { color: #3C3C3C; background-color: rgba(60, 60, 60, 0.1); }
 
 spinbutton:not(.vertical) button:disabled { color: rgba(143, 143, 143, 0.3); }
 
@@ -1361,7 +1361,7 @@ placessidebar > viewport.frame { border-style: none; border-right: #bebebe; }
 
 placessidebar separator { border-top: 1px solid #dddddd; }
 
-placessidebar .sidebar-row:hover { background-color: rgba(54, 101, 179, 0.16); }
+placessidebar .sidebar-row:hover { background-color: rgba(60, 60, 60, 0.1); }
 
 placessidebar row { min-height: 36px; padding: 0px; }
 
