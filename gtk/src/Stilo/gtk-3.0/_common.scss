@@ -2556,7 +2556,7 @@ treeview.view radio:selected { &:focus, & { @extend %radio; }} // This is a work
 //----------//
 %scale_trough {
   border: 1px solid $dark_fill;
-  border-radius: 3px;
+  border-radius: $scale_radius;
   background-color: $dark_fill;
   box-shadow: none;
 
@@ -2585,7 +2585,7 @@ treeview.view radio:selected { &:focus, & { @extend %radio; }} // This is a work
 
 %scale_highlight {
   border: 1px solid $selected_bg_color;
-  border-radius: 3px;
+  border-radius: $scale_radius;
   background-color: $selected_bg_color;
 
   &:disabled {
@@ -2896,7 +2896,7 @@ progressbar {
     }
   }
 
-  trough { background-color: darken($bg_color, 12%); }
+  trough { background-color: if($variant == 'light', darken($bg_color, 12%), $dark_borders_color); }
 
   &.horizontal progress { margin: 0 -1px; } // the progress node is positioned after the trough border
   &.vertical progress { margin: -1px 0; }   // this moves it over it.
@@ -2910,26 +2910,26 @@ progressbar {
   progress {
     @extend %scale_highlight;
 
-    border-radius: 1.5px;
+    border-radius: $scale_radius;
 
     &.left {
-      border-top-left-radius: 2px;
-      border-bottom-left-radius: 2px;
+      border-top-left-radius: $scale_radius;
+      border-bottom-left-radius: $scale_radius;
     }
 
     &.right {
-      border-top-right-radius: 2px;
-      border-bottom-right-radius: 2px;
+      border-top-right-radius: $scale_radius;
+      border-bottom-right-radius: $scale_radius;
     }
 
     &.top {
-      border-top-right-radius: 2px;
-      border-top-left-radius: 2px;
+      border-top-right-radius: $scale_radius;
+      border-top-left-radius: $scale_radius;
     }
 
     &.bottom {
-      border-bottom-right-radius: 2px;
-      border-bottom-left-radius: 2px;
+      border-bottom-right-radius: $scale_radius;
+      border-bottom-left-radius: $scale_radius;
     }
   }
 
@@ -3263,7 +3263,7 @@ filechooserbutton:drop(active) {
 
 .sidebar {
   border-style: none;
-  background-color: $secondary_bg_color;
+  background-color: $sidebar_bg_color;
 
   &:not(separator) {
     @at-root %sidebar_left,
