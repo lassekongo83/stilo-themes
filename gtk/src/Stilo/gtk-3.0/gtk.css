@@ -877,7 +877,7 @@ scrollbar { background-color: whitesmoke; border-width: 0; }
 
 scrollbar.vertical, scrollbar.horizontal, scrollbar.vertical button, scrollbar.horizontal button { background: linear-gradient(to bottom, whitesmoke, whitesmoke); }
 
-scrollbar slider { min-width: 6px; min-height: 6px; margin: -1px; border: 4px solid transparent; border-radius: 8px; background-clip: padding-box; background-color: #8f8f8f; }
+scrollbar slider { min-width: 8px; min-height: 8px; margin: -1px; border: 4px solid transparent; border-radius: 8px; background-clip: padding-box; background-color: #8f8f8f; transition: background-color 250ms; }
 
 scrollbar slider:hover { background-color: #5d5d5d; }
 
@@ -885,7 +885,7 @@ scrollbar slider:hover:active { background-color: #5d5d5d; }
 
 scrollbar slider:disabled { background-color: transparent; }
 
-scrollbar.fine-tune slider { min-width: 6px; min-height: 6px; }
+scrollbar.fine-tune slider { min-width: 8px; min-height: 8px; }
 
 scrollbar.fine-tune.horizontal slider { border-width: 4px; }
 
@@ -895,7 +895,7 @@ scrollbar.overlay-indicator:not(.dragging):not(.hovering) { border-color: transp
 
 scrollbar.overlay-indicator:not(.dragging):not(.hovering) trough { background-color: rgba(245, 245, 245, 0.2); }
 
-scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider { margin: 0; min-width: 6px; min-height: 6px; background-color: #3C3C3C; border: 3px solid transparent; }
+scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider { margin: 0; min-width: 8px; min-height: 8px; background-color: #3C3C3C; border: 3px solid transparent; }
 
 scrollbar.overlay-indicator:not(.dragging):not(.hovering) button { min-width: 14px; min-height: 14px; background-clip: padding-box; background-color: transparent; border: 1px solid transparent; }
 

@@ -19,12 +19,12 @@ $borders_color: if($variant == 'light', darken($bg_color,14%), $dark_borders_col
 $borders_edge: if($variant == 'light', white, transparentize($fg_color, 0.9));
 $link_color: if($variant == 'light', darken($selected_bg_color,10%), lighten($selected_bg_color,20%));
 $link_visited_color: if($variant == 'light', darken($selected_bg_color,20%), lighten($selected_bg_color,10%));
-$top_hilight: $borders_edge;
+$top_hilight: if($variant == 'light', $borders_edge, lighten($base_color, 4%));
 $dark_fill: mix($borders_color, $bg_color, 35%);
 $popover_bg_color: mix($bg_color, $base_color, 50%);
 $popover_hover_color: lighten($bg_color, 5%);
 
-$scrollbar_bg_color: darken($base_color, 4%);
+$scrollbar_bg_color: $base_color;
 $scrollbar_slider_color: mix($fg_color, $bg_color, 50%);
 $scrollbar_slider_hover_color: mix($fg_color, $bg_color, 80%);
 $scrollbar_slider_active_color: if($variant=='light', darken($selected_bg_color, 10%), lighten($selected_bg_color, 10%));

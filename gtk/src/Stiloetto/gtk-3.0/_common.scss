@@ -2187,20 +2187,21 @@ scrollbar {
   }
 
   //background-color: $scrollbar_bg_color;
-  &.vertical, &.vertical button { background: linear-gradient(to right, darken($scrollbar_bg_color, 15%), $scrollbar_bg_color); }
-  &.horizontal, &.horizontal button { background: linear-gradient(to bottom, darken($scrollbar_bg_color, 15%), $scrollbar_bg_color); }
+  &.vertical, &.vertical button { background: linear-gradient(to right, darken($scrollbar_bg_color, 8%), $scrollbar_bg_color); }
+  &.horizontal, &.horizontal button { background: linear-gradient(to bottom, darken($scrollbar_bg_color, 8%), $scrollbar_bg_color); }
   border-width: 0;
 
   // slider
 
   slider {
-    min-width: 6px;
-    min-height: 6px;
+    min-width: $_overlay_size;
+    min-height: $_overlay_size;
     margin: -1px;
     border: 4px solid transparent;
     border-radius: 8px;
     background-clip: padding-box;
     background-color: $scrollbar_slider_color;
+    transition: background-color $longer_duration;
 
     &:hover { background-color: $scrollbar_slider_hover_color; }
 
@@ -2383,7 +2384,7 @@ switch {
     border-radius: $circular_radius 0 0 $circular_radius;
     transform: rotate(45deg);
     box-shadow: 0 0 0 4px transparent, $shadow_normal;
-    background-color: $base_color;
+    background-color: if($variant == 'dark', lighten($bg_color, 9%), $base_color);
     color: $fg_color;
   }
 
