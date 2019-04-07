@@ -972,7 +972,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 #LookingGlassPropertyInspector { background: rgba(0, 0, 0, 0.8); border: 2px solid grey; border-radius: 0; padding: 6px; }
 
-#panel.dashtopanelMainPanel.dashtopanelTop { background-color: black; }
+#panel.dashtopanelMainPanel.dashtopanelTop { background-color: #252628; }
 
 #panel.dashtopanelMainPanel.dashtopanelTop .panel-button { text-shadow: black 0 1px 1px; }
 
@@ -1028,7 +1028,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 #panel.dashtopanelMainPanel.dashtopanelTop .showdesktop-button { padding-right: 8px; }
 
-#panel.dashtopanelMainPanel.dashtopanelBottom { background-color: black; }
+#panel.dashtopanelMainPanel.dashtopanelBottom { background-color: #252628; }
 
 #panel.dashtopanelMainPanel.dashtopanelBottom .panel-button { text-shadow: black 0 1px 1px; }
 

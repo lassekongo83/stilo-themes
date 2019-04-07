@@ -2,7 +2,7 @@ $unfocused: transparentize(white, 0.6);
 $focused: transparentize(white, 0.9);
 $focused_hover: transparentize(white, 0.85);
 
-$panel_color: darken($bg_color, 15%);
+$panel_color: #252628;
 $dock_color: transparentize(black, 0.3);
 
 // Trick due to St limitations. It needs a background to draw a box-shadow
