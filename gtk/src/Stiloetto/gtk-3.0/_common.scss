@@ -554,7 +554,7 @@ button {
 
     color: $osd_fg_color;
     border-radius: $button-radius;
-    outline-color: transparentize($osd_fg_color, 0.7);  //FIXME: define a color var?
+    outline-color: transparentize($osd_fg_color, 0.7); //FIXME: define a color var?
 
     @include button(osd);
 
@@ -1323,7 +1323,7 @@ headerbar {
       }
     }
 
-    .subtitle:link { @extend *:link:selected;  }
+    .subtitle:link { @extend *:link:selected; }
 
     button {
       @include button(normal, $selected_bg_color, $selected_fg_color);
@@ -1835,7 +1835,7 @@ menubar,
 .menubar {
   -GtkWidget-window-dragging: true;
   padding: 0px;
-  background-color: $bg_color; //$header_bg;
+  background-color: $bg_color;
 
   > menuitem {
     min-height: 16px;
@@ -1880,7 +1880,7 @@ menu,
   background-color: $base_color;
   border: 1px solid $borders_color; // adds borders in a non composited env
 
-  .csd & { border: none; }  // axes borders in a composited env
+  .csd & { border: none; } // axes borders in a composited env
 
   &:backdrop { background-color: $backdrop_menu_color; }
 
@@ -2686,13 +2686,15 @@ scale {
 
   slider {
     transition: all 100ms $deceleration_curve, box-shadow $shorter_duration $deceleration_curve;
-    @include button(normal);
+    //@include button(normal);
+    background-color: $base_color;
+    box-shadow: 0 0 0 2px $borders_color;
 
     border-radius: 100%;
 
     &:hover { 
       @include button(hover);
-      box-shadow: 0 0 0 6px transparentize($selected_bg_color, 0.7); 
+      box-shadow: 0 0 0 6px transparentize($selected_bg_color, 0.7);
     }
 
     &:active { border-color: $selected_borders_color; }
@@ -3695,7 +3697,7 @@ colorchooser .popover.osd { border-radius: 0; }
 .scale-popup {
   .osd & { @extend %osd; }
 
-  .osd & button.flat {  //FIXME: quick hack, redo properly
+  .osd & button.flat { //FIXME: quick hack, redo properly
     border-style: none;
     border-radius: $button-radius;
   }
