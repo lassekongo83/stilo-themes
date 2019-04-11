@@ -1001,9 +1001,9 @@ check:checked:hover, radio:checked:hover { color: #ffffff; background-color: #36
 
 check:checked:hover:backdrop, radio:checked:hover:backdrop { color: #ffffff; }
 
-check:disabled, radio:disabled { color: #929395; border-color: black; background-color: #424446; }
+check:disabled, radio:disabled { color: #929395; border-color: transparent; background-color: #424446; }
 
-check:disabled:backdrop, check:disabled:checked:backdrop, radio:disabled:backdrop, radio:disabled:checked:backdrop { color: #929395; border-color: black; background-color: #424446; color: #929395; }
+check:disabled:backdrop, check:disabled:checked:backdrop, radio:disabled:backdrop, radio:disabled:checked:backdrop { color: #929395; border-color: transparent; background-color: #424446; color: #929395; }
 
 .osd check, .osd radio { color: #eeeeec; border-color: rgba(0, 0, 0, 0.7); background-image: image(rgba(46, 48, 50, 0.7)); background-clip: padding-box; box-shadow: inset 0 1px rgba(255, 255, 255, 0.1); text-shadow: 0 1px black; -gtk-icon-shadow: 0 1px black; outline-color: rgba(238, 238, 236, 0.3); }
 
