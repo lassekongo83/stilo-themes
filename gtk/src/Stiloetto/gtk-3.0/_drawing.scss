@@ -544,8 +544,9 @@ $entry_inner_shadow: inset 0 1px transparentize(black, 0.98), inset 0 2px transp
   $th: null,
   $bh: null,
   $ba: null,
-  $sa: transparentize(black, 0.98),
-  $sb: transparentize(black, 0.96)) {
+  $sa: if($variant == 'light', transparentize(black, 0.98), transparentize(black, 0.92)),
+  $sb: if($variant == 'light', transparentize(black, 0.96), transparentize(black, 0.8))
+  ) {
   //
   // Tabs
   //

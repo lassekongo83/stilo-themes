@@ -1,5 +1,5 @@
 # Author: lassekongo83
-# Theme: Stilo-dark
+# Theme: Stiloetto-dark
 # based on "Greybird" and "Bluebird" by Simon Steinbeiß and Pasi Lallinaho
 # Description: As is the original theme, this theme is 100% free and open source.
 
@@ -402,7 +402,7 @@ style "tooltips" = "wider" {
   fg[NORMAL]   = @tooltip_fg_color
 
   engine "murrine" {
-    roundness = 0
+    roundness = 5
     rgba      = TRUE
   }
 }
@@ -649,7 +649,7 @@ style "combo" = "comboboxentry" {
 
 style "spin" = "combo" {
   engine "murrine" {
-    roundness     = 0
+    roundness     = 2
     reliefstyle   = 4
     border_shades = {0.9,0.6}
     shadow_shades = {0.8,0.5}
@@ -1057,7 +1057,7 @@ style "xfwm-tabwin"
   fg[PRELIGHT] = @selected_fg_color
 
   engine "murrine" {
-    roundness  = 0
+    roundness  = 2
     textstyle  = 1
     text_shade = 0.25
   }
