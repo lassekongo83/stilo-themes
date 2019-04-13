@@ -1410,9 +1410,16 @@ headerbar {
     }
   }
 
+  .maximized & { box-shadow: none; } // No top highlight on maximized windows
+
   &.default-decoration {
     padding: 4px;
     min-height: 28px;
+
+    .maximized & { // No top highlight on maximized windows
+      box-shadow: inset 0 -1px $borders_color,
+                  inset 0 0 transparent;
+    }
 
     button.titlebutton {
       min-height: $titlebutton-height;

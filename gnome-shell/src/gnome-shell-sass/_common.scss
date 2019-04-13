@@ -1376,16 +1376,24 @@ StScrollBar {
 }
 .app-view-control { //favorties | all toggle button
   padding: 4px 32px;
-  @include button(normal);
+  //@include button(normal);
+  background-color: transparentize(black, 0.5);
+  box-shadow: none;
+  transition-duration: 100ms;
 
   &:hover { @include button(hover); }
-  &:checked { @include button(active); }
+  &:checked {
+    //@include button(active);
+    background-color: $selected_bg_color;
+    box-shadow: none;
+    border-color: transparent;
+  }
   &:first-child {
     border-right-width: 0;
-    border-radius: 0;
+    border-radius: 2px 0 0 2px;
   }
   &:last-child {
-    border-radius: 0;
+    border-radius: 0 2px 2px 0;
     &:checked { border-left-width: 0; }
   }
 }
