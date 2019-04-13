@@ -9,7 +9,7 @@ $dark_base_color: #373a3c;
 
 $base_color: if($variant == 'light', #FFFFFF, $dark_base_color);
 $text_color: if($variant == 'light', black, white);
-$bg_color: if($variant == 'light', #e2e2e2, $dark_bg_color);
+$bg_color: if($variant == 'light', #e2e2e3, $dark_bg_color);
 $fg_color: if($variant == 'light', #3C3C3C, $dark_fg_color);
 
 $selected_fg_color: #ffffff;

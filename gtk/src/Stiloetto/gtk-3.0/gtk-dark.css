@@ -471,7 +471,7 @@ searchbar > revealer > box { margin: -6px; padding: 6px; }
 
 .titlebar:not(headerbar), headerbar { padding: 0 4px; min-height: 38px; border-width: 0; border-style: solid; border-color: #1c1c1e; background: #252628 linear-gradient(to top, #252628, #2f3033); box-shadow: inset 0 1px rgba(65, 68, 71, 0.3); }
 
-.titlebar:backdrop:not(headerbar), headerbar:backdrop { border-color: #1c1c1e; background-image: none; color: #929395; }
+.titlebar:backdrop:not(headerbar), headerbar:backdrop { border-color: #1c1c1e; color: #929395; }
 
 .titlebar:not(headerbar) .title, headerbar .title { font-weight: bold; padding-left: 12px; padding-right: 12px; }
 
