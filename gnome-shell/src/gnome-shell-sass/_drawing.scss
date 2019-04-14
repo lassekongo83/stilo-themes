@@ -42,17 +42,19 @@
 
   @if $t==normal {
     background-color: $_g_bg;
-    border-color: $_g_border;
-    @include _shadows($_inner_hilight);
+    box-shadow: none;
+    //@include _shadows($_inner_hilight);
   }
   @if $t==focus {
-    @include _shadows($_inner_hilight_hover);
+    box-shadow: none;
+    background-color: $_g_bg-hover;
+    //@include _shadows($_inner_hilight_hover);
     //border-color: if($fc==$selected_bg_color,
     //                 $selected_borders_color,
     //                 darken($fc,35%));
   }
   @if $t==hover { 
-    @include _shadows($_inner_hilight_hover);
+    background-color: $_g_bg-hover;
   }
   @if $t==insensitive {
     color: $insensitive_fg_color;

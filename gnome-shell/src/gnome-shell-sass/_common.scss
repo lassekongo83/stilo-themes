@@ -5,6 +5,9 @@ $cakeisalie: "This stylesheet is generated, DO NOT EDIT";
 /* #{$cakeisalie} */
 
 $panel-corner-radius: 0px;
+$small-radius: 2px;
+$large-radius: 5px;
+$larger-radius: 26px;
 
 /* Copyright 2009, 2015 Red Hat, Inc.
  *
@@ -32,8 +35,9 @@ $font-family: Roboto, Sans-Serif;
 $_bubble_bg_color: opacify($osd_bg_color,0.25);
 $_bubble_fg_color: $osd_fg_color;
 $_bubble_borders_color: transparentize($osd_fg_color,0.8);
-$_g_bg: transparentize(white,0.8);
-$_g_border: transparentize(white,0.6);
+$_g_bg: transparentize(white,0.86);
+$_g_bg-hover: transparentize(white,0.8);
+$_g_border: transparentize(white,0.68);
 
 stage {
   font-family: $font-family;
@@ -45,7 +49,7 @@ stage {
 
 // Buttons
 .button {
-  border-radius: 0;
+  border-radius: $small-radius;
   border-width: 1px;
   padding: 4px 32px;
   @include button(normal);
@@ -68,21 +72,21 @@ stage {
   padding: 12px;
 
   &:first-child {
-    border-radius: 0;
+    border-radius: 0 0 0 $large-radius;
   }
   &:last-child {
     border-right-width: 0;
-    border-radius: 0;
+    border-radius: 0 0 $large-radius 0;
   }
   &:first-child:last-child {
     border-right-width: 0;
-    border-radius: 0;
+    border-radius: 0 0 $large-radius $large-radius;
   }
 }
 
 // Entries
 StEntry {
-  border-radius: 0;
+  border-radius: $small-radius;
   padding: 4px;
   border-width: 0px;
   color: $_bubble_fg_color;
@@ -116,12 +120,12 @@ StScrollBar {
   }
 
   StBin#trough {
-    border-radius: 0;
+    border-radius: $larger-radius;
     background-color: transparent;
   }
 
   StButton#vhandle, StButton#hhandle {
-    border-radius: 0;
+    border-radius: $larger-radius;
     background-color: mix($fg_color, $bg_color, 60%);
     //border: 3px solid transparent; //would be nice to margin or at least to transparent
     margin: 3px;
@@ -193,7 +197,7 @@ StScrollBar {
 .flashspot { background-color: white; }
 
 %modal {
-  border-radius: 2px;
+  border-radius: $large-radius;
   color: $osd_fg_color;
   background-color: $bg_color;
   border: none;
@@ -938,7 +942,7 @@ StScrollBar {
   width: 2.4em; height: 2.4em;
   padding: 0.1em;
   margin: 2px;
-  border-radius: 2px;
+  border-radius: $small-radius;
   font-feature-settings: "tnum";
   &:hover,&:focus { background-color: lighten($bg_color, 5%); }
   &:active,&:selected {
@@ -1165,7 +1169,7 @@ StScrollBar {
   background-image: url("close-window.svg");
   background-size: 24px;
   background-color: $close_button;
-  border-radius: 2px;
+  border-radius: $small-radius;
   box-shadow: none;
   border: 0;
   color: transparent;
@@ -1262,11 +1266,12 @@ StScrollBar {
 .search-entry {
   width: 320px;
   padding: 7px 9px;
-  border-radius: 66px;
+  border-radius: $small-radius;
   border-color: transparent;
   color: $_bubble_fg_color;
-  background-color: white;
   box-shadow: none;
+  text-shadow: 0px 1px 2px rgba(0,0,0,0.6);
+  transition-duration: 100ms;
   @include entry(normal);
   &:hover { @include entry(hover); }
   &:focus {
@@ -1377,11 +1382,12 @@ StScrollBar {
 .app-view-control { //favorties | all toggle button
   padding: 4px 32px;
   //@include button(normal);
-  background-color: transparentize(black, 0.5);
+  background-color: $_g_bg;
   box-shadow: none;
   transition-duration: 100ms;
+  border: none;
 
-  &:hover { @include button(hover); }
+  &:hover { background-color: $_g_bg-hover; }
   &:checked {
     //@include button(active);
     background-color: $selected_bg_color;
@@ -1390,10 +1396,10 @@ StScrollBar {
   }
   &:first-child {
     border-right-width: 0;
-    border-radius: 2px 0 0 2px;
+    border-radius: $small-radius 0 0 $small-radius;
   }
   &:last-child {
-    border-radius: 0 2px 2px 0;
+    border-radius: 0 $small-radius $small-radius 0;
     &:checked { border-left-width: 0; }
   }
 }
@@ -1437,7 +1443,7 @@ StScrollBar {
 
 %icon_tile {
   color: $osd_fg_color;
-  border-radius: 2px;
+  border-radius: $small-radius;
   padding: 4px;
   border: 1px solid transparent;
   transition-duration: 100ms;
@@ -1500,7 +1506,7 @@ StScrollBar {
   visible-width: 32px; //amount visible before hover
   spacing: 11px;
   padding: 8px;
-  border-radius: 0;
+  border-radius: $large-radius 0 0 $large-radius;
 
   .placeholder {
     background-image: url("dash-placeholder.svg");
@@ -1828,7 +1834,7 @@ StScrollBar {
   &:expanded .login-dialog-user-list-item:logged-in { border-right: 2px solid $selected_bg_color; }
 }
 .login-dialog-user-list-item {
-  border-radius: 5px;
+  border-radius: $large-radius;
   padding: 6px;
   color: darken($osd_fg_color,30%);
   &:ltr .user-widget { padding-right: 1em; }
