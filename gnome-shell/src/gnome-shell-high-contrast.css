@@ -32,11 +32,11 @@ stage { font-family: Roboto, Sans-Serif; font-size: 10pt; color: #fff; }
 
 .modal-dialog-linked-button:first-child:last-child { border-right-width: 0; border-radius: 0 0 5px 5px; }
 
-StEntry { border-radius: 2px; padding: 4px; border-width: 0px; color: #eeeeec; background-color: rgba(255, 255, 255, 0.14); box-shadow: none; selection-background-color: #215d9c; selected-color: #ffffff; }
+StEntry { border-radius: 2px; padding: 4px; border-width: 0px; color: #eeeeec; background-color: rgba(255, 255, 255, 0.14); box-shadow: inset 0 1px rgba(255, 255, 255, 0.06); selection-background-color: #215d9c; selected-color: #ffffff; }
 
 StEntry:hover { background-color: rgba(255, 255, 255, 0.2); }
 
-StEntry:focus { box-shadow: none; background-color: rgba(255, 255, 255, 0.2); }
+StEntry:focus { box-shadow: inset 0 1px rgba(255, 255, 255, 0.06); background-color: rgba(255, 255, 255, 0.2); }
 
 StEntry:insensitive { color: gray; border-color: #0e0e0e; box-shadow: none; }
 
@@ -578,11 +578,11 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .window-caption { spacing: 25px; color: #ffffff; background-color: #215d9c; border-radius: 0; padding: 4px 12px; }
 
-.search-entry { width: 320px; padding: 7px 9px; border-radius: 2px; border-color: transparent; color: #eeeeec; box-shadow: none; text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.6); transition-duration: 100ms; background-color: rgba(255, 255, 255, 0.14); box-shadow: none; }
+.search-entry { width: 320px; padding: 7px 9px; border-radius: 2px; border-color: transparent; color: #eeeeec; text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.6); transition-duration: 100ms; background-color: rgba(255, 255, 255, 0.14); box-shadow: inset 0 1px rgba(255, 255, 255, 0.06); }
 
 .search-entry:hover { background-color: rgba(255, 255, 255, 0.2); }
 
-.search-entry:focus { box-shadow: none; background-color: rgba(255, 255, 255, 0.2); }
+.search-entry:focus { box-shadow: inset 0 1px rgba(255, 255, 255, 0.06); background-color: rgba(255, 255, 255, 0.2); }
 
 .search-entry .search-entry-icon { icon-size: 1em; padding: 0 4px; color: #eeeeec; }
 
@@ -634,11 +634,11 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .app-view-controls { padding-bottom: 32px; }
 
-.app-view-control { padding: 4px 32px; background-color: rgba(255, 255, 255, 0.14); box-shadow: none; transition-duration: 100ms; border: none; }
+.app-view-control { padding: 4px 32px; box-shadow: inset 0 1px rgba(255, 255, 255, 0.06); background-color: rgba(255, 255, 255, 0.14); transition-duration: 100ms; border: none; }
 
 .app-view-control:hover { background-color: rgba(255, 255, 255, 0.2); }
 
-.app-view-control:checked { background-color: #215d9c; box-shadow: none; border-color: transparent; }
+.app-view-control:checked { background-color: #215d9c; box-shadow: inset 0 1px rgba(255, 255, 255, 0.06); border-color: transparent; }
 
 .app-view-control:first-child { border-right-width: 0; border-radius: 2px 0 0 2px; }
 

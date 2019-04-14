@@ -42,11 +42,11 @@
 
   @if $t==normal {
     background-color: $_g_bg;
-    box-shadow: none;
+    box-shadow: $_g_highlight;
     //@include _shadows($_inner_hilight);
   }
   @if $t==focus {
-    box-shadow: none;
+    box-shadow: $_g_highlight;
     background-color: $_g_bg-hover;
     //@include _shadows($_inner_hilight_hover);
     //border-color: if($fc==$selected_bg_color,

@@ -56,11 +56,10 @@ $dock_color: transparentize(black, 0.3);
       .show-apps .overview-icon {
         background-image: url("d2p-activities.svg");
         background-position: center center;
-        //background-color: transparentize(black, 0.2);
         border: none;
         color: transparent;
         margin: 0;
-        transition-duration: 100ms;
+        transition-duration: $short-duration;
       }
 
       .show-apps:#{$d} .overview-icon {
@@ -71,10 +70,9 @@ $dock_color: transparentize(black, 0.3);
         box-shadow: none;
       }
 
-      //.dash-item-container .focused { background-color: red; box-shadow: inset -2px 0 white; }
       .dash-item-container .show-apps {
         padding: 4px 2px 4px 0;
-        transition-duration: 100ms;
+        transition-duration: $short-duration;
         &:#{$d} { background-color: transparentize(black, 0.2); }
       }
     }

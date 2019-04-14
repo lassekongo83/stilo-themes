@@ -35,9 +35,12 @@ $font-family: Roboto, Sans-Serif;
 $_bubble_bg_color: opacify($osd_bg_color,0.25);
 $_bubble_fg_color: $osd_fg_color;
 $_bubble_borders_color: transparentize($osd_fg_color,0.8);
-$_g_bg: transparentize(white,0.86);
-$_g_bg-hover: transparentize(white,0.8);
+$_g_bg: transparentize(white,0.86); // button/entry color
+$_g_bg-hover: transparentize(white,0.8); // hover button/entry color
 $_g_border: transparentize(white,0.68);
+$_g_highlight: inset 0 1px rgba(255,255,255,0.06); // button/entry top highlight color
+$short-duration: 100ms;
+$long-duration: 200ms;
 
 stage {
   font-family: $font-family;
@@ -102,7 +105,6 @@ StEntry {
     padding: 0 4px;
   }
 }
-
 
 // Scrollbars
 
@@ -412,7 +414,6 @@ StScrollBar {
   padding-bottom: 8px;
 }
 
-
 // Polkit Dialog
 
 .polkit-dialog-user-layout {
@@ -565,7 +566,6 @@ StScrollBar {
   border-bottom-width: 1px;
   border-bottom-style: solid;
 }
-
 
 // Background menu
 .background-menu { -boxpointer-gap: 4px; -arrow-rise: 0px; }
@@ -754,7 +754,7 @@ StScrollBar {
     -minimum-hpadding: 6px;
     font-weight: bold;
     color: $fg_color;
-    transition-duration: 100ms;
+    transition-duration: $short-duration;
 
     .app-menu-icon {
       -st-icon-style: symbolic;
@@ -1088,7 +1088,7 @@ StScrollBar {
     background-gradient-direction: none !important;
     border: 0 solid transparent !important;
     text-shadow: 0 0 transparent !important;
-    transition-duration: 100ms !important;
+    transition-duration: $short-duration !important;
     box-shadow: none !important;
     color: transparent;
   }
@@ -1269,9 +1269,8 @@ StScrollBar {
   border-radius: $small-radius;
   border-color: transparent;
   color: $_bubble_fg_color;
-  box-shadow: none;
   text-shadow: 0px 1px 2px rgba(0,0,0,0.6);
-  transition-duration: 100ms;
+  transition-duration: $short-duration;
   @include entry(normal);
   &:hover { @include entry(hover); }
   &:focus {
@@ -1382,16 +1381,16 @@ StScrollBar {
 .app-view-control { //favorties | all toggle button
   padding: 4px 32px;
   //@include button(normal);
+  box-shadow: $_g_highlight;
   background-color: $_g_bg;
-  box-shadow: none;
-  transition-duration: 100ms;
+  transition-duration: $short-duration;
   border: none;
 
   &:hover { background-color: $_g_bg-hover; }
   &:checked {
     //@include button(active);
     background-color: $selected_bg_color;
-    box-shadow: none;
+    box-shadow: $_g_highlight;
     border-color: transparent;
   }
   &:first-child {
@@ -1411,7 +1410,7 @@ StScrollBar {
   &:active, &:checked { background-color: transparentize(darken($osd_bg_color,10%),.1); }
   &:focus, &:selected, &:hover {
     background-color: transparentize($osd_fg_color,.9);
-    transition-duration: 200ms;
+    transition-duration: $long-duration;
   }
 }
 .app-well-app,
@@ -1446,7 +1445,7 @@ StScrollBar {
   border-radius: $small-radius;
   padding: 4px;
   border: 1px solid transparent;
-  transition-duration: 100ms;
+  transition-duration: $short-duration;
   text-align: center;
 }
 
@@ -1457,7 +1456,7 @@ StScrollBar {
 .show-apps:checked .show-apps-icon,
 .show-apps:focus .show-apps-icon {
   color: white;
-  transition-duration: 100ms;
+  transition-duration: $short-duration;
 }
 
 
@@ -1979,7 +1978,7 @@ StScrollBar {
     -minimum-hpadding: 6px;
     font-weight: bold;
     color: #ccc;
-    transition-duration: 100ms;
+    transition-duration: $short-duration;
     padding-left: .3em;
     padding-right: .3em;
     &:hover {
