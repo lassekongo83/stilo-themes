@@ -32,6 +32,20 @@
   }
 }
 
+// Need to use this on Nautilus 3.32
+%fm_button_fix {
+  @include button(undecorated);
+  &:hover {
+    background-color: $light_selection;
+    border-color: $light_selection_border;
+  }
+  &:checked, &:checked:hover, &:last-child {
+    background-color: $selected_bg_color;
+    border-color: transparent;
+    &, &:hover, &:backdrop:hover { color: $selected_fg_color; }
+  }
+}
+
 //
 // XFCE GTK3 Styling
 //
@@ -236,6 +250,14 @@ XfceHeading,
       margin-right: 6px;
     }
     button { @extend %fm_button; }
+  }
+
+  // Nautilus 3.32
+  .nautilus-path-bar {
+    button {
+      margin: 0 2px;
+      @extend %fm_button_fix;
+    }
   }
 }
 

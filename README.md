@@ -4,9 +4,11 @@ Minimalistic GTK themes
 These themes are still in development. Things may change.
 
 ### Requirements
-GTK 3.30+
 
-<sub>The theme should work with 3.28 as well, or even 3.22. I just can't guarantee that everything will look right.</sub>
+- GNOME Shell 3.30+
+- GTK 3.24.6+
+
+<sub>It's possible that some parts of the theme will work with earlier versions. No fixes will however be made for earlier versions.</sub>
 
 Some or all of these packages may already be installed by default on some distros.
 
@@ -19,7 +21,7 @@ Other distros may have named the above packages differently.
 
 ## Installation
 
-Make sure you have `git`, `meson`, [ninja](https://github.com/ninja-build/ninja/wiki/Pre-built-Ninja-packages), and `sassc` installed.
+When the above requirements are installed, simply run these commands.
 ```bash
 git clone https://github.com/lassekongo83/stilo-themes.git
 cd stilo-themes

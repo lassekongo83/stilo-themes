@@ -1703,6 +1703,14 @@ button.emoji-section:checked label { opacity: 1; }
 
 .nautilus-window .path-bar button:checked, .thunar .path-bar button:checked, .nautilus-window .path-bar button:checked:hover, .thunar .path-bar button:checked:hover, .nautilus-window .path-bar button:checked:backdrop:hover, .thunar .path-bar button:checked:backdrop:hover, .nautilus-window .path-bar button:checked:hover, .thunar .path-bar button:checked:hover, .nautilus-window .path-bar button:checked:hover:hover, .thunar .path-bar button:checked:hover:hover, .nautilus-window .path-bar button:checked:hover:backdrop:hover, .thunar .path-bar button:checked:hover:backdrop:hover { color: #ffffff; }
 
+.nautilus-window .nautilus-path-bar button { border-color: transparent; background-color: transparent; background-image: none; box-shadow: none; box-shadow: inset 0 1px rgba(255, 255, 255, 0), 0 1px rgba(246, 246, 247, 0); text-shadow: none; -gtk-icon-shadow: none; }
+
+.nautilus-window .nautilus-path-bar button:hover { background-color: #3e71c5; border-color: #4a79c8; }
+
+.nautilus-window .nautilus-path-bar button:checked, .nautilus-window .nautilus-path-bar button:checked:hover, .nautilus-window .nautilus-path-bar button:last-child { background-color: #3665b3; border-color: transparent; }
+
+.nautilus-window .nautilus-path-bar button:checked, .nautilus-window .nautilus-path-bar button:checked:hover, .nautilus-window .nautilus-path-bar button:checked:backdrop:hover, .nautilus-window .nautilus-path-bar button:checked:hover, .nautilus-window .nautilus-path-bar button:checked:hover:hover, .nautilus-window .nautilus-path-bar button:checked:hover:backdrop:hover, .nautilus-window .nautilus-path-bar button:last-child, .nautilus-window .nautilus-path-bar button:last-child:hover, .nautilus-window .nautilus-path-bar button:last-child:backdrop:hover { color: #ffffff; }
+
 CatfishWindow .pane-separator { background-color: #1f2021; }
 
 XfceHeading, .XfceHeading { margin: 0; padding: 0; border-width: 0; background-image: none; background-color: #2e3032; color: white; text-shadow: none; }
@@ -1788,6 +1796,8 @@ XfceHeading, .XfceHeading { margin: 0; padding: 0; border-width: 0; background-i
 .nautilus-window .searchbar-container { margin-top: -1px; }
 
 .nautilus-window .path-bar .dim-label, .nautilus-window .path-bar label.separator, .nautilus-window .path-bar .titlebar:not(headerbar) .subtitle, .titlebar:not(headerbar) .nautilus-window .path-bar .subtitle, .nautilus-window .path-bar headerbar .subtitle, headerbar .nautilus-window .path-bar .subtitle { color: transparent; border-right: 1px solid #1c1c1e; margin-right: 6px; }
+
+.nautilus-window .nautilus-path-bar button { margin: 0 2px; }
 
 .disk-space-display { border-style: solid; border-width: 2px; }
 

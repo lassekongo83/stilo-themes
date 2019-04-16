@@ -86,7 +86,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .flashspot { background-color: white; }
 
-.modal-dialog, .popup-menu-boxpointer, .candidate-popup-boxpointer { border-radius: 5px; color: #eeeeec; background-color: #000; border: none; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); }
+.modal-dialog { border-radius: 5px; color: #eeeeec; background-color: #000; border: none; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); }
 
 .modal-dialog .modal-dialog-content-box { padding: 24px; }
 
@@ -260,7 +260,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .popup-menu-ornament { text-align: right; width: 1.2em; }
 
-.popup-menu-boxpointer, .candidate-popup-boxpointer { -arrow-border-radius: 0; -arrow-background-color: transparent; -arrow-border-width: 0px; -arrow-border-color: transparent; -arrow-base: 0px; -arrow-rise: 0px; }
+.popup-menu-boxpointer, .candidate-popup-boxpointer { -arrow-border-radius: 5px; -arrow-background-color: #000; -arrow-border-width: 1px; -arrow-border-color: black; -arrow-base: 12px; -arrow-rise: 8px; }
 
 .popup-separator-menu-item { height: 1px; margin: 6px 0px; background-color: transparent; border-color: rgba(0, 0, 0, 0.3); border-bottom-width: 1px; border-bottom-style: solid; }
 
