@@ -2752,6 +2752,27 @@ scale {
       }
     }
   }
+
+  //marks margins
+  @each $scale_orient, $marks_class, $marks_pos, $marks_margin in (horizontal, top, top, bottom),
+                                                                  (horizontal, bottom, bottom, top),
+                                                                  (vertical, top, left, right),
+                                                                  (vertical, bottom, right, left) {
+    &.#{$scale_orient} marks {
+      &.#{$marks_class} {
+        margin-#{$marks_margin}: $_marks_distance;
+        margin-#{$marks_pos}: -($_marks_distance + $_marks_length);
+      }
+    }
+
+    &.#{$scale_orient}.fine-tune marks {
+      &.#{$marks_class} {
+        margin-#{$marks_margin}: $_marks_distance;
+        margin-#{$marks_pos}: -($_marks_distance + $_marks_length - 3px);
+      }
+    }
+  }
+
   &.horizontal {
     indicator {
       min-height: $_marks_length;
@@ -2767,6 +2788,57 @@ scale {
     }
 
     &.fine-tune indicator { min-width: ($_marks_length - 3px); }
+  }
+
+  // scale with marks madness - parts borrowed from https://github.com/hrdwrrsk/tetra-gtk-theme
+  @each $dir_class, $dir_infix in ('horizontal', 'horz'),
+                                  ('vertical', 'vert') {
+    @each $marks_infix, $marks_class in ('scale-has-marks-above', 'marks-before:not(.marks-after)'),
+                                        ('scale-has-marks-below', 'marks-after:not(.marks-before)') {
+      &.#{$dir_class}.#{$marks_class} {
+        slider {
+          margin: -11px -4px;
+          padding: 0px;
+          border-radius: $button-radius;
+
+          $_scale_slider_bg_pos: bottom;
+
+          @if $dir_class == 'horizontal' {
+            min-height: 22px;
+            min-width: 9px;
+
+            @if $marks_infix == 'scale-has-marks-above' {
+              $_scale_slider_bg_pos: top;
+            }
+          }
+          @else {
+            margin: -4px -11px;
+            min-height: 9px;
+            min-width: 22px;
+
+            @if $marks_infix == 'scale-has-marks-above' {
+              $_scale_slider_bg_pos: left bottom;
+            }
+
+            @else {
+              $_scale_slider_bg_pos: right bottom;
+            }
+          }
+        }
+
+        &.fine-tune slider {
+          // bigger negative margins to make the trough grow here as well
+          margin: -8px -4px;
+
+          @if $dir_class == 'horizontal' {
+          }
+
+          @else {
+            margin: -4px -8px;
+          }
+        }
+      }
+    }
   }
 
   &.color {

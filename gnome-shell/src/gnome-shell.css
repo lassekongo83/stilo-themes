@@ -978,6 +978,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 #panel.dashtopanelMainPanel.dashtopanelTop { background-color: #252628; }
 
+#panel.dashtopanelMainPanel.dashtopanelTop #panelLeft, #panel.dashtopanelMainPanel.dashtopanelTop #panelCenter, #panel.dashtopanelMainPanel.dashtopanelTop #panelRight { background-color: #252628; }
+
 #panel.dashtopanelMainPanel.dashtopanelTop .panel-button { text-shadow: black 0 1px 1px; }
 
 #panel.dashtopanelMainPanel.dashtopanelTop .panel-button:hover { background-color: rgba(255, 255, 255, 0.1); }
@@ -1033,6 +1035,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 #panel.dashtopanelMainPanel.dashtopanelTop .showdesktop-button { padding-right: 8px; }
 
 #panel.dashtopanelMainPanel.dashtopanelBottom { background-color: #252628; }
+
+#panel.dashtopanelMainPanel.dashtopanelBottom #panelLeft, #panel.dashtopanelMainPanel.dashtopanelBottom #panelCenter, #panel.dashtopanelMainPanel.dashtopanelBottom #panelRight { background-color: #252628; }
 
 #panel.dashtopanelMainPanel.dashtopanelBottom .panel-button { text-shadow: black 0 1px 1px; }
 

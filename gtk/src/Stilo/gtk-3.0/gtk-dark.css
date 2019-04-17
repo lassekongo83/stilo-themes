@@ -1127,6 +1127,22 @@ scale.fine-tune marks.top { margin-right: 1px; margin-left: -1px; }
 
 scale.fine-tune marks.bottom { margin-left: 1px; margin-right: -1px; }
 
+scale.horizontal marks.top { margin-bottom: 1px; margin-top: -4px; }
+
+scale.horizontal.fine-tune marks.top { margin-bottom: 1px; margin-top: -1px; }
+
+scale.horizontal marks.bottom { margin-top: 1px; margin-bottom: -4px; }
+
+scale.horizontal.fine-tune marks.bottom { margin-top: 1px; margin-bottom: -1px; }
+
+scale.vertical marks.top { margin-right: 1px; margin-left: -4px; }
+
+scale.vertical.fine-tune marks.top { margin-right: 1px; margin-left: -1px; }
+
+scale.vertical marks.bottom { margin-left: 1px; margin-right: -4px; }
+
+scale.vertical.fine-tune marks.bottom { margin-left: 1px; margin-right: -1px; }
+
 scale.horizontal indicator { min-height: 3px; min-width: 1px; }
 
 scale.horizontal.fine-tune indicator { min-height: 0px; }
@@ -1134,6 +1150,22 @@ scale.horizontal.fine-tune indicator { min-height: 0px; }
 scale.vertical indicator { min-height: 1px; min-width: 3px; }
 
 scale.vertical.fine-tune indicator { min-width: 0px; }
+
+scale.horizontal.marks-before:not(.marks-after) slider { margin: -11px -4px; padding: 0px; border-radius: 0; min-height: 22px; min-width: 9px; }
+
+scale.horizontal.marks-before:not(.marks-after).fine-tune slider { margin: -8px -4px; }
+
+scale.horizontal.marks-after:not(.marks-before) slider { margin: -11px -4px; padding: 0px; border-radius: 0; min-height: 22px; min-width: 9px; }
+
+scale.horizontal.marks-after:not(.marks-before).fine-tune slider { margin: -8px -4px; }
+
+scale.vertical.marks-before:not(.marks-after) slider { margin: -11px -4px; padding: 0px; border-radius: 0; margin: -4px -11px; min-height: 9px; min-width: 22px; }
+
+scale.vertical.marks-before:not(.marks-after).fine-tune slider { margin: -8px -4px; margin: -4px -8px; }
+
+scale.vertical.marks-after:not(.marks-before) slider { margin: -11px -4px; padding: 0px; border-radius: 0; margin: -4px -11px; min-height: 9px; min-width: 22px; }
+
+scale.vertical.marks-after:not(.marks-before).fine-tune slider { margin: -8px -4px; margin: -4px -8px; }
 
 scale.color { min-height: 0; min-width: 0; }
 
