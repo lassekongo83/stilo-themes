@@ -605,17 +605,19 @@ $entry_inner_shadow: inset 0 1px transparentize(black, 0.98), inset 0 2px transp
 
       > tabs {
         > tab {
-          @if ($po == top) or ($po == bottom) { box-shadow: inset -1px 0 $borders_color; }
-          @if ($po == left) or ($po == right) { box-shadow: inset 0 -1px $borders_color; }
-          &:hover { 
-            //box-shadow: inset 0 0 0 1px transparentize($light_selection_border, 0.5); //$bh;
-            @if ($po == top) or ($po == bottom) { box-shadow: inset -1px 0 transparentize($light_selection_border, 0.5); }
-            @if ($po == left) or ($po == right) { box-shadow: inset 0 -1px transparentize($light_selection_border, 0.5); }
+          @if ($po == top) or ($po == bottom) { border-right: 1px solid $borders_color; }
+          @if ($po == left) or ($po == right) { border-bottom: 1px solid $borders_color; }
+
+          &:hover {
             background-color: transparentize($light_selection, 0.5);
+            @if ($po == top) or ($po == bottom) { border-right: 1px solid $borders_color; }
+            @if ($po == left) or ($po == right) { border-bottom: 1px solid $borders_color; }
           }
+
           &:checked, &:checked:hover {
             background-color: $secondary_bg_color;
-            border-width: 0;
+            @if ($po == top) or ($po == bottom) { border-right: 1px solid $borders_color; }
+            @if ($po == left) or ($po == right) { border-bottom: 1px solid $borders_color; }
             box-shadow: $ba;
           }
         }
