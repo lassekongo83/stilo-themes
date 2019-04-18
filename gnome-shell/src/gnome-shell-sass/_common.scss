@@ -179,11 +179,8 @@ StScrollBar {
   width: 52px;
   height: 24px;
   background-size: contain;
-
-  &-us, &-intl {
-    background-image: url("switch-off.svg");
-    &:checked { background-image: url("switch-on.svg"); }
-  }
+  background-image: url("switch-off.svg");
+  &:checked { background-image: url("switch-on.svg"); }
 }
 
 // links

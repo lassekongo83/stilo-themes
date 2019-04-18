@@ -18,6 +18,8 @@ $dock_color: transparentize(black, 0.3);
   #panel.dashtopanelMainPanel.dashtopanel#{$d} {
     background-color: $panel_color; // Not used in 3.32+
 
+    //#panelLeft, #panelCenter, #panelRight {} // in case a custom background color/gradient is wanted
+
     .panel-button {
       &:hover { background-color: transparentize(white,0.9); }
       &:active, &:overview, &:focus { background-color: $selected_bg_color; }

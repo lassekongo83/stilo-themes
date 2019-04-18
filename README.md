@@ -8,7 +8,7 @@ These themes are still in development. Things may change.
 - GNOME Shell 3.30+
 - GTK 3.24.6+
 
-<sub>It's possible that some parts of the theme will work with earlier versions. No fixes will however be made for earlier versions.</sub>
+<sub>It's possible that some parts of the theme will work with earlier versions. I can't guarantee that things will look as intended on older versions.</sub>
 
 Some or all of these packages may already be installed by default on some distros.
 
