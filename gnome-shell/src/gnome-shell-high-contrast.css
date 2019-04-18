@@ -272,6 +272,8 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .osd-window .level { height: 0.6em; -barlevel-height: 0.6em; -barlevel-background-color: rgba(11, 12, 13, 0.5); -barlevel-active-background-color: #eeeeec; -barlevel-overdrive-color: #d51010; -barlevel-overdrive-separator-width: 0.2em; }
 
+.osd-window .level-bar { background-color: rgba(11, 12, 13, 0.5); border-radius: 0.3em; }
+
 .pad-osd-window { padding: 32px; background-color: rgba(0, 0, 0, 0.8); }
 
 .pad-osd-window .pad-osd-title-box { spacing: 12px; }
@@ -978,8 +980,6 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 #panel.dashtopanelMainPanel.dashtopanelTop { background-color: #252628; }
 
-#panel.dashtopanelMainPanel.dashtopanelTop #panelLeft, #panel.dashtopanelMainPanel.dashtopanelTop #panelCenter, #panel.dashtopanelMainPanel.dashtopanelTop #panelRight { background-color: #252628; }
-
 #panel.dashtopanelMainPanel.dashtopanelTop .panel-button { text-shadow: black 0 1px 1px; }
 
 #panel.dashtopanelMainPanel.dashtopanelTop .panel-button:hover { background-color: rgba(255, 255, 255, 0.1); }
@@ -1035,8 +1035,6 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 #panel.dashtopanelMainPanel.dashtopanelTop .showdesktop-button { padding-right: 8px; }
 
 #panel.dashtopanelMainPanel.dashtopanelBottom { background-color: #252628; }
-
-#panel.dashtopanelMainPanel.dashtopanelBottom #panelLeft, #panel.dashtopanelMainPanel.dashtopanelBottom #panelCenter, #panel.dashtopanelMainPanel.dashtopanelBottom #panelRight { background-color: #252628; }
 
 #panel.dashtopanelMainPanel.dashtopanelBottom .panel-button { text-shadow: black 0 1px 1px; }
 
