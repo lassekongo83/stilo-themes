@@ -2194,8 +2194,14 @@ scrollbar {
   }
 
   //background-color: $scrollbar_bg_color;
-  &.vertical, &.vertical button { background: linear-gradient(to right, darken($scrollbar_bg_color, 8%), $scrollbar_bg_color); }
-  &.horizontal, &.horizontal button { background: linear-gradient(to bottom, darken($scrollbar_bg_color, 8%), $scrollbar_bg_color); }
+  &.vertical, &.vertical button {
+    background: if($variant == 'light', linear-gradient(to right, darken($scrollbar_bg_color, 8%), $scrollbar_bg_color),
+                                        linear-gradient(to right, darken($scrollbar_bg_color, 3%), $scrollbar_bg_color));
+  }
+  &.horizontal, &.horizontal button {
+    background: if($variant == 'light', linear-gradient(to bottom, darken($scrollbar_bg_color, 8%), $scrollbar_bg_color),
+                                        linear-gradient(to bottom, darken($scrollbar_bg_color, 3%), $scrollbar_bg_color));
+  }
   border-width: 0;
 
   // slider

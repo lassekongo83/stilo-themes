@@ -469,7 +469,7 @@ searchbar > revealer > box { margin: -6px; padding: 6px; }
 
 .inline-toolbar, searchbar > revealer > box, .location-bar { background-color: #161717; }
 
-.titlebar:not(headerbar), headerbar { padding: 0 4px; min-height: 38px; border-width: 0; border-style: solid; border-color: #1c1c1e; background: #252628 linear-gradient(to top, #252628, #2f3033); box-shadow: inset 0 1px rgba(65, 68, 71, 0.3); }
+.titlebar:not(headerbar), headerbar { padding: 0 4px; min-height: 38px; border-width: 0; border-style: solid; border-color: #1c1c1e; background: #282a2c linear-gradient(to top, #282a2c, #343739); box-shadow: inset 0 1px rgba(65, 68, 71, 0.3); }
 
 .titlebar:backdrop:not(headerbar), headerbar:backdrop { border-color: #1c1c1e; color: #929395; }
 
@@ -477,7 +477,7 @@ searchbar > revealer > box { margin: -6px; padding: 6px; }
 
 .titlebar:not(headerbar) .subtitle, headerbar .subtitle { font-size: smaller; padding-left: 12px; padding-right: 12px; }
 
-.selection-mode .titlebar:not(headerbar), .selection-mode.titlebar:not(headerbar), .selection-mode headerbar, headerbar.selection-mode { color: #ffffff; text-shadow: 0 -1px rgba(0, 0, 0, 0.5); border-color: #1e3965; background: #3665b3 linear-gradient(to top, #3665b3, #3b6ec3); box-shadow: inset 0 1px #3b557d; }
+.selection-mode .titlebar:not(headerbar), .selection-mode.titlebar:not(headerbar), .selection-mode headerbar, headerbar.selection-mode { color: #ffffff; text-shadow: 0 -1px rgba(0, 0, 0, 0.5); border-color: #1e3965; background: #3665b3 linear-gradient(to top, #3665b3, #3e71c5); box-shadow: inset 0 1px #3b557d; }
 
 .selection-mode .titlebar:backdrop:not(headerbar), .selection-mode.titlebar:backdrop:not(headerbar), .selection-mode headerbar:backdrop, headerbar.selection-mode:backdrop { background-color: #3665b3; background-image: none; box-shadow: inset 0 1px #3c5172; }
 
@@ -531,7 +531,7 @@ searchbar > revealer > box { margin: -6px; padding: 6px; }
 
 .titlebar:not(headerbar) separator, headerbar separator { background-color: transparent; }
 
-.titlebar:not(headerbar) separator:backdrop, headerbar separator:backdrop { background: #252628 linear-gradient(to top, #252628, #2f3033); box-shadow: inset 0 1px rgba(65, 68, 71, 0.3); }
+.titlebar:not(headerbar) separator:backdrop, headerbar separator:backdrop { background: #282a2c linear-gradient(to top, #282a2c, #343739); box-shadow: inset 0 1px rgba(65, 68, 71, 0.3); }
 
 .titlebar:not(headerbar) separator.titlebutton, headerbar separator.titlebutton { opacity: 0; }
 
@@ -599,7 +599,7 @@ window.tiled headerbar, window.tiled headerbar:first-child, window.tiled headerb
 
 window.csd > .titlebar:not(headerbar) { padding: 0; background-color: transparent; background-image: none; border-style: none; border-color: transparent; box-shadow: none; }
 
-.titlebar:not(headerbar) separator { background: #252628 linear-gradient(to top, #252628, #2f3033); box-shadow: inset 0 1px rgba(65, 68, 71, 0.3); }
+.titlebar:not(headerbar) separator { background: #282a2c linear-gradient(to top, #282a2c, #343739); box-shadow: inset 0 1px rgba(65, 68, 71, 0.3); }
 
 filechooser .path-bar.linked > button { border-color: transparent; background-color: transparent; background-image: none; box-shadow: none; box-shadow: inset 0 1px rgba(255, 255, 255, 0), 0 1px rgba(246, 246, 247, 0); text-shadow: none; -gtk-icon-shadow: none; border-radius: 2px; margin: 0 2px; }
 
@@ -745,7 +745,7 @@ popover.background list separator { margin: 0px; }
 
 notebook { padding: 0; }
 
-notebook > header { padding: 0; border-color: #1c1c1e; border-width: 0; background: linear-gradient(to bottom, #282a2c, #151617); padding-top: 1px; padding-right: 1px; padding-bottom: 1px; padding-left: 1px; }
+notebook > header { padding: 0; border-color: #1c1c1e; border-width: 0; background: #252628; padding-top: 1px; padding-right: 1px; padding-bottom: 1px; padding-left: 1px; }
 
 notebook > header.top tabs, notebook > header.bottom tabs { margin: -1px 0 -1px 1px; }
 
@@ -871,9 +871,9 @@ scrollbar { border-width: 0; }
 
 * { -GtkScrollbar-has-backward-stepper: true; -GtkScrollbar-has-forward-stepper: true; }
 
-scrollbar.vertical, scrollbar.vertical button { background: linear-gradient(to right, #232527, #373a3c); }
+scrollbar.vertical, scrollbar.vertical button { background: linear-gradient(to right, #303234, #373a3c); }
 
-scrollbar.horizontal, scrollbar.horizontal button { background: linear-gradient(to bottom, #232527, #373a3c); }
+scrollbar.horizontal, scrollbar.horizontal button { background: linear-gradient(to bottom, #303234, #373a3c); }
 
 scrollbar slider { min-width: 8px; min-height: 8px; margin: -1px; border: 4px solid transparent; border-radius: 8px; background-clip: padding-box; background-color: #929395; transition: background-color 250ms; }
 
@@ -1339,7 +1339,7 @@ calendar.highlight { color: #929395; }
 
 calendar:indeterminate { color: alpha(currentColor,0.1); }
 
-messagedialog .titlebar { min-height: 20px; background-image: none; background-color: #2e3032; border-style: none; border-top-left-radius: 5px; border-top-right-radius: 5px; background: #252628 linear-gradient(to top, #252628, #2f3033); box-shadow: inset 0 1px rgba(65, 68, 71, 0.3); }
+messagedialog .titlebar { min-height: 20px; background-image: none; background-color: #2e3032; border-style: none; border-top-left-radius: 5px; border-top-right-radius: 5px; background: #282a2c linear-gradient(to top, #282a2c, #343739); box-shadow: inset 0 1px rgba(65, 68, 71, 0.3); }
 
 messagedialog.csd.background { border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; }
 
@@ -1557,7 +1557,7 @@ messagedialog.csd decoration { border-radius: 5px; box-shadow: 0 1px 2px rgba(0,
 
 .ssd .titlebar.default-decoration button.titlebutton, headerbar button.titlebutton, .titlebar button.titlebutton, #MozillaGtkWidget.background.default-decoration button.titlebutton, #MozillaGtkWidget.background headerbar.titlebar button.titlebutton { min-width: 30px; min-height: 20px; padding: 0; margin: 2px; border-radius: 1.5px; }
 
-.ssd .titlebar { border-width: 0; background: #252628 linear-gradient(to top, #252628, #2f3033); box-shadow: inset 0 1px rgba(65, 68, 71, 0.3); box-shadow: inset 0 -1px #1c1c1e, inset 0 1px rgba(65, 68, 71, 0.3); padding: 2px 4px; }
+.ssd .titlebar { border-width: 0; background: #282a2c linear-gradient(to top, #282a2c, #343739); box-shadow: inset 0 1px rgba(65, 68, 71, 0.3); box-shadow: inset 0 -1px #1c1c1e, inset 0 1px rgba(65, 68, 71, 0.3); padding: 2px 4px; }
 
 .ssd .titlebar.default-decoration button.titlebutton { transition-duration: 100ms; }
 

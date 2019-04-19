@@ -23,11 +23,11 @@
        inkscape:collect="always"
        id="linearGradient2425">
       <stop
-         style="stop-color:#242628;stop-opacity:1"
+         style="stop-color:#303234;stop-opacity:1"
          offset="0"
          id="stop2421" />
       <stop
-         style="stop-color:#36393b;stop-opacity:1"
+         style="stop-color:#373a3c;stop-opacity:1"
          offset="1"
          id="stop2423" />
     </linearGradient>
@@ -35,11 +35,11 @@
        inkscape:collect="always"
        id="linearGradient2417">
       <stop
-         style="stop-color:#242628;stop-opacity:1"
+         style="stop-color:#303234;stop-opacity:1"
          offset="0"
          id="stop2413" />
       <stop
-         style="stop-color:#36393b;stop-opacity:1"
+         style="stop-color:#373a3c;stop-opacity:1"
          offset="1"
          id="stop2415" />
     </linearGradient>
@@ -210,9 +210,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="26.47087"
-     inkscape:cy="28.50398"
+     inkscape:zoom="22.627417"
+     inkscape:cx="26.469773"
+     inkscape:cy="23.31823"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
