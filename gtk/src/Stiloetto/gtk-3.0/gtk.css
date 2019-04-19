@@ -477,7 +477,7 @@ searchbar > revealer > box { margin: -6px; padding: 6px; }
 
 .inline-toolbar, searchbar > revealer > box, .location-bar { background-color: #c8c8ca; }
 
-.titlebar:not(headerbar), headerbar { padding: 0 4px; min-height: 38px; border-width: 0; border-style: solid; border-color: #bebec0; background: #dadadb linear-gradient(to top, #d5d5d6, #e2e2e3); box-shadow: inset 0 1px rgba(255, 255, 255, 0.3); }
+.titlebar:not(headerbar), headerbar { padding: 0 4px; min-height: 38px; border-width: 0; border-style: solid; border-color: #bebec0; background: #dadadb linear-gradient(to top, #d5d5d6, #e7e7e8); box-shadow: inset 0 1px rgba(255, 255, 255, 0.3); }
 
 .titlebar:backdrop:not(headerbar), headerbar:backdrop { border-color: #bebec0; color: #8f8f90; }
 
@@ -485,7 +485,7 @@ searchbar > revealer > box { margin: -6px; padding: 6px; }
 
 .titlebar:not(headerbar) .subtitle, headerbar .subtitle { font-size: smaller; padding-left: 12px; padding-right: 12px; }
 
-.selection-mode .titlebar:not(headerbar), .selection-mode.titlebar:not(headerbar), .selection-mode headerbar, headerbar.selection-mode { color: #ffffff; text-shadow: 0 -1px rgba(0, 0, 0, 0.5); border-color: #1e3965; background: #3665b3 linear-gradient(to top, #3461ab, #3a6cbf); box-shadow: inset 0 1px #9bb2d9; }
+.selection-mode .titlebar:not(headerbar), .selection-mode.titlebar:not(headerbar), .selection-mode headerbar, headerbar.selection-mode { color: #ffffff; text-shadow: 0 -1px rgba(0, 0, 0, 0.5); border-color: #1e3965; background: #3665b3 linear-gradient(to top, #3461ab, #3e71c5); box-shadow: inset 0 1px #9bb2d9; }
 
 .selection-mode .titlebar:backdrop:not(headerbar), .selection-mode.titlebar:backdrop:not(headerbar), .selection-mode headerbar:backdrop, headerbar.selection-mode:backdrop { background-color: #3665b3; background-image: none; box-shadow: inset 0 1px #afc1e1; }
 
@@ -539,7 +539,7 @@ searchbar > revealer > box { margin: -6px; padding: 6px; }
 
 .titlebar:not(headerbar) separator, headerbar separator { background-color: transparent; }
 
-.titlebar:not(headerbar) separator:backdrop, headerbar separator:backdrop { background: #dadadb linear-gradient(to top, #d5d5d6, #e2e2e3); box-shadow: inset 0 1px rgba(255, 255, 255, 0.3); }
+.titlebar:not(headerbar) separator:backdrop, headerbar separator:backdrop { background: #dadadb linear-gradient(to top, #d5d5d6, #e7e7e8); box-shadow: inset 0 1px rgba(255, 255, 255, 0.3); }
 
 .titlebar:not(headerbar) separator.titlebutton, headerbar separator.titlebutton { opacity: 0; }
 
@@ -607,7 +607,7 @@ window.tiled headerbar, window.tiled headerbar:first-child, window.tiled headerb
 
 window.csd > .titlebar:not(headerbar) { padding: 0; background-color: transparent; background-image: none; border-style: none; border-color: transparent; box-shadow: none; }
 
-.titlebar:not(headerbar) separator { background: #dadadb linear-gradient(to top, #d5d5d6, #e2e2e3); box-shadow: inset 0 1px rgba(255, 255, 255, 0.3); }
+.titlebar:not(headerbar) separator { background: #dadadb linear-gradient(to top, #d5d5d6, #e7e7e8); box-shadow: inset 0 1px rgba(255, 255, 255, 0.3); }
 
 filechooser .path-bar.linked > button { border-color: transparent; background-color: transparent; background-image: none; box-shadow: none; box-shadow: inset 0 1px rgba(255, 255, 255, 0), 0 1px rgba(255, 255, 255, 0); text-shadow: none; -gtk-icon-shadow: none; border-radius: 2px; margin: 0 2px; }
 
@@ -753,19 +753,19 @@ popover.background list separator { margin: 0px; }
 
 notebook { padding: 0; }
 
-notebook > header { padding: 0; border-color: #bebec0; border-width: 0; background: linear-gradient(to bottom, #cdcdcf, #c5c5c7); padding-top: 1px; padding-right: 1px; padding-bottom: 1px; padding-left: 1px; }
+notebook > header { padding: 0; border-color: #bebec0; border-width: 0; background: linear-gradient(to bottom, #c8c8ca, #b3b3b6); padding-top: 1px; padding-right: 1px; padding-bottom: 1px; padding-left: 1px; }
 
-notebook > header.top tabs, notebook > header.bottom tabs { margin: -1px 0 -1px 0; }
+notebook > header.top tabs, notebook > header.bottom tabs { margin: -1px 0 -1px 1px; }
 
-notebook > header.right tabs, notebook > header.left tabs { margin: 0 -1px 0 -1px; }
+notebook > header.right tabs, notebook > header.left tabs { margin: 1px -1px 0 -1px; }
 
 notebook > header.top { box-shadow: inset 0 -1px #bebec0, inset 0 2px rgba(0, 0, 0, 0.02), inset 0 1px rgba(0, 0, 0, 0.04); }
 
-notebook > header.top > tabs > tab { border-right: 1px solid #bebec0; }
+notebook > header.top > tabs > tab { border-right: 1px solid rgba(0, 0, 0, 0.1); }
 
-notebook > header.top > tabs > tab:hover { background-color: rgba(179, 199, 232, 0.5); border-right: 1px solid #bebec0; }
+notebook > header.top > tabs > tab:hover { background-color: rgba(179, 199, 232, 0.5); border-right: 1px solid rgba(0, 0, 0, 0.1); }
 
-notebook > header.top > tabs > tab:checked, notebook > header.top > tabs > tab:checked:hover { background-color: #f1f1f1; border-right: 1px solid #bebec0; box-shadow: inset 0 1px #3665b3; }
+notebook > header.top > tabs > tab:checked, notebook > header.top > tabs > tab:checked:hover { background-color: #f1f1f1; border-right: 1px solid transparent; box-shadow: -1px 0 #f1f1f1; }
 
 notebook > header.top > tabs > arrow { border-style: none; }
 
@@ -773,11 +773,11 @@ notebook > header.top { padding-left: 0; padding-right: 0; }
 
 notebook > header.right { box-shadow: inset 1px 0 #bebec0, inset -2px 0 rgba(0, 0, 0, 0.02), inset -1px 0 rgba(0, 0, 0, 0.04); }
 
-notebook > header.right > tabs > tab { border-bottom: 1px solid #bebec0; }
+notebook > header.right > tabs > tab { border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
 
-notebook > header.right > tabs > tab:hover { background-color: rgba(179, 199, 232, 0.5); border-bottom: 1px solid #bebec0; }
+notebook > header.right > tabs > tab:hover { background-color: rgba(179, 199, 232, 0.5); border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
 
-notebook > header.right > tabs > tab:checked, notebook > header.right > tabs > tab:checked:hover { background-color: #f1f1f1; border-bottom: 1px solid #bebec0; box-shadow: inset -1px 0 #3665b3; }
+notebook > header.right > tabs > tab:checked, notebook > header.right > tabs > tab:checked:hover { background-color: #f1f1f1; border-bottom: 1px solid transparent; box-shadow: 0 -1px #f1f1f1; }
 
 notebook > header.right > tabs > arrow { border-style: none; }
 
@@ -785,11 +785,11 @@ notebook > header.right { padding-top: 0; padding-bottom: 0; }
 
 notebook > header.bottom { box-shadow: inset 0 1px #bebec0, inset 0 -2px rgba(0, 0, 0, 0.02), inset 0 -1px rgba(0, 0, 0, 0.04); }
 
-notebook > header.bottom > tabs > tab { border-right: 1px solid #bebec0; }
+notebook > header.bottom > tabs > tab { border-right: 1px solid rgba(0, 0, 0, 0.1); }
 
-notebook > header.bottom > tabs > tab:hover { background-color: rgba(179, 199, 232, 0.5); border-right: 1px solid #bebec0; }
+notebook > header.bottom > tabs > tab:hover { background-color: rgba(179, 199, 232, 0.5); border-right: 1px solid rgba(0, 0, 0, 0.1); }
 
-notebook > header.bottom > tabs > tab:checked, notebook > header.bottom > tabs > tab:checked:hover { background-color: #f1f1f1; border-right: 1px solid #bebec0; box-shadow: inset 0 -1px #3665b3; }
+notebook > header.bottom > tabs > tab:checked, notebook > header.bottom > tabs > tab:checked:hover { background-color: #f1f1f1; border-right: 1px solid transparent; box-shadow: -1px 0 #f1f1f1; }
 
 notebook > header.bottom > tabs > arrow { border-style: none; }
 
@@ -797,11 +797,11 @@ notebook > header.bottom { padding-left: 0; padding-right: 0; }
 
 notebook > header.left { box-shadow: inset -1px 0 #bebec0, inset 2px 0 rgba(0, 0, 0, 0.02), inset 1px 0 rgba(0, 0, 0, 0.04); }
 
-notebook > header.left > tabs > tab { border-bottom: 1px solid #bebec0; }
+notebook > header.left > tabs > tab { border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
 
-notebook > header.left > tabs > tab:hover { background-color: rgba(179, 199, 232, 0.5); border-bottom: 1px solid #bebec0; }
+notebook > header.left > tabs > tab:hover { background-color: rgba(179, 199, 232, 0.5); border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
 
-notebook > header.left > tabs > tab:checked, notebook > header.left > tabs > tab:checked:hover { background-color: #f1f1f1; border-bottom: 1px solid #bebec0; box-shadow: inset 1px 0 #3665b3; }
+notebook > header.left > tabs > tab:checked, notebook > header.left > tabs > tab:checked:hover { background-color: #f1f1f1; border-bottom: 1px solid transparent; box-shadow: 0 -1px #f1f1f1; }
 
 notebook > header.left > tabs > arrow { border-style: none; }
 
@@ -1349,7 +1349,7 @@ calendar.highlight { color: #8f8f90; }
 
 calendar:indeterminate { color: alpha(currentColor,0.1); }
 
-messagedialog .titlebar { min-height: 20px; background-image: none; background-color: #e2e2e3; border-style: none; border-top-left-radius: 5px; border-top-right-radius: 5px; background: #dadadb linear-gradient(to top, #d5d5d6, #e2e2e3); box-shadow: inset 0 1px rgba(255, 255, 255, 0.3); }
+messagedialog .titlebar { min-height: 20px; background-image: none; background-color: #e2e2e3; border-style: none; border-top-left-radius: 5px; border-top-right-radius: 5px; background: #dadadb linear-gradient(to top, #d5d5d6, #e7e7e8); box-shadow: inset 0 1px rgba(255, 255, 255, 0.3); }
 
 messagedialog.csd.background { border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; }
 
@@ -1567,7 +1567,7 @@ messagedialog.csd decoration { border-radius: 5px; box-shadow: 0 1px 2px rgba(0,
 
 .ssd .titlebar.default-decoration button.titlebutton, headerbar button.titlebutton, .titlebar button.titlebutton, #MozillaGtkWidget.background.default-decoration button.titlebutton, #MozillaGtkWidget.background headerbar.titlebar button.titlebutton { min-width: 30px; min-height: 20px; padding: 0; margin: 2px; border-radius: 1.5px; }
 
-.ssd .titlebar { border-width: 0; background: #dadadb linear-gradient(to top, #d5d5d6, #e2e2e3); box-shadow: inset 0 1px rgba(255, 255, 255, 0.3); box-shadow: inset 0 -1px #bebec0, inset 0 1px rgba(255, 255, 255, 0.3); padding: 2px 4px; }
+.ssd .titlebar { border-width: 0; background: #dadadb linear-gradient(to top, #d5d5d6, #e7e7e8); box-shadow: inset 0 1px rgba(255, 255, 255, 0.3); box-shadow: inset 0 -1px #bebec0, inset 0 1px rgba(255, 255, 255, 0.3); padding: 2px 4px; }
 
 .ssd .titlebar.default-decoration button.titlebutton { transition-duration: 100ms; }
 
