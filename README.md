@@ -8,9 +8,9 @@ These themes are still in development. Things may change.
 - GNOME Shell 3.30+
 - GTK 3.24.6+
 
-<sub>It's possible that some parts of the theme will work with earlier versions. I can't guarantee that things will look as intended on older versions.</sub>
+<sub>I can't guarantee that the themes will look as intended on older versions.</sub>
 
-Some or all of these packages may already be installed by default on some distros.
+Some of these packages may already be installed by default on some distros.
 
 * Debian/Ubuntu/Mint - `apt install gtk2-engines-murrine gtk2-engines-pixbuf fonts-roboto ninja-build git meson sassc`
 * Arch/Manjaro/Antergos - `pacman -S gtk-engine-murrine gtk-engines ttf-roboto ninja git meson sassc`

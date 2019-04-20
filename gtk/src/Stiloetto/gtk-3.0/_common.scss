@@ -474,7 +474,7 @@ button {
       transition: none;
     }
 
-    &.default { 
+    &.default {
       @include button(focus);
     }
 
@@ -2193,7 +2193,6 @@ scrollbar {
     -GtkScrollbar-has-forward-stepper: true;
   }
 
-  //background-color: $scrollbar_bg_color;
   &.vertical, &.vertical button {
     background: if($variant == 'light', linear-gradient(to right, darken($scrollbar_bg_color, 8%), $scrollbar_bg_color),
                                         linear-gradient(to right, darken($scrollbar_bg_color, 3%), $scrollbar_bg_color));
@@ -2699,18 +2698,21 @@ scale {
 
   slider {
     transition: all 100ms $deceleration_curve, box-shadow $shorter_duration $deceleration_curve;
-    //@include button(normal);
-    background-color: $base_color;
-    box-shadow: 0 0 0 2px $borders_color;
+    @include button(normal);
+    border: 1px solid transparentize(black,0.5);
+    box-shadow: none;
 
     border-radius: 100%;
 
-    &:hover { 
+    &:hover {
       @include button(hover);
       box-shadow: 0 0 0 6px transparentize($selected_bg_color, 0.7);
     }
 
-    &:active { border-color: $selected_borders_color; }
+    &:active, &:checked {
+      border-color: if($variant == 'light', $selected_borders_color, transparentize(black,0.5));
+      box-shadow: none;
+    }
 
     &:disabled { @include button (insensitive); }
 
@@ -2969,7 +2971,7 @@ progressbar {
   // sizing
   &.horizontal {
     trough,
-    progress { 
+    progress {
       min-height: 6px;
       border-style: none;
       box-shadow: none;
@@ -2978,7 +2980,7 @@ progressbar {
 
   &.vertical {
     trough,
-    progress { 
+    progress {
       min-height: 6px;
       border-style: none;
       box-shadow: none;
@@ -3809,7 +3811,7 @@ decoration {
   $_wm_border: if($variant=='light', transparentize(black, 0.77), transparentize($borders_color, 0.1));
   $_wm_border_backdrop: if($variant=='light', transparentize(black, 0.82), transparentize($borders_color, 0.1));
 
-  box-shadow: 0 4px 4px 3px transparentize(black, 0.66);
+  box-shadow: 0 4px 5px 2px transparentize(black, 0.66);
 
   // FIXME rationalize shadows
 
@@ -3821,7 +3823,7 @@ decoration {
     // change when we go to backdrop, to prevent jumping windows.
     // The biggest shadow should be in the same order then in the active state
     // or the jumping will happen during the transition.
-    box-shadow: 0 4px 4px 3px transparent,
+    box-shadow: 0 4px 5px 2px transparent,
                 0 1px 2px 1px transparentize(black, 0.8);
   }
 
@@ -3971,7 +3973,10 @@ headerbar,
         }
       }
     }
-    @if variant=='dark' or $dark_header=='true' { &:backdrop:not(:hover) { opacity: 0.5; } }
+    @if variant=='dark' or $dark_header=='true' {
+      &:not(:hover) { opacity: 0.8; } // slightly reduce the opacity of the otherwise very bright color in the dark theme
+      &:backdrop:not(:hover) { opacity: 0.5; }
+    }
   }
   // Unmaximize
   .maximized & {
@@ -3988,7 +3993,10 @@ headerbar,
           }
         }
       }
-      @if variant=='dark' or $dark_header=='true' { &:backdrop:not(:hover) { opacity: 0.5; } }
+      @if variant=='dark' or $dark_header=='true' {
+        &:not(:hover) { opacity: 0.8; } // slightly reduce the opacity of the otherwise very bright color in the dark theme
+        &:backdrop:not(:hover) { opacity: 0.5; }
+      }
     }
   }
 }
@@ -3997,7 +4005,7 @@ headerbar,
 
 %selected_items {
   background-color: $selected_bg_color;
-  &:backdrop { background-color: transparentize($selected_bg_color, 0.4); }
+  &:backdrop { background-color: transparentize($selected_bg_color, 0.3); }
 
   @at-root %nobg_selected_items, & {
     color: $selected_fg_color;

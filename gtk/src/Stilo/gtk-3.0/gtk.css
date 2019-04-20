@@ -761,9 +761,9 @@ notebook > header.right tabs, notebook > header.left tabs { margin: 1px -1px 0 -
 
 notebook > header.top { box-shadow: inset 0 -1px #c3c3c5, inset 0 2px rgba(0, 0, 0, 0.02), inset 0 1px rgba(0, 0, 0, 0.04); }
 
-notebook > header.top > tabs > tab { border-right: 1px solid #b8b8bb; }
+notebook > header.top > tabs > tab { border-right: 1px solid rgba(0, 0, 0, 0.1); }
 
-notebook > header.top > tabs > tab:hover { background-color: rgba(179, 199, 232, 0.5); border-right: 1px solid #b8b8bb; }
+notebook > header.top > tabs > tab:hover { background-color: rgba(0, 0, 0, 0.04); border-right: 1px solid rgba(0, 0, 0, 0.1); }
 
 notebook > header.top > tabs > tab:checked, notebook > header.top > tabs > tab:checked:hover { background-color: #f1f1f1; border-right: 1px solid transparent; box-shadow: -1px 0 #f1f1f1; }
 
@@ -773,9 +773,9 @@ notebook > header.top { padding-left: 0; padding-right: 0; }
 
 notebook > header.right { box-shadow: inset 1px 0 #c3c3c5, inset -2px 0 rgba(0, 0, 0, 0.02), inset -1px 0 rgba(0, 0, 0, 0.04); }
 
-notebook > header.right > tabs > tab { border-bottom: 1px solid #b8b8bb; }
+notebook > header.right > tabs > tab { border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
 
-notebook > header.right > tabs > tab:hover { background-color: rgba(179, 199, 232, 0.5); border-bottom: 1px solid #b8b8bb; }
+notebook > header.right > tabs > tab:hover { background-color: rgba(0, 0, 0, 0.04); border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
 
 notebook > header.right > tabs > tab:checked, notebook > header.right > tabs > tab:checked:hover { background-color: #f1f1f1; border-bottom: 1px solid transparent; box-shadow: 0 -1px #f1f1f1; }
 
@@ -785,9 +785,9 @@ notebook > header.right { padding-top: 0; padding-bottom: 0; }
 
 notebook > header.bottom { box-shadow: inset 0 1px #c3c3c5, inset 0 -2px rgba(0, 0, 0, 0.02), inset 0 -1px rgba(0, 0, 0, 0.04); }
 
-notebook > header.bottom > tabs > tab { border-right: 1px solid #b8b8bb; }
+notebook > header.bottom > tabs > tab { border-right: 1px solid rgba(0, 0, 0, 0.1); }
 
-notebook > header.bottom > tabs > tab:hover { background-color: rgba(179, 199, 232, 0.5); border-right: 1px solid #b8b8bb; }
+notebook > header.bottom > tabs > tab:hover { background-color: rgba(0, 0, 0, 0.04); border-right: 1px solid rgba(0, 0, 0, 0.1); }
 
 notebook > header.bottom > tabs > tab:checked, notebook > header.bottom > tabs > tab:checked:hover { background-color: #f1f1f1; border-right: 1px solid transparent; box-shadow: -1px 0 #f1f1f1; }
 
@@ -797,9 +797,9 @@ notebook > header.bottom { padding-left: 0; padding-right: 0; }
 
 notebook > header.left { box-shadow: inset -1px 0 #c3c3c5, inset 2px 0 rgba(0, 0, 0, 0.02), inset 1px 0 rgba(0, 0, 0, 0.04); }
 
-notebook > header.left > tabs > tab { border-bottom: 1px solid #b8b8bb; }
+notebook > header.left > tabs > tab { border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
 
-notebook > header.left > tabs > tab:hover { background-color: rgba(179, 199, 232, 0.5); border-bottom: 1px solid #b8b8bb; }
+notebook > header.left > tabs > tab:hover { background-color: rgba(0, 0, 0, 0.04); border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
 
 notebook > header.left > tabs > tab:checked, notebook > header.left > tabs > tab:checked:hover { background-color: #f1f1f1; border-bottom: 1px solid transparent; box-shadow: 0 -1px #f1f1f1; }
 
@@ -1097,11 +1097,11 @@ scale fill:disabled { border-color: transparent; background-color: transparent; 
 
 .osd scale fill:disabled { border-color: transparent; background-color: transparent; }
 
-scale slider { transition: all 100ms cubic-bezier(0, 0, 0.2, 1), box-shadow 150ms cubic-bezier(0, 0, 0.2, 1); background-color: #FFFFFF; box-shadow: 0 0 0 2px #c3c3c5; border-radius: 100%; }
+scale slider { transition: all 100ms cubic-bezier(0, 0, 0.2, 1), box-shadow 150ms cubic-bezier(0, 0, 0.2, 1); color: #3C3C3C; outline-color: rgba(60, 60, 60, 0.3); background-color: #f9f9fa; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(0, 0, 0, 0.16); border-color: transparent; border: 1px solid rgba(0, 0, 0, 0.5); box-shadow: none; border-radius: 100%; }
 
 scale slider:hover { color: #3C3C3C; background-color: white; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.4); box-shadow: 0 0 0 6px rgba(54, 101, 179, 0.3); }
 
-scale slider:active { border-color: #1e3965; }
+scale slider:active, scale slider:checked { border-color: #1e3965; box-shadow: none; }
 
 scale slider:disabled { color: #8f8f90; background-color: #d1d1d2; text-shadow: none; -gtk-icon-shadow: none; box-shadow: none; border-color: transparent; }
 
@@ -1543,9 +1543,9 @@ colorchooser .popover.osd { border-radius: 0; }
 
 .scale-popup button:hover { background-color: rgba(60, 60, 60, 0.1); border-radius: 0; }
 
-decoration { border-radius: 0 0 0 0; border-width: 0px; box-shadow: 0 4px 4px 3px rgba(0, 0, 0, 0.34); margin: 10px; }
+decoration { border-radius: 0 0 0 0; border-width: 0px; box-shadow: 0 4px 5px 2px rgba(0, 0, 0, 0.34); margin: 10px; }
 
-decoration:backdrop { box-shadow: 0 4px 4px 3px transparent, 0 1px 2px 1px rgba(0, 0, 0, 0.2); }
+decoration:backdrop { box-shadow: 0 4px 5px 2px transparent, 0 1px 2px 1px rgba(0, 0, 0, 0.2); }
 
 .maximized decoration, .fullscreen decoration, .tiled decoration, .tiled-top decoration, .tiled-right decoration, .tiled-bottom decoration, .tiled-left decoration { border-radius: 0; }
 
@@ -1631,7 +1631,7 @@ headerbar button.titlebutton.minimize:active, .titlebar button.titlebutton.minim
 
 .view:selected, iconview:selected, .view text:selected, iconview text:selected, textview text:selected, .nautilus-window notebook:selected, .nautilus-window notebook > stack:not(:only-child) searchbar:selected, .view text selection:focus, iconview text selection:focus, .view text selection, iconview text selection, textview text selection:focus, textview text selection, flowbox flowboxchild:selected, spinbutton:not(.vertical) selection, entry selection, modelbutton.flat:selected, popover.background checkbutton:selected, popover.background radiobutton:selected, .menuitem.button.flat:selected, treeview.view:selected:focus, treeview.view:selected, row:selected, calendar:selected, .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected { background-color: #3665b3; }
 
-.view:backdrop:selected, iconview:backdrop:selected, .view text:backdrop:selected, iconview text:backdrop:selected, textview text:backdrop:selected, .nautilus-window notebook:backdrop:selected, .nautilus-window notebook > stack:not(:only-child) searchbar:backdrop:selected, iconview text selection:backdrop:focus, .view text selection:backdrop, iconview text selection:backdrop, textview text selection:backdrop, flowbox flowboxchild:backdrop:selected, spinbutton:not(.vertical) selection:backdrop, entry selection:backdrop, modelbutton.flat:backdrop:selected, popover.background checkbutton:backdrop:selected, popover.background radiobutton:backdrop:selected, .menuitem.button.flat:backdrop:selected, row:backdrop:selected, calendar:backdrop:selected, .nemo-window .nemo-window-pane widget.entry:backdrop:selected { background-color: rgba(54, 101, 179, 0.6); }
+.view:backdrop:selected, iconview:backdrop:selected, .view text:backdrop:selected, iconview text:backdrop:selected, textview text:backdrop:selected, .nautilus-window notebook:backdrop:selected, .nautilus-window notebook > stack:not(:only-child) searchbar:backdrop:selected, iconview text selection:backdrop:focus, .view text selection:backdrop, iconview text selection:backdrop, textview text selection:backdrop, flowbox flowboxchild:backdrop:selected, spinbutton:not(.vertical) selection:backdrop, entry selection:backdrop, modelbutton.flat:backdrop:selected, popover.background checkbutton:backdrop:selected, popover.background radiobutton:backdrop:selected, .menuitem.button.flat:backdrop:selected, row:backdrop:selected, calendar:backdrop:selected, .nemo-window .nemo-window-pane widget.entry:backdrop:selected { background-color: rgba(54, 101, 179, 0.7); }
 
 row:selected label, label:selected, .view:selected, iconview:selected, .view text:selected, iconview text:selected, textview text:selected, .nautilus-window notebook:selected, .nautilus-window notebook > stack:not(:only-child) searchbar:selected, .view text selection:focus, iconview text selection:focus, .view text selection, iconview text selection, textview text selection:focus, textview text selection, flowbox flowboxchild:selected, spinbutton:not(.vertical) selection, entry selection, modelbutton.flat:selected, popover.background checkbutton:selected, popover.background radiobutton:selected, .menuitem.button.flat:selected, treeview.view:selected:focus, treeview.view:selected, row:selected, calendar:selected, .nemo-window .nemo-window-pane widget.entry:selected:focus, .nemo-window .nemo-window-pane widget.entry:selected { color: #ffffff; outline-color: rgba(255, 255, 255, 0.3); }
 
