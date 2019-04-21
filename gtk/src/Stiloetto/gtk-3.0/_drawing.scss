@@ -273,7 +273,7 @@ $entry_inner_shadow: inset 0 1px transparentize(black, 0.98), inset 0 2px transp
       background-color: lighten($dc, 18%);
       @include edges(hover);
     }
-    @else { 
+    @else {
       @include button(hover);
       &:hover:backdrop:not(.titlebutton) { color: $fg_color; }
     }
@@ -297,7 +297,7 @@ $entry_inner_shadow: inset 0 1px transparentize(black, 0.98), inset 0 2px transp
       background-color: darken($dc, 12%);
       @include edges(active-dark);
     }
-    @else { 
+    @else {
       @include button(hoveractive);
       &:hover:backdrop { color: $fg_color; }
     }
@@ -542,8 +542,6 @@ $entry_inner_shadow: inset 0 1px transparentize(black, 0.98), inset 0 2px transp
 // Tabs
 @mixin tabs(
   $th: null,
-  $bh: null,
-  $ba: null,
   $sa: if($variant == 'light', transparentize(black, 0.98), transparentize(black, 0.92)),
   $sb: if($variant == 'light', transparentize(black, 0.96), transparentize(black, 0.8))
   ) {
@@ -552,8 +550,6 @@ $entry_inner_shadow: inset 0 1px transparentize(black, 0.98), inset 0 2px transp
   //
   // $po = position
   // $th = tab header box shadow
-  // $bh = hovered tab box shadow
-  // $ba = active tab box shadow
   // $sa = header large inner shadow
   // $sb = header small inner shadow
   //
@@ -572,32 +568,24 @@ $entry_inner_shadow: inset 0 1px transparentize(black, 0.98), inset 0 2px transp
       $th: inset 0 -1px $borders_color,
            inset 0 2px $sa,
            inset 0 1px $sb;
-      $bh: inset 0 -3px $borders_color;
-      $ba: inset 0 1px $selected_bg_color;
     }
     @else if $po == left {
       padding-left: 1px;
       $th: inset -1px 0 $borders_color,
            inset 2px 0 $sa,
            inset 1px 0 $sb;
-      $bh: inset -3px 0 $borders_color;
-      $ba: inset 1px 0 $selected_bg_color;
     }
     @else if $po == right {
       padding-right: 1px;
       $th: inset 1px 0 $borders_color,
            inset -2px 0 $sa,
            inset -1px 0 $sb;
-      $bh: inset 3px 0 $borders_color;
-      $ba: inset -1px 0 $selected_bg_color;
     }
     @else if $po == bottom {
       padding-bottom: 1px;
       $th: inset 0 1px $borders_color,
            inset 0 -2px $sa,
            inset 0 -1px $sb;
-      $bh: inset 0 3px $borders_color;
-      $ba: inset 0 -1px $selected_bg_color;
     }
 
     &.#{$po} {
@@ -605,12 +593,13 @@ $entry_inner_shadow: inset 0 1px transparentize(black, 0.98), inset 0 2px transp
 
       > tabs {
         > tab {
-          $tabbar_border: transparentize(black, 0.9);
+          transition-duration: $shortest_duration;
+          $tabbar_border: if($variant == 'light', transparentize(black, 0.9), transparentize(black, 0.8));
           @if ($po == top) or ($po == bottom) { border-right: 1px solid $tabbar_border; }
           @if ($po == left) or ($po == right) { border-bottom: 1px solid $tabbar_border; }
 
           &:hover {
-            background-color: transparentize(black, 0.96);
+            background-color: if($variant == 'light', transparentize(black, 0.96), transparentize(black, 0.9));
             @if ($po == top) or ($po == bottom) { border-right: 1px solid $tabbar_border; }
             @if ($po == left) or ($po == right) { border-bottom: 1px solid $tabbar_border; }
           }

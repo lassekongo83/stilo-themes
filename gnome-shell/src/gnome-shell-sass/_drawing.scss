@@ -53,7 +53,7 @@
     //                 $selected_borders_color,
     //                 darken($fc,35%));
   }
-  @if $t==hover { 
+  @if $t==hover {
     background-color: $_g_bg-hover;
   }
   @if $t==insensitive {
