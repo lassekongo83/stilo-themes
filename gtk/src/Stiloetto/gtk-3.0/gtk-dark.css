@@ -747,9 +747,13 @@ notebook { padding: 0; }
 
 notebook > header { padding: 0; border-color: #1c1c1e; border-width: 0; background: #252628; padding-top: 1px; padding-right: 1px; padding-bottom: 1px; padding-left: 1px; }
 
-notebook > header.top tabs, notebook > header.bottom tabs { margin: -1px 0 -1px 1px; }
+notebook > header.top tabs { margin: 0 0 -1px 1px; }
 
-notebook > header.right tabs, notebook > header.left tabs { margin: 1px -1px 0 -1px; }
+notebook > header.bottom tabs { margin: -1px 0 0 1px; }
+
+notebook > header.right tabs { margin: 1px 0 0 -1px; }
+
+notebook > header.left tabs { margin: 1px -1px 0 0; }
 
 notebook > header.top { box-shadow: inset 0 -1px #1c1c1e, inset 0 2px rgba(0, 0, 0, 0.08), inset 0 1px rgba(0, 0, 0, 0.2); }
 
