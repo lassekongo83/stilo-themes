@@ -13,7 +13,7 @@ These themes are still in development. Things may change.
 Some of these packages may already be installed by default on some distros.
 
 * Debian/Ubuntu/Mint - `apt install gtk2-engines-murrine gtk2-engines-pixbuf fonts-roboto ninja-build git meson sassc`
-* Arch/Manjaro/Antergos - `pacman -S gtk-engine-murrine gtk-engines ttf-roboto ninja git meson sassc`
+* Arch/Manjaro/Antergos - Available in the Arch User Repository: [`stilo-themes-git`](https://aur.archlinux.org/packages/stilo-themes-git/)
 * Opensuse - `zypper in gtk2-engine-murrine gtk2-engines google-roboto-fonts ninja git meson sassc`
 * Fedora - `dnf install gtk-murrine-engine gtk2-engines google-roboto-fonts ninja-build git meson sassc`
 
