@@ -214,13 +214,13 @@ $entry_inner_shadow: inset 0 1px transparentize(black, 0.98), inset 0 2px transp
   // pushed button
     color: $tc;
     outline-color: transparentize($tc, 0.7);
-    background-color: darken($c, 8%);
+    background-color: if($variant == 'dark', darken($c, 8%), darken($c, 12%));
     @include edges(active);
   }
   @else if $t==hoveractive {
   // pushed hovered button
     color: $tc;
-    background-color: darken($c, 12%);
+    background-color: if($variant == 'dark', darken($c, 12%), darken($c, 16%));
   }
   @else if $t==insensitive {
   // insensitive button
@@ -540,8 +540,8 @@ $entry_inner_shadow: inset 0 1px transparentize(black, 0.98), inset 0 2px transp
 // Tabs
 @mixin tabs(
   $th: null,
-  $sa: if($variant == 'light', transparentize(black, 0.98), transparentize(black, 0.92)),
-  $sb: if($variant == 'light', transparentize(black, 0.96), transparentize(black, 0.8))
+  $sa: if($variant == 'light', transparentize(black, 0.96), transparentize(black, 0.92)),
+  $sb: if($variant == 'light', transparentize(black, 0.92), transparentize(black, 0.8))
   ) {
   //
   // Tabs

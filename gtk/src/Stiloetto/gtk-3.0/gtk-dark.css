@@ -745,7 +745,11 @@ popover.background list separator { margin: 0px; }
 
 notebook { padding: 0; }
 
-notebook > header { padding: 0; border-color: #1c1c1e; border-width: 0; background: #252628; padding-top: 1px; padding-right: 1px; padding-bottom: 1px; padding-left: 1px; }
+notebook > header { padding: 0; border-color: #1c1c1e; border-width: 0; padding-top: 1px; padding-right: 1px; padding-bottom: 1px; padding-left: 1px; }
+
+notebook > header.top, notebook > header.bottom { background: linear-gradient(to top, #252628, #1b1c1d); }
+
+notebook > header.right, notebook > header.left { background: linear-gradient(to left, #252628, #111213); }
 
 notebook > header.top tabs { margin: 0 0 -1px 1px; }
 
@@ -919,7 +923,7 @@ scrollbar button { padding: 0; min-width: 14px; min-height: 14px; border-style: 
 
 scrollbar button:hover { color: #ceced0; box-shadow: none; }
 
-scrollbar button:active, scrollbar button:checked { box-shadow: none; color: #517fcb; }
+scrollbar button:active, scrollbar button:checked { box-shadow: inset 0 0 6px 0 rgba(0, 0, 0, 0.3); color: #517fcb; }
 
 scrollbar button:disabled { color: rgba(146, 147, 149, 0.2); box-shadow: none; background-color: transparent; }
 
