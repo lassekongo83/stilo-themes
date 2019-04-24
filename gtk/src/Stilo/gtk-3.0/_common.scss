@@ -2699,19 +2699,17 @@ scale {
   slider {
     transition: all 100ms $deceleration_curve, box-shadow $shorter_duration $deceleration_curve;
     @include button(normal);
-    border: 1px solid transparentize(black,0.5);
-    box-shadow: none;
 
     border-radius: 100%;
 
     &:hover {
       @include button(hover);
-      box-shadow: 0 0 0 6px transparentize($selected_bg_color, 0.7);
+      box-shadow: 0 0 0 4px if($variant == 'light', transparentize($selected_bg_color, 0.7), transparentize(white, 0.96));
     }
 
     &:active, &:checked {
-      border-color: $selected_borders_color;
-      box-shadow: none;
+      border-color: if($variant == 'light', $selected_borders_color, transparentize(black,0.5));
+      box-shadow: $shadow_hover;
     }
 
     &:disabled { @include button (insensitive); }
