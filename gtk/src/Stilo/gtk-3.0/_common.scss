@@ -2363,7 +2363,7 @@ treeview ~ scrollbar.vertical {
 // Switch //
 //--------//
 
-// Originally from materia-theme by nana-4
+// Some parts from https://github.com/nana-4/materia-theme
 switch {
   transition: background-color $shortest_duration $deceleration_curve, opacity $longer_duration $deceleration_curve;
   margin: 0;
@@ -2375,12 +2375,16 @@ switch {
   font-size: 0;
 
   &:checked {
-    background-color: $light_selection;
-    border-color: $light_selection_border;
-    box-shadow: 0 0 0 2px transparentize($light_selection_border, 0.8);
+    background-color: if($variant == 'light', $selected_bg_color, $dark_fill);
+    border-color: if($variant == 'light', $selected_borders_color, $borders_color);
   }
 
-  &:disabled { opacity: 0.5; }
+  &:disabled {
+    opacity: 0.5;
+    border-color: transparentize($borders_color, 0.4);
+  }
+
+  $slider_hover_shadow: if($variant == 'light', 0 0 2px 1px $selected_bg_color, 0 0 2px 1px transparentize(black, 0.1));
 
   slider {
     transition: all $shortest_duration $deceleration_curve, box-shadow $longer_duration $deceleration_curve;
@@ -2389,28 +2393,30 @@ switch {
     margin: 0px;
     border-radius: $circular_radius 0 0 $circular_radius;
     transform: rotate(45deg);
-    box-shadow: 0 0 0 4px transparent, $shadow_normal;
+    box-shadow: 0 0 2px 1px transparent, $shadow_normal;
     background-color: if($variant == 'dark', lighten($bg_color, 9%), $base_color);
     color: $fg_color;
   }
 
-  &:hover slider { box-shadow: 0 0 0 4px transparentize($selected_bg_color, 0.7); }
-  &:focus slider { box-shadow: 0 0 0 4px transparentize($selected_bg_color, 0.6); }
-  &:focus:hover slider { box-shadow: 0 0 0 4px transparentize($selected_bg_color, 0.5); }
+  &:hover slider {
+    box-shadow: $slider_hover_shadow;
+    background-color: if($variant == 'light', lighten($bg_color, 12%), lighten($base_color, 6%));
+  }
+  &:focus slider { box-shadow: $slider_hover_shadow; }
+  &:focus:hover slider { box-shadow: $slider_hover_shadow; }
   &:checked slider {
-    //background-color: $selected_bg_color;
+    background-color: if($variant == 'light', lighten($bg_color, 12%), $selected_bg_color);
     color: $fg_color;
-    //box-shadow: none;
     border-radius: 0 $circular_radius $circular_radius 0;
   }
-  &:checked:hover slider { box-shadow: 0 0 0 4px transparentize($selected_bg_color, 0.7); }
+  &:checked:hover slider { box-shadow: $slider_hover_shadow; }
 
   row:selected &, menuitem:hover & {
     &:checked { background-color: transparentize(lighten($selected_bg_color, 20%), 0.5); }
     &:checked slider { background-color: lighten(lighten($selected_bg_color, 20%), 20%); }
-    &:hover slider { box-shadow: 0 0 0 4px transparentize(lighten($selected_bg_color, 20%), 0.7); }
-    &:focus slider { box-shadow: 0 0 0 4px transparentize(lighten($selected_bg_color, 20%), 0.6); }
-    &:focus:hover slider { box-shadow: 0 0 0 4px transparentize(lighten($selected_bg_color, 20%), 0.5); }
+    &:hover slider { box-shadow: 0 0 2px 1px transparentize(lighten($selected_bg_color, 20%), 0.7); }
+    &:focus slider { box-shadow: 0 0 2px 1px transparentize(lighten($selected_bg_color, 20%), 0.6); }
+    &:focus:hover slider { box-shadow: 0 0 2px 1px transparentize(lighten($selected_bg_color, 20%), 0.5); }
   }
 
   image { color: transparent; }
