@@ -469,7 +469,7 @@ searchbar > revealer > box { margin: -6px; padding: 6px; }
 
 .inline-toolbar, searchbar > revealer > box, .location-bar { background-color: #131415; }
 
-.titlebar:not(headerbar), headerbar { padding: 0 4px; min-height: 38px; border-width: 0; border-style: solid; border-color: #121517; background-color: #3e4143; box-shadow: inset 0 1px #45494b; }
+.titlebar:not(headerbar), headerbar { padding: 0 4px; min-height: 38px; border-width: 0; border-style: solid; border-color: #121517; background-color: #3e4143; box-shadow: inset 0 1px rgba(255, 255, 255, 0.04); }
 
 .titlebar:backdrop:not(headerbar), headerbar:backdrop { border-color: #121517; background-image: none; color: #919294; }
 
@@ -477,7 +477,7 @@ searchbar > revealer > box { margin: -6px; padding: 6px; }
 
 .titlebar:not(headerbar) .subtitle, headerbar .subtitle { font-size: smaller; padding-left: 12px; padding-right: 12px; }
 
-.selection-mode .titlebar:not(headerbar), .selection-mode.titlebar:not(headerbar), .selection-mode headerbar, headerbar.selection-mode { color: #ffffff; text-shadow: 0 -1px rgba(0, 0, 0, 0.5); border-color: #2543ad; background-color: #5c78dc; box-shadow: inset 0 1px #6982df; }
+.selection-mode .titlebar:not(headerbar), .selection-mode.titlebar:not(headerbar), .selection-mode headerbar, headerbar.selection-mode { color: #ffffff; text-shadow: 0 -1px rgba(0, 0, 0, 0.5); border-color: #2543ad; background-color: #5c78dc; box-shadow: inset 0 1px rgba(100, 126, 221, 0.55); }
 
 .selection-mode .titlebar:backdrop:not(headerbar), .selection-mode.titlebar:backdrop:not(headerbar), .selection-mode headerbar:backdrop, headerbar.selection-mode:backdrop { background-color: #5c78dc; background-image: none; box-shadow: inset 0 1px rgba(103, 129, 222, 0.46); }
 
@@ -531,7 +531,7 @@ searchbar > revealer > box { margin: -6px; padding: 6px; }
 
 .titlebar:not(headerbar) separator, headerbar separator { background-color: transparent; }
 
-.titlebar:not(headerbar) separator:backdrop, headerbar separator:backdrop { background-color: #3e4143; box-shadow: inset 0 1px #45494b; }
+.titlebar:not(headerbar) separator:backdrop, headerbar separator:backdrop { background-color: #3e4143; box-shadow: inset 0 1px rgba(255, 255, 255, 0.04); }
 
 .titlebar:not(headerbar) separator.titlebutton, headerbar separator.titlebutton { opacity: 0; }
 
@@ -599,7 +599,7 @@ window.tiled headerbar, window.tiled headerbar:first-child, window.tiled headerb
 
 window.csd > .titlebar:not(headerbar) { padding: 0; background-color: transparent; background-image: none; border-style: none; border-color: transparent; box-shadow: none; }
 
-.titlebar:not(headerbar) separator { background-color: #3e4143; box-shadow: inset 0 1px #45494b; }
+.titlebar:not(headerbar) separator { background-color: #3e4143; box-shadow: inset 0 1px rgba(255, 255, 255, 0.04); }
 
 filechooser .path-bar.linked > button { border-color: transparent; background-color: transparent; background-image: none; box-shadow: none; box-shadow: inset 0 1px rgba(255, 255, 255, 0), 0 1px rgba(246, 246, 247, 0); text-shadow: none; -gtk-icon-shadow: none; border-radius: 0; margin: 0 2px; }
 
@@ -1341,7 +1341,7 @@ calendar.highlight { color: #919294; }
 
 calendar:indeterminate { color: alpha(currentColor,0.1); }
 
-messagedialog .titlebar { min-height: 20px; background-image: none; background-color: #2b2e30; border-style: none; border-top-left-radius: 0; border-top-right-radius: 0; background-color: #3e4143; box-shadow: inset 0 1px #45494b; }
+messagedialog .titlebar { min-height: 20px; background-image: none; background-color: #2b2e30; border-style: none; border-top-left-radius: 0; border-top-right-radius: 0; background-color: #3e4143; box-shadow: inset 0 1px rgba(255, 255, 255, 0.04); }
 
 messagedialog.csd.background { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
 
