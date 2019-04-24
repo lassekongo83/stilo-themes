@@ -3,13 +3,13 @@
 # based on "Greybird" and "Bluebird" by Simon Steinbeiß and Pasi Lallinaho
 # Description: As is the original theme, this theme is 100% free and open source.
 
-gtk-color-scheme = "bg_color:#2e3032\nselected_bg_color:#3665b3\nbase_color:#373a3c" # Background, base.
+gtk-color-scheme = "bg_color:#2b2e30\nselected_bg_color:#5c78dc\nbase_color:#383b3d" # Background, base.
 gtk-color-scheme = "fg_color:#f6f6f7\nselected_fg_color:#ffffff\ntext_color:#ffffff" # Foreground, text.
 gtk-color-scheme = "tooltip_bg_color:#000000\ntooltip_fg_color:#FFFFFF" # Tooltips.
 gtk-color-scheme = "link_color:#2d71b8" # Hyperlinks
-gtk-color-scheme = "panel_bg:#2e3032" # Panel bg color
-gtk-color-scheme = "fm_color:#F7F7F7" # Color used in Thunar.
-gtk-color-scheme = "bg_color_dark:#2e3032\ntext_color_dark:#f6f6f7"
+gtk-color-scheme = "panel_bg:#121517" # Panel bg color
+gtk-color-scheme = "fm_color:#2b2e30" # Color used in Thunar.
+gtk-color-scheme = "bg_color_dark:#2f3136\ntext_color_dark:#f6f6f7"
 
 gtk-icon-sizes     = "panel-applications-menu=24,24:panel-menu=24,24:panel=16,16:gtk-button=16,16"
 gtk-button-images  = 1 # Disables icons for buttons with text

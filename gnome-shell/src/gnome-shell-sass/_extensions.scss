@@ -1,4 +1,4 @@
-$panel_color: #252628; // Not used in 3.32+
+$panel_color: transparentize(black, 0.3); // Not used in 3.32+
 $dock_color: transparentize(black, 0.3);
 
 // Trick due to St limitations. It needs a background to draw a box-shadow

@@ -2,10 +2,10 @@
 // it gets @if ed depending on $variant
 
 // When we want to use the dark colors in the light theme
-$dark_bg_color: #2e3032;
+$dark_bg_color: #2b2e30;
 $dark_fg_color: #f6f6f7;
-$dark_borders_color: #1c1c1e;
-$dark_base_color: #373a3c;
+$dark_borders_color: #121517;
+$dark_base_color: #383b3d;
 
 $base_color: if($variant == 'light', #FFFFFF, $dark_base_color);
 $text_color: if($variant == 'light', black, white);
@@ -13,7 +13,7 @@ $bg_color: if($variant == 'light', #e2e2e3, $dark_bg_color);
 $fg_color: if($variant == 'light', #3C3C3C, $dark_fg_color);
 
 $selected_fg_color: #ffffff;
-$selected_bg_color: #3665b3;
+$selected_bg_color: if($variant == 'light', #3665b3, #5c78dc);
 $selected_borders_color: darken($selected_bg_color, 20%);
 $borders_color: if($variant == 'light', darken($bg_color,12%), $dark_borders_color);
 $borders_edge: if($variant == 'light', white, transparentize($fg_color, 0.9));
@@ -50,11 +50,11 @@ $shadow_color: transparentize(black, 0.9);
 $drop_target_color: #4e9a06;
 
 //headerbar color
-$header_bg: if($dark_header == 'true', #282a2c, darken($bg_color, 3%));
+$header_bg: if($dark_header == 'true', #3e4143, darken($bg_color, 3%));
 
 //insensitive state derived colors
 $insensitive_fg_color: mix($fg_color, $bg_color, 50%);
-$insensitive_bg_color: mix($bg_color, $fg_color, 90%);
+$insensitive_bg_color: if($variant == 'light', mix($bg_color, $fg_color, 90%), mix($bg_color, $base_color, 60%));
 $insensitive_borders_color: $borders_color;
 
 //colors for the backdrop state, derived from the main colors.
@@ -78,7 +78,7 @@ $secondary_bg_color: if($variant == 'light', mix($bg_color, $base_color, 50%), $
 $secondary_borders_color: if($variant == 'light', darken($secondary_bg_color, 8%), $borders_color);
 
 // tabbar
-$tabbar_color: if($variant == 'light', darken($header_bg, 10%), #252628);
+$tabbar_color: if($variant == 'light', darken($header_bg, 10%), darken($bg_color, 3%));
 
 // toolbar
 $toolbar_color: $bg_color;
