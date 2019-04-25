@@ -2710,6 +2710,7 @@ scale {
 
     &:hover {
       @include button(hover);
+      background-color: lighten($bg_color, 18%);
       box-shadow: 0 0 0 4px if($variant == 'light', transparentize($selected_bg_color, 0.7), transparentize(white, 0.96));
     }
 
