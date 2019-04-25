@@ -28,6 +28,8 @@ $dock_color: transparentize(black, 0.3);
 
     .dash-item-container > * { padding: 0 4px; }
 
+    //.show-apps { width: 20px; }
+
     // panel dash icon
     @each $d in hover, focus, active, checked, overview {
       .show-apps .overview-icon {
