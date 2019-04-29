@@ -1285,7 +1285,6 @@ headerbar {
 
   &:backdrop {
     border-color: $borders_color;
-    //background-image: none;
     color: $backdrop_fg_color;
   }
 
@@ -1489,10 +1488,6 @@ headerbar {
     switch {
       background-color: $close_button_backdrop;
       box-shadow: none;
-      &:checked {
-        //background-color: transparentize($selected_bg_color, 0.5);
-        //box-shadow: none;
-      }
     }
   }
 }

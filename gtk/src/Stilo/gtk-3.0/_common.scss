@@ -1489,10 +1489,6 @@ headerbar {
     switch {
       background-color: $close_button_backdrop;
       box-shadow: none;
-      &:checked {
-        //background-color: transparentize($selected_bg_color, 0.5);
-        //box-shadow: none;
-      }
     }
   }
 }

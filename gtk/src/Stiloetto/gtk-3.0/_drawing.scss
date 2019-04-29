@@ -557,8 +557,9 @@ $entry_inner_shadow: inset 0 1px transparentize(black, 0.98), inset 0 2px transp
   padding: 0;
   border-color: $borders_color;
   border-width: 0;
-  &.top, &.bottom { background: linear-gradient(to top, $tabbar_color, darken($tabbar_color, 4%)); }
-  &.right, &.left { background: linear-gradient(to left, $tabbar_color, darken($tabbar_color, 8%)); } // use a darker gradient on vertical tabs because they're wider
+  background-color: $tabbar_color;
+  //&.top, &.bottom { background: linear-gradient(to top, $tabbar_color, darken($tabbar_color, 4%)); }
+  //&.right, &.left { background: linear-gradient(to left, $tabbar_color, darken($tabbar_color, 8%)); } // use a darker gradient on vertical tabs because they're wider
 
   &.top { tabs { margin: 0 0 -1px 1px; } }
   &.bottom { tabs { margin: -1px 0 0 1px; } }

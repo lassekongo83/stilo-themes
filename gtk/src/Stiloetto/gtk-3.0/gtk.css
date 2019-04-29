@@ -753,11 +753,7 @@ popover.background list separator { margin: 0px; }
 
 notebook { padding: 0; }
 
-notebook > header { padding: 0; border-color: #bebec0; border-width: 0; padding-top: 1px; padding-right: 1px; padding-bottom: 1px; padding-left: 1px; }
-
-notebook > header.top, notebook > header.bottom { background: linear-gradient(to top, #c0c0c2, #b6b6b8); }
-
-notebook > header.right, notebook > header.left { background: linear-gradient(to left, #c0c0c2, #acacae); }
+notebook > header { padding: 0; border-color: #bebec0; border-width: 0; background-color: #c0c0c2; padding-top: 1px; padding-right: 1px; padding-bottom: 1px; padding-left: 1px; }
 
 notebook > header.top tabs { margin: 0 0 -1px 1px; }
 
