@@ -753,7 +753,7 @@ notebook > header.right tabs { margin: 1px 0 0 -1px; }
 
 notebook > header.left tabs { margin: 1px -1px 0 0; }
 
-notebook > header.top { box-shadow: inset 0 -1px #121517, inset 0 2px rgba(0, 0, 0, 0.08), inset 0 1px rgba(0, 0, 0, 0.2); }
+notebook > header.top { box-shadow: inset 0 -1px rgba(0, 0, 0, 0.2), inset 0 2px rgba(0, 0, 0, 0.08), inset 0 1px rgba(0, 0, 0, 0.2); }
 
 notebook > header.top > tabs > tab { transition-duration: 100ms; border-right: 1px solid rgba(0, 0, 0, 0.2); }
 
@@ -765,7 +765,7 @@ notebook > header.top > tabs > arrow { border-style: none; }
 
 notebook > header.top { padding-left: 0; padding-right: 0; }
 
-notebook > header.right { box-shadow: inset 1px 0 #121517, inset -2px 0 rgba(0, 0, 0, 0.08), inset -1px 0 rgba(0, 0, 0, 0.2); }
+notebook > header.right { box-shadow: inset 1px 0 rgba(0, 0, 0, 0.2), inset -2px 0 rgba(0, 0, 0, 0.08), inset -1px 0 rgba(0, 0, 0, 0.2); }
 
 notebook > header.right > tabs > tab { transition-duration: 100ms; border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
 
@@ -777,7 +777,7 @@ notebook > header.right > tabs > arrow { border-style: none; }
 
 notebook > header.right { padding-top: 0; padding-bottom: 0; }
 
-notebook > header.bottom { box-shadow: inset 0 1px #121517, inset 0 -2px rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.2); }
+notebook > header.bottom { box-shadow: inset 0 1px rgba(0, 0, 0, 0.2), inset 0 -2px rgba(0, 0, 0, 0.08), inset 0 -1px rgba(0, 0, 0, 0.2); }
 
 notebook > header.bottom > tabs > tab { transition-duration: 100ms; border-right: 1px solid rgba(0, 0, 0, 0.2); }
 
@@ -789,7 +789,7 @@ notebook > header.bottom > tabs > arrow { border-style: none; }
 
 notebook > header.bottom { padding-left: 0; padding-right: 0; }
 
-notebook > header.left { box-shadow: inset -1px 0 #121517, inset 2px 0 rgba(0, 0, 0, 0.08), inset 1px 0 rgba(0, 0, 0, 0.2); }
+notebook > header.left { box-shadow: inset -1px 0 rgba(0, 0, 0, 0.2), inset 2px 0 rgba(0, 0, 0, 0.08), inset 1px 0 rgba(0, 0, 0, 0.2); }
 
 notebook > header.left > tabs > tab { transition-duration: 100ms; border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
 
