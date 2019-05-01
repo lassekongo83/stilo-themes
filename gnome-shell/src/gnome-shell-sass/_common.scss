@@ -1227,6 +1227,7 @@ StScrollBar {
 
 #overview {
   spacing: 24px;
+  background-color: transparentize(black, 0.5); // darken the overview a little bit more
 }
 
 .overview-controls {

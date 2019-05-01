@@ -562,7 +562,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .no-networks-box { spacing: 12px; }
 
-#overview { spacing: 24px; }
+#overview { spacing: 24px; background-color: rgba(0, 0, 0, 0.5); }
 
 .overview-controls { padding-bottom: 32px; }
 
