@@ -41,20 +41,20 @@
   $_inner_hilight_hover: inset 0 0 0 1px transparentize(white, 0.7);
 
   @if $t==normal {
-    background-color: $_g_bg;
-    box-shadow: $_g_highlight;
+    background-color: $button_bg;
+    box-shadow: $button_top_hilight;
     //@include _shadows($_inner_hilight);
   }
   @if $t==focus {
-    box-shadow: $_g_highlight;
-    background-color: $_g_bg-hover;
+    box-shadow: $button_top_hilight;
+    background-color: $button_hover;
     //@include _shadows($_inner_hilight_hover);
     //border-color: if($fc==$selected_bg_color,
     //                 $selected_borders_color,
     //                 darken($fc,35%));
   }
   @if $t==hover {
-    background-color: $_g_bg-hover;
+    background-color: $button_hover;
   }
   @if $t==insensitive {
     color: $insensitive_fg_color;

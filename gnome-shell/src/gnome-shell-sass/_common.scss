@@ -35,10 +35,10 @@ $font-family: Roboto, Sans-Serif;
 $_bubble_bg_color: opacify($osd_bg_color,0.25);
 $_bubble_fg_color: $osd_fg_color;
 $_bubble_borders_color: transparentize($osd_fg_color,0.8);
-$_g_bg: transparentize(white,0.86); // button/entry color
-$_g_bg-hover: transparentize(white,0.8); // hover button/entry color
-$_g_border: transparentize(white,0.68);
-$_g_highlight: inset 0 1px rgba(255,255,255,0.06); // button/entry top highlight color
+$button_bg: transparentize(white,0.86); // overview button/normal entry color
+$button_hover: transparentize(white,0.8);
+$button_border: transparentize(white,0.68);
+$button_top_hilight: inset 0 1px rgba(255,255,255,0.06); // overview button/normal entry top hilight color
 $short-duration: 100ms;
 $long-duration: 200ms;
 
@@ -1371,26 +1371,26 @@ StScrollBar {
   icon-size: 48px;
 }
 
-.app-view-controls { //favorties | all toggle container
+.app-view-controls { //favorites | all toggle container
   padding-bottom: 32px;
 }
-.app-view-control { //favorties | all toggle button
+.app-view-control { //favorites | all toggle button
   padding: 4px 32px;
   //@include button(normal);
-  box-shadow: $_g_highlight;
-  background-color: $_g_bg;
+  box-shadow: $button_top_hilight;
+  background-color: $button_bg;
   transition-duration: $short-duration;
   border: none;
 
-  &:hover { background-color: $_g_bg-hover; }
+  &:hover { background-color: $button_hover; }
   &:checked {
     //@include button(active);
     background-color: $selected_bg_color;
-    box-shadow: $_g_highlight;
+    box-shadow: $button_top_hilight;
     border-color: transparent;
   }
   &:first-child {
-    border-right-width: 0;
+    border-right-width: 1px;
     border-radius: $small_radius 0 0 $small_radius;
   }
   &:last-child {
@@ -1524,8 +1524,8 @@ StScrollBar {
 
 %overview-panel {
   color: $_bubble_fg_color;
-  background-color: $_g_bg;
-  border: 1px solid $_g_border;
+  background-color: $button_bg;
+  border: 1px solid $button_border;
 }
 
 %status_text {
