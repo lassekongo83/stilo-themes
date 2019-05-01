@@ -547,7 +547,7 @@ searchbar > revealer > box { margin: -6px; padding: 6px; }
 
 headerbar { color: #3C3C3C; }
 
-headerbar button { color: #3C3C3C; border-width: 1px; border-radius: 0; color: #3C3C3C; outline-color: rgba(60, 60, 60, 0.3); background-color: #f9f9fa; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(0, 0, 0, 0.16); border-color: transparent; border-color: transparent; box-shadow: none; background-color: transparent; }
+headerbar button { color: #3C3C3C; border-width: 1px; border-radius: 0; color: #3C3C3C; outline-color: rgba(60, 60, 60, 0.3); background-color: #f9f9fa; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(0, 0, 0, 0.16); border-color: transparent; background-color: transparent; box-shadow: none; border-color: transparent; }
 
 headerbar button:hover { color: #3C3C3C; background-color: white; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.4); }
 
@@ -1581,7 +1581,7 @@ headerbar .left.horizontal, .titlebar .left.horizontal { border-right: 1px solid
 
 headerbar button.titlebutton, .titlebar button.titlebutton { border-color: transparent; background-color: transparent; background-image: none; box-shadow: none; box-shadow: inset 0 1px rgba(255, 255, 255, 0), 0 1px rgba(255, 255, 255, 0); text-shadow: none; -gtk-icon-shadow: none; }
 
-headerbar button.titlebutton.close, .titlebar button.titlebutton.close { color: transparent; background-color: transparent; background-position: center; background-repeat: no-repeat; border-width: 0; box-shadow: none; transition-duration: 100ms; background-color: transparent; box-shadow: none; }
+headerbar button.titlebutton.close, .titlebar button.titlebutton.close { color: transparent; background-color: transparent; background-position: center; background-repeat: no-repeat; border-width: 0; box-shadow: none; transition-property: background-color; transition-duration: 150ms; background-color: transparent; box-shadow: none; }
 
 headerbar button.titlebutton.close:hover, headerbar button.titlebutton.close:active, .titlebar button.titlebutton.close:hover, .titlebar button.titlebutton.close:active { background-color: #c75050; }
 
@@ -1589,13 +1589,13 @@ headerbar button.titlebutton.close:backdrop, .titlebar button.titlebutton.close:
 
 headerbar button.titlebutton.close:backdrop:hover, headerbar button.titlebutton.close:backdrop:active, .titlebar button.titlebutton.close:backdrop:hover, .titlebar button.titlebutton.close:backdrop:active { background-color: #c75050; }
 
-headerbar button.titlebutton.maximize, .titlebar button.titlebutton.maximize { color: transparent; background-color: transparent; background-position: center; background-repeat: no-repeat; border-width: 0; box-shadow: none; transition-duration: 100ms; }
+headerbar button.titlebutton.maximize, .titlebar button.titlebutton.maximize { color: transparent; background-color: transparent; background-position: center; background-repeat: no-repeat; border-width: 0; box-shadow: none; transition-property: background-color; transition-duration: 150ms; }
 
 headerbar button.titlebutton.maximize:hover, headerbar button.titlebutton.maximize:active, .titlebar button.titlebutton.maximize:hover, .titlebar button.titlebutton.maximize:active { background-color: #3665b3; }
 
 headerbar button.titlebutton.maximize:hover:backdrop, headerbar button.titlebutton.maximize:active:backdrop, .titlebar button.titlebutton.maximize:hover:backdrop, .titlebar button.titlebutton.maximize:active:backdrop { box-shadow: none; }
 
-headerbar button.titlebutton.minimize, .titlebar button.titlebutton.minimize { color: transparent; background-color: transparent; background-position: center; background-repeat: no-repeat; border-width: 0; box-shadow: none; transition-duration: 100ms; }
+headerbar button.titlebutton.minimize, .titlebar button.titlebutton.minimize { color: transparent; background-color: transparent; background-position: center; background-repeat: no-repeat; border-width: 0; box-shadow: none; transition-property: background-color; transition-duration: 150ms; }
 
 headerbar button.titlebutton.minimize:hover, headerbar button.titlebutton.minimize:active, .titlebar button.titlebutton.minimize:hover, .titlebar button.titlebutton.minimize:active { background-color: #3665b3; }
 

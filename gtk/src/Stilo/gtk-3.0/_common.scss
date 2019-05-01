@@ -3922,7 +3922,8 @@ headerbar,
         background-repeat: no-repeat;
         border-width: 0;
         box-shadow: none;
-        transition-duration: $shortest_duration;
+        transition-property: background-color;
+        transition-duration: $shorter_duration;
 
         @if $b==close {
           background-color: $close_button;

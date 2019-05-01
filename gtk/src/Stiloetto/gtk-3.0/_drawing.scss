@@ -220,7 +220,7 @@ $entry_inner_shadow: inset 0 1px transparentize(black, 0.98), inset 0 2px transp
   @else if $t==hoveractive {
   // pushed hovered button
     color: $tc;
-    background-color: if($variant == 'dark', darken($c, 12%), darken($c, 16%));
+    background-color: if($variant == 'dark', darken($c, 4%), darken($c, 16%));
   }
   @else if $t==insensitive {
   // insensitive button
@@ -261,16 +261,15 @@ $entry_inner_shadow: inset 0 1px transparentize(black, 0.98), inset 0 2px transp
     }
     @else {
       @include button(normal);
-      border-color: transparent;
-      box-shadow: none;
       background-color: transparent;
+      @include edges(disabled);
     }
   }
   @else if $t==headerbutton-hover {
   // hovered header button
     @if($dark_header=='true' or $variant=='dark') {
       color: $dfc;
-      background-color: lighten($dc, 18%);
+      background-color: lighten($dc, 12%);
       @include edges(hover);
     }
     @else {
@@ -294,7 +293,7 @@ $entry_inner_shadow: inset 0 1px transparentize(black, 0.98), inset 0 2px transp
   // active hovered header button
     @if($dark_header=='true' or $variant=='dark') {
       color: $dfc;
-      background-color: darken($dc, 12%);
+      background-color: darken($dc, 4%);
       @include edges(active-dark);
     }
     @else {
