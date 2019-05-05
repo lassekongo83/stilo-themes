@@ -133,7 +133,7 @@ XfceHeading,
       box-shadow: none;
     }
     trough {
-      background-color: ligthen($dark_bg_color, 10%);
+      background-color: lighten($dark_bg_color, 10%);
       border: none;
       border-radius: $button-radius;
       padding: 1px 0;
