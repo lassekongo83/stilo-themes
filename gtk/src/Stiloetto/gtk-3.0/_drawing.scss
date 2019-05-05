@@ -269,7 +269,7 @@ $entry_inner_shadow: inset 0 1px transparentize(black, 0.98), inset 0 2px transp
   // hovered header button
     @if($dark_header=='true' or $variant=='dark') {
       color: $dfc;
-      background-color: lighten($dc, 12%);
+      background-color: lighten($dc, 18%);
       @include edges(hover);
     }
     @else {
@@ -602,7 +602,7 @@ $entry_inner_shadow: inset 0 1px transparentize(black, 0.98), inset 0 2px transp
           @if ($po == left) or ($po == right) { border-bottom: 1px solid $tabbar_border; }
 
           &:hover {
-            background-color: if($variant == 'light', transparentize(black, 0.96), transparentize(black, 0.9));
+            background-color: if($variant == 'light', transparentize(black, 0.96), transparentize(white, 0.97));
             @if ($po == top) or ($po == bottom) { border-right: 1px solid $tabbar_border; }
             @if ($po == left) or ($po == right) { border-bottom: 1px solid $tabbar_border; }
           }

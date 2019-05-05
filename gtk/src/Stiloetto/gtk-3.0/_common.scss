@@ -3932,13 +3932,6 @@ headerbar,
         @if $b==close {
           background-color: $close_button;
           box-shadow: none;
-          // FIXME Maybe. Increase the click area of the button to make better use of Fitt's law.
-          // Will need to redo the assets, using a bg-color doesn't work with this "hack"
-          //margin: 0 -4px 0 0;
-          //border-top: 8px solid $dark_bg_color;
-          //border-bottom: 8px solid $dark_bg_color;
-          //border-right: 8px solid $dark_bg_color;
-          //border-radius: 10px;
 
           &:hover, &:active {
             background-color: $close_button_hover;

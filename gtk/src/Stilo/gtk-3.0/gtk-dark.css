@@ -541,7 +541,7 @@ headerbar { color: #f6f6f7; }
 
 headerbar button { color: #f6f6f7; border-width: 0; border-radius: 0; color: #f6f6f7; outline-color: rgba(246, 246, 247, 0.3); background-color: transparent; box-shadow: none; border-color: transparent; }
 
-headerbar button:hover { color: #f6f6f7; background-color: #484d50; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.4); }
+headerbar button:hover { color: #f6f6f7; background-color: #565c60; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.4); }
 
 headerbar button:focus, headerbar button.default { color: #f6f6f7; background-color: #4a79c7; border-color: #4a79c7; box-shadow: none; }
 
@@ -757,7 +757,7 @@ notebook > header.top { box-shadow: inset 0 -1px rgba(0, 0, 0, 0.2), inset 0 2px
 
 notebook > header.top > tabs > tab { transition-duration: 100ms; border-right: 1px solid rgba(0, 0, 0, 0.2); }
 
-notebook > header.top > tabs > tab:hover { background-color: rgba(0, 0, 0, 0.1); border-right: 1px solid rgba(0, 0, 0, 0.2); }
+notebook > header.top > tabs > tab:hover { background-color: rgba(255, 255, 255, 0.03); border-right: 1px solid rgba(0, 0, 0, 0.2); }
 
 notebook > header.top > tabs > tab:checked, notebook > header.top > tabs > tab:checked:hover { background-color: #383b3d; border-right: 1px solid transparent; box-shadow: -1px 0 #383b3d; }
 
@@ -769,7 +769,7 @@ notebook > header.right { box-shadow: inset 1px 0 rgba(0, 0, 0, 0.2), inset -2px
 
 notebook > header.right > tabs > tab { transition-duration: 100ms; border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
 
-notebook > header.right > tabs > tab:hover { background-color: rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+notebook > header.right > tabs > tab:hover { background-color: rgba(255, 255, 255, 0.03); border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
 
 notebook > header.right > tabs > tab:checked, notebook > header.right > tabs > tab:checked:hover { background-color: #383b3d; border-bottom: 1px solid transparent; box-shadow: 0 -1px #383b3d; }
 
@@ -781,7 +781,7 @@ notebook > header.bottom { box-shadow: inset 0 1px rgba(0, 0, 0, 0.2), inset 0 -
 
 notebook > header.bottom > tabs > tab { transition-duration: 100ms; border-right: 1px solid rgba(0, 0, 0, 0.2); }
 
-notebook > header.bottom > tabs > tab:hover { background-color: rgba(0, 0, 0, 0.1); border-right: 1px solid rgba(0, 0, 0, 0.2); }
+notebook > header.bottom > tabs > tab:hover { background-color: rgba(255, 255, 255, 0.03); border-right: 1px solid rgba(0, 0, 0, 0.2); }
 
 notebook > header.bottom > tabs > tab:checked, notebook > header.bottom > tabs > tab:checked:hover { background-color: #383b3d; border-right: 1px solid transparent; box-shadow: -1px 0 #383b3d; }
 
@@ -793,7 +793,7 @@ notebook > header.left { box-shadow: inset -1px 0 rgba(0, 0, 0, 0.2), inset 2px 
 
 notebook > header.left > tabs > tab { transition-duration: 100ms; border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
 
-notebook > header.left > tabs > tab:hover { background-color: rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
+notebook > header.left > tabs > tab:hover { background-color: rgba(255, 255, 255, 0.03); border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
 
 notebook > header.left > tabs > tab:checked, notebook > header.left > tabs > tab:checked:hover { background-color: #383b3d; border-bottom: 1px solid transparent; box-shadow: 0 -1px #383b3d; }
 
