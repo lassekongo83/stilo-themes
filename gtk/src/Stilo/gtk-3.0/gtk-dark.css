@@ -873,8 +873,6 @@ scrollbar { background-color: #2e3132; border-width: 0; }
 
 * { -GtkScrollbar-has-backward-stepper: true; -GtkScrollbar-has-forward-stepper: true; }
 
-scrollbar.vertical, scrollbar.horizontal, scrollbar.vertical button, scrollbar.horizontal button { background: linear-gradient(to bottom, #2e3132, #2e3132); }
-
 scrollbar slider { min-width: 8px; min-height: 8px; margin: -1px; border: 4px solid transparent; border-radius: 8px; background-clip: padding-box; background-color: #919294; transition: background-color 250ms; }
 
 scrollbar slider:hover { background-color: #cdcecf; }
@@ -895,7 +893,7 @@ scrollbar.overlay-indicator:not(.dragging):not(.hovering) trough { background-co
 
 scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider { margin: 0; min-width: 8px; min-height: 8px; background-color: #f6f6f7; border: 3px solid transparent; }
 
-scrollbar.overlay-indicator:not(.dragging):not(.hovering) button { min-width: 14px; min-height: 14px; background-clip: padding-box; background-color: transparent; border: 1px solid transparent; }
+scrollbar.overlay-indicator:not(.dragging):not(.hovering) button { min-width: 14px; min-height: 14px; background-clip: padding-box; background-color: rgba(46, 49, 50, 0.2); border: 1px solid transparent; }
 
 scrollbar.overlay-indicator:not(.dragging):not(.hovering).horizontal slider { margin: 0; min-width: 40px; }
 
@@ -911,11 +909,11 @@ scrollbar.horizontal slider { min-width: 40px; }
 
 scrollbar.vertical slider { min-height: 40px; }
 
-scrollbar button { padding: 0; min-width: 14px; min-height: 14px; border-style: none; border-radius: 0; transition-property: min-height, min-width, color; box-shadow: none; color: #919294; }
+scrollbar button { padding: 0; min-width: 14px; min-height: 14px; border-style: none; border-radius: 0; transition-property: min-height, min-width, color; box-shadow: none; color: #919294; background-color: #2e3132; }
 
-scrollbar button:hover { color: #cdcecf; box-shadow: none; }
+scrollbar button:hover { background-color: #0c0d0d; color: #cdcecf; box-shadow: none; }
 
-scrollbar button:active, scrollbar button:checked { box-shadow: inset 0 0 6px 0 rgba(0, 0, 0, 0.3); color: #7196d3; }
+scrollbar button:active, scrollbar button:checked { color: #7196d3; background-color: black; }
 
 scrollbar button:disabled { color: rgba(145, 146, 148, 0.2); box-shadow: none; background-color: transparent; }
 

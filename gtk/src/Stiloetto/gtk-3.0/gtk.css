@@ -907,7 +907,7 @@ scrollbar.overlay-indicator:not(.dragging):not(.hovering) trough { background-co
 
 scrollbar.overlay-indicator:not(.dragging):not(.hovering) slider { margin: 0; min-width: 8px; min-height: 8px; background-color: #3C3C3C; border: 3px solid transparent; }
 
-scrollbar.overlay-indicator:not(.dragging):not(.hovering) button { min-width: 14px; min-height: 14px; background-clip: padding-box; background-color: transparent; border: 1px solid transparent; }
+scrollbar.overlay-indicator:not(.dragging):not(.hovering) button { min-width: 14px; min-height: 14px; background-clip: padding-box; background-color: rgba(255, 255, 255, 0.2); border: 1px solid transparent; }
 
 scrollbar.overlay-indicator:not(.dragging):not(.hovering).horizontal slider { margin: 0; min-width: 40px; }
 
@@ -927,9 +927,17 @@ scrollbar button { padding: 0; min-width: 14px; min-height: 14px; border-style: 
 
 scrollbar button:hover { color: #5d5d5d; box-shadow: none; }
 
-scrollbar button:active, scrollbar button:checked { box-shadow: inset 0 0 6px 0 rgba(0, 0, 0, 0.3); color: #2a4f8c; }
+scrollbar button:active, scrollbar button:checked { color: #2a4f8c; }
 
 scrollbar button:disabled { color: rgba(143, 143, 144, 0.2); box-shadow: none; background-color: transparent; }
+
+scrollbar.vertical button:hover { background: linear-gradient(to right, #d6d6d6, #ebebeb); }
+
+scrollbar.horizontal button:hover { background: linear-gradient(to bottom, #d6d6d6, #ebebeb); }
+
+scrollbar.vertical button:active { background: linear-gradient(to right, #c2c2c2, #d6d6d6); }
+
+scrollbar.horizontal button:active { background: linear-gradient(to bottom, #c2c2c2, #d6d6d6); }
 
 scrollbar.vertical button.up { -gtk-icon-source: -gtk-scaled(url("assets/scrollarrow-up.png"), url("assets/scrollarrow-up@2.png")); }
 
