@@ -199,8 +199,7 @@ StScrollBar {
   border-radius: $medium_radius;
   color: $osd_fg_color;
   background-color: $bg_color;
-  border: none;
-  box-shadow: 0 1px 2px transparentize(black, 0.5); // Upper and left shadow seems to be ignored in GNOME 3.32
+  border: 1px solid darken($bg_color, 5%);
 }
 
 .modal-dialog {
@@ -548,8 +547,8 @@ StScrollBar {
   -arrow-background-color: $bg_color;
   -arrow-border-width: 1px;
   -arrow-border-color: darken($bg_color, 5%);
-  -arrow-base: 12px;
-  -arrow-rise: 8px;
+  -arrow-base: 0;
+  -arrow-rise: 0;
 }
 
 .popup-separator-menu-item {
