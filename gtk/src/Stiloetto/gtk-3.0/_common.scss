@@ -3945,22 +3945,17 @@ headerbar,
 
         @if $b==close {
           background-color: $close_button;
-          box-shadow: none;
 
           &:hover, &:active {
             background-color: $close_button_hover;
           }
           &:backdrop {
-            box-shadow: none;
             background-color: $close_button_backdrop;
             &:hover, &:active { background-color: $close_button_hover; }
           }
         }
         @else if $b==maximize or minimize {
-          &:hover, &:active {
-            background-color: $max_min_hover;
-            &:backdrop { box-shadow: none; }
-          }
+          &:hover, &:active { background-color: $max_min_hover; }
         }
       }
     }

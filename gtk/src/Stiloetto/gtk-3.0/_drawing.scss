@@ -135,7 +135,7 @@ $entry_inner_shadow: inset 0 1px transparentize(black, 0.98), inset 0 2px transp
 @mixin edges(
     $s: normal, //state
     $c: $bg_color,
-    $b: if($c!=$bg_color, _border_color($c), darken($borders_color, 8%)) //border
+    $b: if($c!=$bg_color, _border_color($c), darken($borders_color, 14%)) //border
   ) {
   @if $s == normal {
     box-shadow: $shadow_normal;

@@ -753,7 +753,7 @@ popover.background list separator { margin: 0px; }
 
 notebook { padding: 0; }
 
-notebook > header { padding: 0; border-color: #c3c3c5; border-width: 0; background-color: #c0c0c2; padding-top: 1px; padding-right: 1px; padding-bottom: 1px; padding-left: 1px; }
+notebook > header { padding: 0; border-color: #c3c3c5; border-width: 0; background-color: #c5c5c7; padding-top: 1px; padding-right: 1px; padding-bottom: 1px; padding-left: 1px; }
 
 notebook > header.top tabs { margin: 0 0 -1px 1px; }
 
@@ -1579,11 +1579,11 @@ headerbar .left.horizontal, .titlebar .left.horizontal { border-right: 1px solid
 
 headerbar button.titlebutton, .titlebar button.titlebutton { border-color: transparent; background-color: transparent; background-image: none; box-shadow: none; box-shadow: inset 0 1px rgba(255, 255, 255, 0), 0 1px rgba(255, 255, 255, 0); text-shadow: none; -gtk-icon-shadow: none; }
 
-headerbar button.titlebutton.close, .titlebar button.titlebutton.close { color: transparent; background-color: transparent; background-position: center; background-repeat: no-repeat; border-width: 0; box-shadow: none; transition-property: background-color; transition-duration: 150ms; background-color: transparent; box-shadow: none; }
+headerbar button.titlebutton.close, .titlebar button.titlebutton.close { color: transparent; background-color: transparent; background-position: center; background-repeat: no-repeat; border-width: 0; box-shadow: none; transition-property: background-color; transition-duration: 150ms; background-color: transparent; }
 
 headerbar button.titlebutton.close:hover, headerbar button.titlebutton.close:active, .titlebar button.titlebutton.close:hover, .titlebar button.titlebutton.close:active { background-color: #c75050; }
 
-headerbar button.titlebutton.close:backdrop, .titlebar button.titlebutton.close:backdrop { box-shadow: none; background-color: transparent; }
+headerbar button.titlebutton.close:backdrop, .titlebar button.titlebutton.close:backdrop { background-color: transparent; }
 
 headerbar button.titlebutton.close:backdrop:hover, headerbar button.titlebutton.close:backdrop:active, .titlebar button.titlebutton.close:backdrop:hover, .titlebar button.titlebutton.close:backdrop:active { background-color: #c75050; }
 
@@ -1591,13 +1591,9 @@ headerbar button.titlebutton.maximize, .titlebar button.titlebutton.maximize { c
 
 headerbar button.titlebutton.maximize:hover, headerbar button.titlebutton.maximize:active, .titlebar button.titlebutton.maximize:hover, .titlebar button.titlebutton.maximize:active { background-color: #3665b3; }
 
-headerbar button.titlebutton.maximize:hover:backdrop, headerbar button.titlebutton.maximize:active:backdrop, .titlebar button.titlebutton.maximize:hover:backdrop, .titlebar button.titlebutton.maximize:active:backdrop { box-shadow: none; }
-
 headerbar button.titlebutton.minimize, .titlebar button.titlebutton.minimize { color: transparent; background-color: transparent; background-position: center; background-repeat: no-repeat; border-width: 0; box-shadow: none; transition-property: background-color; transition-duration: 150ms; }
 
 headerbar button.titlebutton.minimize:hover, headerbar button.titlebutton.minimize:active, .titlebar button.titlebutton.minimize:hover, .titlebar button.titlebutton.minimize:active { background-color: #3665b3; }
-
-headerbar button.titlebutton.minimize:hover:backdrop, headerbar button.titlebutton.minimize:active:backdrop, .titlebar button.titlebutton.minimize:hover:backdrop, .titlebar button.titlebutton.minimize:active:backdrop { box-shadow: none; }
 
 headerbar button.titlebutton.close, .titlebar button.titlebutton.close { background-image: -gtk-scaled(url("assets/titlebutton-close.png"), url("assets/titlebutton-close@2.png")); }
 
