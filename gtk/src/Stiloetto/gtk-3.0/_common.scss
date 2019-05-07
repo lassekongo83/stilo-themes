@@ -2713,18 +2713,21 @@ scale {
   slider {
     transition: all 100ms $deceleration_curve, box-shadow $shorter_duration $deceleration_curve;
     @include button(normal);
+    border: 1px solid transparent; // border needed here, or trough highlight color won't work
+    @if $variant == 'dark' { background-color: lighten($bg_color, 18%); }
 
     border-radius: 100%;
 
     &:hover {
       @include button(hover);
-      background-color: lighten($bg_color, 18%);
+      background-color: lighten($bg_color, 28%);
       box-shadow: 0 0 0 4px if($variant == 'light', transparentize($selected_bg_color, 0.7), transparentize(white, 0.96));
     }
 
-    &:active, &:checked {
-      border-color: if($variant == 'light', $selected_borders_color, transparentize(black,0.5));
-      box-shadow: $shadow_hover;
+    &:active {
+      border-color: if($variant == 'light', $selected_borders_color, $selected_bg_color);
+      box-shadow: none;
+      @if $variant == 'dark' { background-color: $selected_bg_color; }
     }
 
     &:disabled { @include button (insensitive); }
