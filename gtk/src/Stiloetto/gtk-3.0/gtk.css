@@ -1285,11 +1285,11 @@ printdialog paper { color: #3C3C3C; border: 1px solid #bebec0; background: white
 
 printdialog .dialog-action-box { margin: 12px; }
 
-frame > border, .frame { box-shadow: none; margin: 0; padding: 0; border-radius: 0; border: 1px solid #bebec0; }
+frame > border, .frame { box-shadow: none; margin: 0; padding: 0; border-radius: 0; border: 1px solid #99999d; }
 
 frame > border.flat, .frame.flat { border-style: none; }
 
-frame > border:backdrop, .frame:backdrop { border-color: #c1c1c3; }
+frame > border:backdrop, .frame:backdrop { border-color: #9d9da0; }
 
 frame.flat > border { border-style: none; }
 

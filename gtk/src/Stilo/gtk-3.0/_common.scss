@@ -3118,11 +3118,11 @@ frame > border,
   margin: 0;
   padding: 0;
   border-radius: 0;
-  border: 1px solid $borders_color;
+  border: 1px solid if($variant == 'light', darken($borders_color, 14%), $borders_color);
 
   &.flat { border-style: none; }
 
-  &:backdrop { border-color: $backdrop_borders_color; }
+  &:backdrop { border-color: if($variant == 'light', darken($backdrop_borders_color, 14%), $backdrop_borders_color); }
 }
 
 frame.flat > border { border-style: none; }

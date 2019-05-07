@@ -477,7 +477,7 @@ searchbar > revealer > box { margin: -6px; padding: 6px; }
 
 .inline-toolbar, searchbar > revealer > box, .location-bar { background-color: #c8c8ca; }
 
-.titlebar:not(headerbar), headerbar { padding: 0 4px; min-height: 38px; border-width: 0; border-style: solid; border-color: #c3c3c5; background-color: #dadadb; }
+.titlebar:not(headerbar), headerbar { padding: 0 4px; min-height: 38px; border-width: 0; border-style: solid; border-color: #c3c3c5; background-color: #dadadb; box-shadow: inset 0 1px rgba(255, 255, 255, 0.1); }
 
 .titlebar:backdrop:not(headerbar), headerbar:backdrop { border-color: #c3c3c5; background-image: none; color: #8f8f90; }
 
@@ -485,9 +485,9 @@ searchbar > revealer > box { margin: -6px; padding: 6px; }
 
 .titlebar:not(headerbar) .subtitle, headerbar .subtitle { font-size: smaller; padding-left: 12px; padding-right: 12px; }
 
-.selection-mode .titlebar:not(headerbar), .selection-mode.titlebar:not(headerbar), .selection-mode headerbar, headerbar.selection-mode { color: #ffffff; text-shadow: 0 -1px rgba(0, 0, 0, 0.5); border-color: #1e3965; background-color: #3665b3; }
+.selection-mode .titlebar:not(headerbar), .selection-mode.titlebar:not(headerbar), .selection-mode headerbar, headerbar.selection-mode { color: #ffffff; text-shadow: 0 -1px rgba(0, 0, 0, 0.5); border-color: #1e3965; background-color: #3665b3; box-shadow: inset 0 1px rgba(64, 109, 183, 0.55); }
 
-.selection-mode .titlebar:backdrop:not(headerbar), .selection-mode.titlebar:backdrop:not(headerbar), .selection-mode headerbar:backdrop, headerbar.selection-mode:backdrop { background-color: #3665b3; background-image: none; box-shadow: inset 0 1px #afc1e1; }
+.selection-mode .titlebar:backdrop:not(headerbar), .selection-mode.titlebar:backdrop:not(headerbar), .selection-mode headerbar:backdrop, headerbar.selection-mode:backdrop { background-color: #3665b3; background-image: none; box-shadow: inset 0 1px rgba(69, 112, 185, 0.46); }
 
 .selection-mode .titlebar:backdrop:not(headerbar) label, .selection-mode.titlebar:backdrop:not(headerbar) label, .selection-mode headerbar:backdrop label, headerbar.selection-mode:backdrop label { text-shadow: none; color: #ffffff; }
 
@@ -539,7 +539,7 @@ searchbar > revealer > box { margin: -6px; padding: 6px; }
 
 .titlebar:not(headerbar) separator, headerbar separator { background-color: transparent; }
 
-.titlebar:not(headerbar) separator:backdrop, headerbar separator:backdrop { background-color: #dadadb; }
+.titlebar:not(headerbar) separator:backdrop, headerbar separator:backdrop { background-color: #dadadb; box-shadow: inset 0 1px rgba(255, 255, 255, 0.1); }
 
 .titlebar:not(headerbar) separator.titlebutton, headerbar separator.titlebutton { opacity: 0; }
 
@@ -607,7 +607,7 @@ window.tiled headerbar, window.tiled headerbar:first-child, window.tiled headerb
 
 window.csd > .titlebar:not(headerbar) { padding: 0; background-color: transparent; background-image: none; border-style: none; border-color: transparent; box-shadow: none; }
 
-.titlebar:not(headerbar) separator { background-color: #dadadb; }
+.titlebar:not(headerbar) separator { background-color: #dadadb; box-shadow: inset 0 1px rgba(255, 255, 255, 0.1); }
 
 filechooser .path-bar.linked > button { border-color: transparent; background-color: transparent; background-image: none; box-shadow: none; box-shadow: inset 0 1px rgba(255, 255, 255, 0), 0 1px rgba(255, 255, 255, 0); text-shadow: none; -gtk-icon-shadow: none; border-radius: 0; margin: 0 2px; }
 
@@ -1055,7 +1055,7 @@ treeview.view check:selected:disabled:backdrop, treeview.view radio:selected:dis
 
 treeview.view check:backdrop:selected, treeview.view check:backdrop, treeview.view radio:backdrop:selected, treeview.view radio:backdrop { color: #ffffff; }
 
-scale trough, scale fill, progressbar trough { border: 1px solid #d7d7d8; border-radius: 0; background-color: #d7d7d8; box-shadow: none; }
+scale trough, scale fill, progressbar trough { border: 1px solid #d7d7d8; border-radius: 16px; background-color: #d7d7d8; box-shadow: none; }
 
 scale trough:disabled, scale fill:disabled, progressbar trough:disabled { background-color: #d1d1d2; box-shadow: none; }
 
@@ -1067,7 +1067,7 @@ row:selected scale trough, scale row:selected trough, row:selected scale fill, s
 
 .osd scale trough:disabled, scale .osd trough:disabled, .osd scale fill:disabled, scale .osd fill:disabled, .osd progressbar trough:disabled, progressbar .osd trough:disabled { background-color: rgba(63, 65, 67, 0.5); }
 
-scale highlight, progressbar progress { border: 1px solid #3665b3; border-radius: 0; background-color: #3665b3; }
+scale highlight, progressbar progress { border: 1px solid #3665b3; border-radius: 16px; background-color: #3665b3; }
 
 scale highlight:disabled, progressbar progress:disabled { background-color: transparent; border-color: transparent; }
 
@@ -1231,15 +1231,15 @@ progressbar.horizontal progress { margin: 0 -1px; }
 
 progressbar.vertical progress { margin: -1px 0; }
 
-progressbar progress { border-radius: 0; }
+progressbar progress { border-radius: 16px; }
 
-progressbar progress.left { border-top-left-radius: 0; border-bottom-left-radius: 0; }
+progressbar progress.left { border-top-left-radius: 16px; border-bottom-left-radius: 16px; }
 
-progressbar progress.right { border-top-right-radius: 0; border-bottom-right-radius: 0; }
+progressbar progress.right { border-top-right-radius: 16px; border-bottom-right-radius: 16px; }
 
-progressbar progress.top { border-top-right-radius: 0; border-top-left-radius: 0; }
+progressbar progress.top { border-top-right-radius: 16px; border-top-left-radius: 16px; }
 
-progressbar progress.bottom { border-bottom-right-radius: 0; border-bottom-left-radius: 0; }
+progressbar progress.bottom { border-bottom-right-radius: 16px; border-bottom-left-radius: 16px; }
 
 progressbar.osd { min-width: 6px; min-height: 6px; background-color: transparent; }
 
@@ -1273,11 +1273,11 @@ printdialog paper { color: #3C3C3C; border: 1px solid #c3c3c5; background: white
 
 printdialog .dialog-action-box { margin: 12px; }
 
-frame > border, .frame { box-shadow: none; margin: 0; padding: 0; border-radius: 0; border: 1px solid #c3c3c5; }
+frame > border, .frame { box-shadow: none; margin: 0; padding: 0; border-radius: 0; border: 1px solid #9f9fa2; }
 
 frame > border.flat, .frame.flat { border-style: none; }
 
-frame > border:backdrop, .frame:backdrop { border-color: #c6c6c8; }
+frame > border:backdrop, .frame:backdrop { border-color: #a2a2a5; }
 
 frame.flat > border { border-style: none; }
 
@@ -1349,7 +1349,7 @@ calendar.highlight { color: #8f8f90; }
 
 calendar:indeterminate { color: alpha(currentColor,0.1); }
 
-messagedialog .titlebar { min-height: 20px; background-image: none; background-color: #e2e2e3; border-style: none; border-top-left-radius: 0; border-top-right-radius: 0; background-color: #dadadb; }
+messagedialog .titlebar { min-height: 20px; background-image: none; background-color: #e2e2e3; border-style: none; border-top-left-radius: 0; border-top-right-radius: 0; background-color: #dadadb; box-shadow: inset 0 1px rgba(255, 255, 255, 0.1); }
 
 messagedialog.csd.background { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
 
@@ -1707,8 +1707,8 @@ button.emoji-section:checked label { opacity: 1; }
 @define-color success_color #9ccc65;
 @define-color wm_title shade(#3C3C3C, 1.8);
 @define-color wm_unfocused_title #8f8f90;
-@define-color wm_highlight white;
-@define-color wm_borders_edge white;
+@define-color wm_highlight rgba(255, 255, 255, 0.1);
+@define-color wm_borders_edge rgba(255, 255, 255, 0.1);
 @define-color wm_bg_a shade(#e2e2e3, 1.2);
 @define-color wm_bg_b #e2e2e3;
 @define-color wm_shadow alpha(black, 0.35);
