@@ -78,7 +78,7 @@ $secondary_bg_color: if($variant == 'light', mix($bg_color, $base_color, 50%), $
 $secondary_borders_color: if($variant == 'light', darken($secondary_bg_color, 8%), $borders_color);
 
 // tabbar
-$tabbar_color: if($variant == 'light', darken($bg_color, 12%), darken($bg_color, 3%));
+$tabbar_color: if($variant == 'light', darken($bg_color, 11%), darken($bg_color, 3%));
 
 // toolbar
 $toolbar_color: $bg_color;

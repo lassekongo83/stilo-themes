@@ -753,7 +753,7 @@ popover.background list separator { margin: 0px; }
 
 notebook { padding: 0; }
 
-notebook > header { padding: 0; border-color: #bebec0; border-width: 0; background-color: #c3c3c5; padding-top: 1px; padding-right: 1px; padding-bottom: 1px; padding-left: 1px; }
+notebook > header { padding: 0; border-color: #bebec0; border-width: 0; background-color: #c5c5c7; padding-top: 1px; padding-right: 1px; padding-bottom: 1px; padding-left: 1px; }
 
 notebook > header.top tabs { margin: 0 0 -1px 1px; }
 

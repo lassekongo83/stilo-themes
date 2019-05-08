@@ -1,7 +1,8 @@
 # stilo-themes
 Minimalistic GTK themes
 
-These themes are still in development. Things may change.
+![Stilo themes](images/preview.png?raw=true)
+<sub>[Wallpapers](https://imgur.com/a/zrijHvk) | [Icons](https://github.com/vinceliuice/Tela-icon-theme) | Fonts: Droid Sans / SF Mono | GNOME shell extension: Dash to Panel</sub>
 
 ### Requirements
 
@@ -21,7 +22,7 @@ Other distros may have named the above packages differently.
 
 ## Installation
 
-When the above requirements are installed, simply run these commands.
+When the above requirements are installed, simply run these commands:
 ```bash
 git clone https://github.com/lassekongo83/stilo-themes.git
 cd stilo-themes
@@ -29,3 +30,14 @@ meson build
 sudo ninja -C build install
 ```
 The themes will be installed in: `/usr/share/themes`
+
+Use `gnome-tweaks` to change themes.
+
+You can also change your GTK themes using a terminal.
+```bash
+# Changing the theme to Stiloetto-dark, simply run
+gsettings set org.gnome.desktop.interface gtk-theme Stiloetto-dark
+
+# Reverting the change to the default GNOME theme
+gsettings set org.gnome.desktop.interface gtk-theme Adwaita
+```

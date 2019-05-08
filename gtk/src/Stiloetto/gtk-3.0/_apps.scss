@@ -242,6 +242,10 @@ XfceHeading,
   notebook,
   notebook > stack:not(:only-child) searchbar { @extend %view; }
 
+  @if $variant == 'dark' {
+    .sidebar-row + separator { border: none; }
+  }
+
   .path-bar {
     // Nautilus path-bar separator
     .dim-label {
