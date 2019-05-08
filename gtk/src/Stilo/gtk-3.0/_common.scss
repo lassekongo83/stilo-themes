@@ -3947,7 +3947,7 @@ headerbar,
     @each $k in ('close', 'maximize', 'minimize') {
       @each $l, $m in ('',''), (':backdrop','-backdrop'), (':hover','-hover'), (':active','-hover') 
       { &.#{$k}#{$l} {
-          @if($dark_header=='false' or $variant=='light') {
+          @if($dark_header=='false' and $variant=='light') {
             background-image: -gtk-scaled(url('assets/titlebutton-#{$k}#{$m}.png'),
                                           url('assets/titlebutton-#{$k}#{$m}@2.png'));
           }
@@ -3968,7 +3968,7 @@ headerbar,
     button.titlebutton {
       @each $l, $m in ('',''), (':backdrop','-backdrop'), (':hover','-hover'), (':active','-hover') 
       { &.maximize#{$l} {
-          @if($dark_header=='false' or $variant=='light') {
+          @if($dark_header=='false' and $variant=='light') {
             background-image: -gtk-scaled(url('assets/titlebutton-unmaximize#{$m}.png'),
                                           url('assets/titlebutton-unmaximize#{$m}@2.png'));
           }
