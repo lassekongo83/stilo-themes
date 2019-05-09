@@ -1755,7 +1755,7 @@ CatfishWindow .pane-separator { background-color: #202122; }
 
 XfceHeading, .XfceHeading { margin: 0; padding: 0; border-width: 0; background-image: none; background-color: #2b2e30; color: white; text-shadow: none; }
 
-.budgie-panel, .xfce4-panel { background-color: #2b2e30; color: #f6f6f7; font-style: normal; text-shadow: none; -gtk-icon-shadow: none; }
+.budgie-panel, .xfce4-panel { background-color: #121517; color: #f6f6f7; font-style: normal; text-shadow: none; -gtk-icon-shadow: none; }
 
 .xfce4-panel frame > border { border-style: none; }
 
