@@ -31,6 +31,8 @@ sudo ninja -C build install
 ```
 The themes will be installed in: `/usr/share/themes`
 
+#### Changing themes
+
 Use `gnome-tweaks` to change themes.
 
 You can also change your GTK themes using a terminal.

@@ -115,7 +115,7 @@
   }
 }
 
-@mixin button($t, $c:$osd_bg_color, $tc:$fg_color, $edge: $borders_edge) {
+@mixin button($t, $c:$bg_color, $tc:$fg_color, $edge: $borders_edge) {
 //
 // Button drawing function
 //
@@ -140,8 +140,8 @@
   //
   // normal button
   //
-    $_bg: if($c!=$osd_bg_color, transparentize($c, 0.5),
-                            lighten($osd_bg_color, 6%));
+    $_bg: if($c!=$bg_color, transparentize($c, 0.5),
+                            lighten($bg_color, 6%));
 
     color: $osd_fg_color;
     background-color: $_bg;
@@ -156,8 +156,8 @@
   //
   // hover osd button
   //
-    $_bg: if($c!=$osd_bg_color, transparentize($c, 0.5),
-                            lighten($osd_bg_color, 10%));
+    $_bg: if($c!=$bg_color, transparentize($c, 0.5),
+                            lighten($bg_color, 10%));
 
     color: white;
     border-color: transparent;
@@ -203,7 +203,7 @@
   //
   // insensitive osd button
   //
-    $_bg: transparentize(mix($insensitive_fg_color,$osd_bg_color,20%),0.3);
+    $_bg: transparentize(mix($insensitive_fg_color,$bg_color,20%),0.3);
 
     color: $insensitive_fg_color;
     border-color: $osd_borders_color;

@@ -141,23 +141,23 @@ StScrollBar {
 .slider {
   height: 1em;
   -barlevel-height: 0.3em;
-  -barlevel-background-color: $insensitive_bg_color; //background of the trough
-  -barlevel-border-color: $borders_color; //trough border color
-  -barlevel-active-background-color: $selected_bg_color; //active trough fill
-  -barlevel-active-border-color: darken($selected_bg_color,15%); //active trough border
+  -barlevel-background-color: lighten($insensitive_bg_color,5%); //background of the trough
+  -barlevel-border-color: transparent; //$borders_color; //trough border color
+  -barlevel-active-background-color: darken($selected_bg_color,15%); //active trough fill
+  -barlevel-active-border-color: transparent; //darken($selected_bg_color,15%); //active trough border
   -barlevel-overdrive-color: $destructive_color;
   -barlevel-overdrive-border-color: darken($destructive_color,10%);
   -barlevel-overdrive-separator-width: 0.2em;
-  -barlevel-border-width: 1px;
+  -barlevel-border-width: 0;
   -slider-handle-radius: 6px;
 
   // VERSION SPECIFIC (< 3.29.90)
   -slider-height: 0.3em;
-  -slider-background-color: $insensitive_bg_color; //background of the trough
-  -slider-border-color: $borders_color; //trough border color
-  -slider-active-background-color: $selected_bg_color; //active trough fill
-  -slider-active-border-color: darken($selected_bg_color,10%); //active trough border
-  -slider-border-width: 1px;
+  -slider-background-color: lighten($insensitive_bg_color,5%); //background of the trough
+  -slider-border-color: transparent; //trough border color
+  -slider-active-background-color: darken($selected_bg_color,15%); //active trough fill
+  -slider-active-border-color: transparent; //active trough border
+  -slider-border-width: 0;
 }
 
 // Check Boxes
@@ -199,7 +199,7 @@ StScrollBar {
   border-radius: $medium_radius;
   color: $osd_fg_color;
   background-color: $bg_color;
-  border: 1px solid darken($bg_color, 5%);
+  border: none;
 }
 
 .modal-dialog {
@@ -505,7 +505,7 @@ StScrollBar {
   .popup-menu-arrow { } //defined globally in the TOP BAR
   .popup-sub-menu {
     padding-bottom: 1px;
-    background-color: darken($bg_color, 2%);
+    background-color: lighten($borders_color, 4%);
     box-shadow: inset 0 -1px 0px lighten($borders_color, 5%);
   }
 
@@ -516,7 +516,7 @@ StScrollBar {
     &:ltr { padding: .4em 1.75em .4em 0em; }
     &:rtl { padding: .4em 0em .4em 1.75em; }
     &:checked {
-      background-color: darken($bg_color, 2%);
+      background-color: lighten($borders_color, 4%);
       box-shadow: inset 0 1px 0px lighten($borders_color, 5%);
       font-weight: bold;
     }
@@ -543,12 +543,12 @@ StScrollBar {
 }
 .popup-menu-boxpointer,
 .candidate-popup-boxpointer {
-  -arrow-border-radius: $medium_radius;
-  -arrow-background-color: $bg_color;
-  -arrow-border-width: 1px;
-  -arrow-border-color: darken($bg_color, 5%);
-  -arrow-base: 0;
-  -arrow-rise: 0;
+  -arrow-border-radius: $small_radius;
+  -arrow-background-color: $osd_bg_color;
+  -arrow-border-width: 0;
+  -arrow-border-color: $osd_borders_color;
+  -arrow-base: 12px;
+  -arrow-rise: 6px;
 }
 
 .popup-separator-menu-item {
@@ -556,7 +556,7 @@ StScrollBar {
   height: 1px; //not really the whole box
   margin: 6px 0px;
   background-color: transparent;
-  border-color: transparentize($borders_color, 0.7);
+  border-color: transparentize($base_color, 0.8);
   border-bottom-width: 1px;
   border-bottom-style: solid;
 }
@@ -804,7 +804,7 @@ StScrollBar {
   
   &.solid {
     // Not a desired behavior in this theme. Let's use the normal panel bg.
-    background-color: transparentize(black, 0.2);
+    background-color: transparentize(black, 0.1);
     transition-duration: 0ms;
   }
 }
@@ -830,7 +830,7 @@ StScrollBar {
 .datemenu-displays-box { spacing: 1em; }
 
 .datemenu-calendar-column {
-  border: 0 solid lighten($bg_color,5%);
+  border: 0 solid transparentize($base_color, 0.8);
   &:ltr { border-left-width: 1px; }
   &:rtl { border-right-width: 1px; }
 }
@@ -1124,7 +1124,8 @@ StScrollBar {
   color: $fg_color;
   border-radius: 32px; // wish we could do 50%
   padding: 13px;
-  border: 1px solid transparentize($borders_color, .2);
+  border: 1px solid transparent;
+  background-color: transparentize($bg_color, 0.5);
 
   &:hover, &:focus {
     background-color: $selected_bg_color;
