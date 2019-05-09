@@ -1797,15 +1797,15 @@ XfceHeading, .XfceHeading { margin: 0; padding: 0; border-width: 0; background-i
 
 #xfwm-tabwin button:hover { background-color: #4a79c7; transition-duration: 100ms; }
 
-.gnome-panel-menu-bar, .gnome-panel-menu-bar menubar, .mate-panel-menu-bar, .mate-panel-menu-bar menubar { background-color: #2b2e30; }
+.gnome-panel-menu-bar, .gnome-panel-menu-bar menubar, .mate-panel-menu-bar, .mate-panel-menu-bar menubar { background-color: #121517; }
 
 .gnome-panel-menu-bar menubar, .gnome-panel-menu-bar #PanelApplet label, .gnome-panel-menu-bar #PanelApplet image, .mate-panel-menu-bar menubar, .mate-panel-menu-bar #PanelApplet label, .mate-panel-menu-bar #PanelApplet image { color: #f6f6f7; }
 
 .gnome-panel-menu-bar button label, .gnome-panel-menu-bar button image, .gnome-panel-menu-bar #tasklist-button label, .gnome-panel-menu-bar #tasklist-button image, .mate-panel-menu-bar button label, .mate-panel-menu-bar button image, .mate-panel-menu-bar #tasklist-button label, .mate-panel-menu-bar #tasklist-button image { color: inherit; }
 
-.gnome-panel-menu-bar .wnck-pager, .mate-panel-menu-bar .wnck-pager { color: #7b7b7c; background-color: #131415; }
+.gnome-panel-menu-bar .wnck-pager, .mate-panel-menu-bar .wnck-pager { color: #7b7b7c; background-color: black; }
 
-.gnome-panel-menu-bar .wnck-pager:hover, .mate-panel-menu-bar .wnck-pager:hover { background-color: #373b3d; }
+.gnome-panel-menu-bar .wnck-pager:hover, .mate-panel-menu-bar .wnck-pager:hover { background-color: #1d2225; }
 
 .gnome-panel-menu-bar .wnck-pager:selected, .mate-panel-menu-bar .wnck-pager:selected { color: #98b3df; background-color: #4a79c7; }
 

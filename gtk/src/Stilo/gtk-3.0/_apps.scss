@@ -69,10 +69,10 @@ XfceHeading,
   background-color: $dark_borders_color;
   color: $dark_fg_color;
   font-style: normal;
-  
+
   text-shadow: none;
   -gtk-icon-shadow: none;
-  
+
   button { @extend %panelbutton; }
 }
 
@@ -83,7 +83,7 @@ XfceHeading,
 .xfce4-panel menu {
   -gtk-icon-effect: none;
   text-shadow: none;
-  
+
   // plano-theme #25
   button {
     @include button(normal);
@@ -183,7 +183,7 @@ XfceHeading,
 .gnome-panel-menu-bar,
 .mate-panel-menu-bar {
 
-  &, menubar { background-color: $dark_bg_color; }
+  &, menubar { background-color: $dark_borders_color; }
 
   menubar,
   #PanelApplet label,
@@ -201,10 +201,10 @@ XfceHeading,
 
   .wnck-pager {
     color: mix($dark_fg_color, black, 50%);
-    background-color: darken($dark_bg_color, 10%);
+    background-color: darken($dark_borders_color, 10%);
 
     &:hover {
-      background-color: lighten($dark_bg_color, 5%);
+      background-color: lighten($dark_borders_color, 5%);
     }
 
     &:selected {
