@@ -7,3 +7,4 @@ sassc = find_program('sassc')
 
 subdir('gnome-shell')
 subdir('gtk')
+subdir('xfwm4')
