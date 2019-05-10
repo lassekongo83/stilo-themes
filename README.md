@@ -2,7 +2,7 @@
 Minimalistic GTK themes
 
 ![Stilo themes](preview.png?raw=true)
-<sub>[Wallpapers](https://imgur.com/a/zrijHvk) | [Icons](https://github.com/vinceliuice/Tela-icon-theme) | Fonts: Droid Sans / SF Mono | GNOME shell extension: Dash to Panel</sub>
+<sub>[Wallpapers](https://imgur.com/a/zrijHvk) | [Icons](https://github.com/vinceliuice/Tela-icon-theme) | Fonts: Roboto / SF Mono | GNOME shell extension: Dash to Panel</sub>
 
 ### Requirements
 
