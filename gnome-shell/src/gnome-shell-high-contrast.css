@@ -1,6 +1,6 @@
 /* This stylesheet is generated, DO NOT EDIT */
 /* Copyright 2009, 2015 Red Hat, Inc. Portions adapted from Mx's data/style/default.css Copyright 2009 Intel Corporation This program is free software; you can redistribute it and/or modify it under the terms and conditions of the GNU Lesser General Public License, version 2.1, as published by the Free Software Foundation. This program is distributed in the hope it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for more details. You should have received a copy of the GNU Lesser General Public License along with this program; if not, write to the Free Software Foundation, Inc., 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA. */
-stage { font-family: Roboto, Sans-Serif; font-size: 10pt; color: #fff; }
+stage { font-family: Roboto, Ubuntu, Sans-Serif; font-size: 10pt; color: #fff; }
 
 .button { border-radius: 2px; border-width: 1px; padding: 4px 32px; color: #eeeeec; background-color: #0f0f0f; box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1); border-color: transparent; text-shadow: 0 1px black; icon-shadow: 0 1px black; border: 1px solid; }
 
