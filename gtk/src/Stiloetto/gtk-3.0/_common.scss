@@ -542,6 +542,11 @@ button {
         color: $selected_fg_color;
         border-color: transparent;
       }
+      &.flat:hover {
+        background-color: $light_selection;
+        box-shadow: none;
+        border-color: $selected_borders_color;
+      }
     }
   }
 
@@ -3224,6 +3229,11 @@ row {
       &.has-open-popup,
       &:hover { background-color: mix($fg_color, $selected_bg_color, 10%); }
     }
+  }
+
+  button.flat {
+    box-shadow: none;
+    &:hover { border-color: $borders_color; }
   }
 
   &:selected { @extend %selected_items; }

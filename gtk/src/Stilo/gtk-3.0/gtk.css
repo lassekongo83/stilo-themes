@@ -207,6 +207,8 @@ row:selected button { border-color: #1e3965; }
 
 row:selected button.sidebar-button:not(:active):not(:checked):not(:hover):not(disabled), row:selected button.flat:not(:active):not(:checked):not(:hover):not(disabled) { color: #ffffff; border-color: transparent; }
 
+row:selected button.sidebar-button:hover, row:selected button.flat:hover { background-color: #b3c7e8; box-shadow: none; border-color: #1e3965; }
+
 button.osd { min-width: 24px; min-height: 32px; color: #eeeeec; border-radius: 0; outline-color: rgba(238, 238, 236, 0.3); color: #eeeeec; border-color: rgba(0, 0, 0, 0.7); background-image: image(rgba(43, 46, 48, 0.7)); background-clip: padding-box; box-shadow: inset 0 1px rgba(255, 255, 255, 0.1); text-shadow: 0 1px black; -gtk-icon-shadow: 0 1px black; outline-color: rgba(238, 238, 236, 0.3); border: none; box-shadow: none; }
 
 button.osd.image-button { min-width: 32px; }
@@ -1316,6 +1318,10 @@ row.activatable:active { box-shadow: inset 0 2px 2px -2px rgba(0, 0, 0, 0.2); }
 row.activatable:selected:active { box-shadow: inset 0 2px 3px -1px rgba(0, 0, 0, 0.5); }
 
 row.activatable:selected.has-open-popup, row.activatable:selected:hover { background-color: #3761a7; }
+
+row button.flat { box-shadow: none; }
+
+row button.flat:hover { border-color: #c3c3c5; }
 
 .app-notification, .app-notification.frame { padding: 10px; border-radius: 0 0 0 0; background-color: rgba(43, 46, 48, 0.7); background-image: none; background-clip: padding-box; }
 
