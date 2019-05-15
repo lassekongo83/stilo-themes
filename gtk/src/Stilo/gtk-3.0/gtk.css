@@ -1251,25 +1251,33 @@ progressbar.osd progress { border-style: none; border-radius: 0; }
 
 progressbar trough.empty progress { all: unset; }
 
-levelbar block { min-width: 32px; min-height: 1px; }
+levelbar.horizontal block { min-height: 1px; }
 
-levelbar.vertical block { min-width: 1px; min-height: 32px; }
+levelbar.horizontal.discrete block { margin: 0 1px; min-width: 32px; }
 
-levelbar trough { border: 1px solid; padding: 2px; border-radius: 0; color: black; border-color: #c3c3c5; border-bottom-color: #9c9c9f; background-color: #FFFFFF; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(0, 0, 0, 0.16); border-color: transparent; box-shadow: none; }
+levelbar.vertical block { min-width: 1px; }
 
-levelbar.horizontal.discrete block { margin: 0 1px; }
+levelbar.vertical.discrete block { margin: 1px 0; min-height: 32px; }
 
-levelbar.vertical.discrete block { margin: 1px 0; }
+levelbar trough { border: 1px solid; padding: 2px; border-radius: 0; color: black; border-color: #c3c3c5; border-bottom-color: #9c9c9f; background-color: #FFFFFF; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(0, 0, 0, 0.16); border-color: transparent; border-color: #c3c3c5; box-shadow: none; }
 
 levelbar block { border: 1px solid; border-radius: 0; }
 
 levelbar block.low { border-color: #c19100; background-color: #ffca28; }
 
+levelbar block.low:backdrop { border-color: #ffca28; }
+
 levelbar block.high, levelbar block:not(.empty) { border-color: #1e3965; background-color: #3665b3; }
+
+levelbar block.high:backdrop, levelbar block:not(.empty):backdrop { border-color: #3665b3; }
 
 levelbar block.full { border-color: #699833; background-color: #9ccc65; }
 
-levelbar block.empty { background-color: transparent; border-color: rgba(60, 60, 60, 0.2); box-shadow: none; }
+levelbar block.full:backdrop { border-color: #9ccc65; }
+
+levelbar block.empty { background-color: transparent; border-color: rgba(60, 60, 60, 0.2); }
+
+levelbar block.empty:backdrop { border-color: rgba(143, 143, 144, 0.15); }
 
 printdialog paper { color: #3C3C3C; border: 1px solid #c3c3c5; background: white; padding: 0; }
 

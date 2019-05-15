@@ -3050,14 +3050,26 @@ progressbar {
 // Level Bar //
 //-----------//
 levelbar {
-  block {
-    min-width: 32px;
-    min-height: 1px;
+  &.horizontal {
+    block {
+      min-height: 1px;
+    }
+
+    &.discrete block {
+      margin: 0 1px;
+      min-width: 32px;
+    }
   }
 
-  &.vertical block {
-    min-width: 1px;
-    min-height: 32px;
+  &.vertical {
+    block {
+      min-width: 1px;
+    }
+
+    &.discrete block {
+      margin: 1px 0;
+      min-height: 32px;
+    }
   }
 
   trough {
@@ -3065,12 +3077,11 @@ levelbar {
     padding: 2px;
     border-radius: 0;
     @include entry(normal);
+    border-color: $borders_color;
     box-shadow: none;
+
+    &:backdrop { @include entry(backdrop); }
   }
-
-  &.horizontal.discrete block { margin: 0 1px; }
-
-  &.vertical.discrete block { margin: 1px 0; }
 
   block {
     border: 1px solid;
@@ -3079,23 +3090,30 @@ levelbar {
     &.low {
       border-color: if($variant == 'light', darken($warning_color, 20%), $warning_color);
       background-color: $warning_color;
+
+      &:backdrop { border-color: $warning_color; };
     }
 
     &.high,
     &:not(.empty) {
       border-color: if($variant == 'light', darken($selected_bg_color, 20%), $selected_bg_color);
       background-color: $selected_bg_color;
+
+      &:backdrop { border-color: $selected_bg_color; }
     }
 
     &.full {
       border-color: if($variant == 'light', darken($success_color, 20%), $success_color);
       background-color: $success_color;
+
+      &:backdrop { border-color: $success_color; };
     }
 
     &.empty {
       background-color: transparent;
-      border-color: if($variant == 'light', transparentize($fg_color, 0.8), transparentize($fg_color, 0.9));
-      box-shadow: none;
+      border-color: if($variant == 'light', transparentize($fg_color,0.8), transparentize($fg_color,0.9));
+
+      &:backdrop { border-color: transparentize($backdrop_fg_color,0.85); }
     }
   }
 }
