@@ -2504,6 +2504,7 @@ radio {
     margin: 0; // this is a workaround for a menu check/radio size allocation issue
     border: 1px solid;
     box-shadow: none;
+    transition: none;
 
     &, &:disabled, &:checked { //FIXME use button reset mixin
       min-height: 14px;

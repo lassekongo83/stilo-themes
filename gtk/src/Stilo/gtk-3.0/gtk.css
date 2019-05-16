@@ -1031,7 +1031,7 @@ row:selected check, row:selected radio { border-color: #1e3965; }
 
 .osd check:disabled, .osd radio:disabled { color: #8d8e8e; border-color: rgba(0, 0, 0, 0.7); background-image: image(rgba(63, 65, 67, 0.5)); background-clip: padding-box; box-shadow: none; text-shadow: none; -gtk-icon-shadow: none; }
 
-menu menuitem check, menu menuitem radio { margin: 0; border: 1px solid; box-shadow: none; }
+menu menuitem check, menu menuitem radio { margin: 0; border: 1px solid; box-shadow: none; transition: none; }
 
 menu menuitem check, menu menuitem check:disabled, menu menuitem check:checked, menu menuitem radio, menu menuitem radio:disabled, menu menuitem radio:checked { min-height: 14px; min-width: 14px; background-image: none; background-color: transparent; box-shadow: none; -gtk-icon-shadow: none; color: inherit; border-color: #c3c3c5; }
 
