@@ -31,6 +31,16 @@ sudo ninja -C build install
 ```
 The themes will be installed in: `/usr/share/themes`
 
+### Updating the theme
+
+Navigate to the `stilo-themes` folder that was originally cloned. (If you removed it, do the steps above instead).
+
+Then simply run:
+```bash
+git pull
+sudo ninja -C build install
+```
+
 #### Changing themes
 
 Use `gnome-tweaks` to change themes.
