@@ -1393,6 +1393,8 @@ paned .sidebar.left, paned .sidebar.right, paned .sidebar.left:dir(rtl), paned .
 
 .sidebar separator { background-color: transparent; }
 
+.sidebar treeview { background-color: #f1f1f1; }
+
 stacksidebar row { padding: 10px 4px; }
 
 stacksidebar row > label { padding-left: 6px; padding-right: 6px; }
@@ -1757,8 +1759,6 @@ button.emoji-section:checked label { opacity: 1; }
 
 .nautilus-window .nautilus-path-bar button:checked, .nautilus-window .nautilus-path-bar button:checked:hover, .nautilus-window .nautilus-path-bar button:checked:backdrop:hover, .nautilus-window .nautilus-path-bar button:checked:hover, .nautilus-window .nautilus-path-bar button:checked:hover:hover, .nautilus-window .nautilus-path-bar button:checked:hover:backdrop:hover, .nautilus-window .nautilus-path-bar button:last-child, .nautilus-window .nautilus-path-bar button:last-child:hover, .nautilus-window .nautilus-path-bar button:last-child:backdrop:hover { color: #ffffff; }
 
-CatfishWindow .pane-separator { background-color: #e6e6e6; }
-
 XfceHeading, .XfceHeading { margin: 0; padding: 0; border-width: 0; background-image: none; background-color: #e2e2e3; color: black; text-shadow: none; }
 
 .budgie-panel, .xfce4-panel { background-color: #121517; color: #f6f6f7; font-style: normal; text-shadow: none; -gtk-icon-shadow: none; }
@@ -1865,11 +1865,9 @@ window.background.chromium menubar { color: #3C3C3C; }
 
 .thunar .sidebar .view, .thunar .sidebar iconview { background-color: #f1f1f1; }
 
-.thunar .sidebar .view:hover, .thunar .sidebar iconview:hover { background-color: rgba(54, 101, 179, 0.16); }
+.thunar .sidebar .view:hover, .thunar .sidebar iconview:hover { background-color: rgba(60, 60, 60, 0.1); }
 
 .thunar .sidebar .view:selected, .thunar .sidebar iconview:selected { background-color: #3665b3; }
-
-.thunar .sidebar .view:selected:backdrop, .thunar .sidebar iconview:selected:backdrop { background-color: rgba(54, 101, 179, 0.6); }
 
 .thunar toolbar { border-bottom: 1px solid #c3c3c5; }
 
