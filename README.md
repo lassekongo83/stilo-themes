@@ -53,3 +53,9 @@ gsettings set org.gnome.desktop.interface gtk-theme Stiloetto-dark
 # Reverting the change to the default GNOME theme
 gsettings set org.gnome.desktop.interface gtk-theme Adwaita
 ```
+
+Xfce users can change themes in `Settings > Appearance` and `Settings > Window manager`
+
+#### Removing the themes
+
+As root, remove the `Stilo Stiloetto Stilo-dark Stiloetto-dark` folders located in `/usr/share/themes`

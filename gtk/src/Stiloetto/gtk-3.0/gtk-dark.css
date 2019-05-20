@@ -1743,7 +1743,7 @@ button.emoji-section:checked label { opacity: 1; }
 @define-color wm_button_active_color_b shade(#2b2e30, 0.89);
 @define-color wm_button_active_color_c shade(#2b2e30, 0.9);
 @define-color content_view_bg #383b3d;
-.budgie-panel button, .xfce4-panel button, #pulseaudio-button, #indicator-button, .gnome-panel-menu-bar button:not(#tasklist-button), .mate-panel-menu-bar button:not(#tasklist-button) { color: rgba(246, 246, 247, 0.9); border-radius: 0; border: none; background-color: transparent; box-shadow: none; transition-duration: 100ms; }
+.budgie-panel button, .xfce4-panel button, #pulseaudio-button, #indicator-button, .gnome-panel-menu-bar button:not(#tasklist-button), .mate-panel-menu-bar button:not(#tasklist-button) { color: rgba(246, 246, 247, 0.9); border-radius: 0; border: none; background-color: #121517; box-shadow: none; transition-duration: 100ms; }
 
 .budgie-panel button:hover, .xfce4-panel button:hover, #pulseaudio-button:hover, #indicator-button:hover, .gnome-panel-menu-bar button:hover:not(#tasklist-button), .mate-panel-menu-bar button:hover:not(#tasklist-button) { color: #f6f6f7; background-color: rgba(255, 255, 255, 0.1); }
 
@@ -1768,6 +1768,8 @@ button.emoji-section:checked label { opacity: 1; }
 .nautilus-window .nautilus-path-bar button:checked, .nautilus-window .nautilus-path-bar button:checked:hover, .nautilus-window .nautilus-path-bar button:checked:backdrop:hover, .nautilus-window .nautilus-path-bar button:checked:hover, .nautilus-window .nautilus-path-bar button:checked:hover:hover, .nautilus-window .nautilus-path-bar button:checked:hover:backdrop:hover, .nautilus-window .nautilus-path-bar button:last-child, .nautilus-window .nautilus-path-bar button:last-child:hover, .nautilus-window .nautilus-path-bar button:last-child:backdrop:hover { color: #ffffff; }
 
 XfceHeading, .XfceHeading { margin: 0; padding: 0; border-width: 0; background-image: none; background-color: #2b2e30; color: white; text-shadow: none; }
+
+#whiskermenu-window button:hover { box-shadow: none; border-color: #121517; }
 
 .budgie-panel, .xfce4-panel { background-color: #121517; color: #f6f6f7; font-style: normal; text-shadow: none; -gtk-icon-shadow: none; }
 
