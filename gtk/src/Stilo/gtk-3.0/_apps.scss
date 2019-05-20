@@ -62,7 +62,7 @@ XfceHeading,
 
 #whiskermenu-window button {
   // thick box-shadows looks bad
-  &:hover {
+  &:hover:not(:active):not(:checked) {
     box-shadow: none;
     border-color: $borders_color;
   }

@@ -1761,7 +1761,7 @@ button.emoji-section:checked label { opacity: 1; }
 
 XfceHeading, .XfceHeading { margin: 0; padding: 0; border-width: 0; background-image: none; background-color: #e2e2e3; color: black; text-shadow: none; }
 
-#whiskermenu-window button:hover { box-shadow: none; border-color: #c3c3c5; }
+#whiskermenu-window button:hover:not(:active):not(:checked) { box-shadow: none; border-color: #c3c3c5; }
 
 .budgie-panel, .xfce4-panel { background-color: #121517; color: #f6f6f7; font-style: normal; text-shadow: none; -gtk-icon-shadow: none; }
 
