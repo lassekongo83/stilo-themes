@@ -59,3 +59,7 @@ Xfce users can change themes in `Settings > Appearance` and `Settings > Window m
 #### Removing the themes
 
 As root, remove the `Stilo Stiloetto Stilo-dark Stiloetto-dark` folders located in `/usr/share/themes`
+
+## Copying or Reusing
+
+The GTK theme(s) and included scripts are free software licensed under the terms of the [GNU General Public License, version 3](https://www.gnu.org/licenses/gpl-3.0.txt).
