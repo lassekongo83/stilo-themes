@@ -1445,10 +1445,10 @@ StScrollBar {
   }
   &:first-child {
     border-right-width: 1px;
-    border-radius: $small_radius 0 0 $small_radius;
+    border-radius: $small_radius;
   }
   &:last-child {
-    border-radius: 0 $small_radius $small_radius 0;
+    border-radius: $small_radius;
     &:checked { border-left-width: 0; }
   }
 }
