@@ -243,6 +243,7 @@ XfceHeading,
   .searchbar-container { margin-top: -1px; }
 
   // Without this nautilus iconview grabs the bg_color
+  scrolledwindow,
   notebook,
   notebook > stack:not(:only-child) searchbar { @extend %view; }
 
