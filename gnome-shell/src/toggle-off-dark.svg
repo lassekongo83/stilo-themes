@@ -9,15 +9,15 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="39"
-   height="24"
-   viewBox="0 0 36.5625 22.5"
-   id="svg4366"
+   width="46"
+   height="22"
+   viewBox="0 0 12.170833 5.8208337"
    version="1.1"
-   inkscape:version="0.92.2 2405546, 2018-03-11"
-   sodipodi:docname="activities-active.svg">
+   id="svg8"
+   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   sodipodi:docname="toggle-off-dark.svg">
   <defs
-     id="defs4368" />
+     id="defs2" />
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -25,20 +25,24 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.6568542"
-     inkscape:cx="19.381611"
-     inkscape:cy="-0.82323103"
+     inkscape:zoom="16"
+     inkscape:cx="26.017445"
+     inkscape:cy="12.304203"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="px"
-     inkscape:window-width="1857"
-     inkscape:window-height="926"
-     inkscape:window-x="63"
-     inkscape:window-y="27"
-     inkscape:window-maximized="1" />
+     inkscape:window-width="1920"
+     inkscape:window-height="900"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid10" />
+  </sodipodi:namedview>
   <metadata
-     id="metadata4371">
+     id="metadata5">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -53,28 +57,23 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-1029.8622)">
+     transform="translate(0,-291.17916)">
     <g
-       id="g5101"
-       transform="translate(7.5)">
+       id="g4798">
+      <rect
+         ry="2.9104168"
+         y="291.17917"
+         x="0"
+         height="5.8208337"
+         width="12.170834"
+         id="rect4773"
+         style="fill:#1a1a1a;fill-opacity:1;stroke:none;stroke-width:0.26458335" />
       <circle
-         r="1.875"
-         cy="1041.1122"
-         cx="3.75"
-         id="circle4787"
-         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.9375;stroke-opacity:1" />
-      <circle
-         r="1.875"
-         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.9375;stroke-opacity:1"
-         id="circle4789"
-         cx="11.25"
-         cy="1041.1122" />
-      <circle
-         r="1.875"
-         cy="1041.1122"
-         cx="18.75"
-         id="circle4791"
-         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.9375;stroke-opacity:1" />
+         r="2.3812501"
+         cy="294.08957"
+         cx="2.9104168"
+         id="path4775"
+         style="fill:#999999;fill-opacity:1;stroke:none;stroke-width:0.24431112" />
     </g>
   </g>
 </svg>
