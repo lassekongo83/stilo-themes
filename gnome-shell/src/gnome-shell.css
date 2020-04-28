@@ -566,7 +566,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 .ws-switcher-active-up, .ws-switcher-active-down, .ws-switcher-active-left, .ws-switcher-active-right { height: 52px; background-color: #4a79c7; border: 1px solid #5d87cd; border-radius: 5px; color: #fff; }
 
 /* Top Bar */
-#panel { background-color: #000; font-weight: bold; height: 1.86em; font-feature-settings: "tnum"; }
+#panel { background-color: rgba(0, 0, 0, 0.9); font-weight: bold; height: 1.86em; font-feature-settings: "tnum"; }
 
 #panel.unlock-screen, #panel.login-screen { background-color: transparent; }
 
@@ -574,13 +574,13 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 #panel #panelLeft, #panel #panelCenter { spacing: 6px; }
 
-#panel .panel-corner { -panel-corner-radius: 3px; -panel-corner-background-color: #000; -panel-corner-border-width: 2px; -panel-corner-border-color: transparent; }
+#panel .panel-corner { -panel-corner-radius: 0; -panel-corner-background-color: rgba(0, 0, 0, 0.9); -panel-corner-border-width: 0px; -panel-corner-border-color: transparent; }
 
 #panel .panel-corner:active, #panel .panel-corner:overview, #panel .panel-corner:focus { -panel-corner-border-color: #5d87cd; }
 
-#panel .panel-button { font-weight: bold; color: #ccc; -natural-hpadding: 12px; -minimum-hpadding: 6px; }
+#panel .panel-button { font-weight: bold; color: #eeeeec; -natural-hpadding: 12px; -minimum-hpadding: 6px; }
 
-#panel .panel-button:hover { color: white; }
+#panel .panel-button:hover { color: white; background-color: rgba(0, 0, 0, 0.01); box-shadow: inset 0 -2px 0px rgba(255, 255, 255, 0.6); }
 
 #panel .panel-button:active, #panel .panel-button:overview, #panel .panel-button:focus, #panel .panel-button:checked { color: white; }
 
@@ -592,7 +592,7 @@ StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active { backg
 
 .unlock-screen #panel .panel-button:focus, .unlock-screen #panel .panel-button:hover, .unlock-screen #panel .panel-button:active, .login-screen #panel .panel-button:focus, .login-screen #panel .panel-button:hover, .login-screen #panel .panel-button:active { color: white; }
 
-#panel .panel-button:active, #panel .panel-button:overview, #panel .panel-button:focus, #panel .panel-button:checked { background-color: rgba(0, 0, 0, 0.01); box-shadow: inset 0 -2px 0 0 #5d87cd; }
+#panel .panel-button:active, #panel .panel-button:overview, #panel .panel-button:focus, #panel .panel-button:checked { background-color: rgba(0, 0, 0, 0.01); box-shadow: inset 0 -2px 0px #4a79c7; }
 
 #panel .panel-button.clock-display:active, #panel .panel-button.clock-display:overview, #panel .panel-button.clock-display:focus, #panel .panel-button.clock-display:checked { box-shadow: none; }
 
