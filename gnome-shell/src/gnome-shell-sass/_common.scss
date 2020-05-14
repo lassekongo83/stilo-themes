@@ -91,10 +91,10 @@ stage {
 
 // icon tiles
 %icon_tile {
-  border-radius: $base_border_radius + 4px;
+  border-radius: $base_border_radius;
   padding: $base_padding;
   border: 2px solid transparent;
-  transition-duration: 100ms;
+  transition-duration: 75ms;
   text-align: center;
 }
 
