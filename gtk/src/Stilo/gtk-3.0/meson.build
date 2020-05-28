@@ -16,7 +16,7 @@ gtk3_scss_dependencies = [
   '_variables.scss',
   '_colors.scss',
   '_common.scss',
-  '_apps.scss',
+  '_custom.scss',
   '_drawing.scss',
 ]
 
