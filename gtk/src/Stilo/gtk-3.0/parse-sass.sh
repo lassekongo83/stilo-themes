@@ -11,3 +11,5 @@ echo Generating the css...
 
 sassc $SASSC_OPT gtk.scss gtk.css
 sassc $SASSC_OPT gtk-dark.scss gtk-dark.css
+sassc $SASSC_OPT gtk-stiloetto.scss gtk-stiloetto.css
+sassc $SASSC_OPT gtk-stiloetto-dark.scss gtk-stiloetto-dark.css
