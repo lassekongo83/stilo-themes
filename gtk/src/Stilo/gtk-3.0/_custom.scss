@@ -608,12 +608,15 @@ XfdesktopIconView.view {
     > separator {
       background-image: none;
       background-size: 0;
-      background-color: transparent;
+      background-color: if($variant == 'light', transparent, $base_color);
     }
   }
 
   // sidebar
-  .sidebar-row + separator { background-color: transparent; }
+  @if $variant == 'dark' {
+    .sidebar-row + separator { background-color: transparent; }
+  }
+  .sidebar { background-color: $sidebar_bg_color; }
 
   // Without this nautilus iconview grabs the bg_color
   notebook,

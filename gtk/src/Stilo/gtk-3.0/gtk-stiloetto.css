@@ -2006,7 +2006,7 @@ XfdesktopIconView.view .rubberband { border-radius: 0; }
 
 .nautilus-window paned > separator { background-image: none; background-size: 0; background-color: transparent; }
 
-.nautilus-window .sidebar-row + separator { background-color: transparent; }
+.nautilus-window .sidebar { background-color: #f1f1f1; }
 
 .nautilus-window notebook scrolledwindow { background-color: #ffffff; }
 

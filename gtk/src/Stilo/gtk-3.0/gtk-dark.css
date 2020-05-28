@@ -659,7 +659,7 @@ filechooser .path-bar.linked > button:checked, filechooser .path-bar.linked > bu
 
 filechooser .path-bar.linked > button:checked, filechooser .path-bar.linked > button:checked:hover, filechooser .path-bar.linked > button:checked:backdrop:hover, filechooser .path-bar.linked > button:checked:hover, filechooser .path-bar.linked > button:checked:hover:hover, filechooser .path-bar.linked > button:checked:hover:backdrop:hover, filechooser .path-bar.linked > button:active:hover, filechooser .path-bar.linked > button:active:hover:hover, filechooser .path-bar.linked > button:active:hover:backdrop:hover { color: #ffffff; }
 
-filechooser #pathbarbox { background-color: #2b2e30; border-bottom: 1px solid #212425; }
+filechooser #pathbarbox { background-color: #2e3132; border-bottom: 1px solid #212425; }
 
 .path-bar button.text-button, .path-bar button.image-button, .path-bar button { padding-left: 4px; padding-right: 4px; }
 
@@ -2058,9 +2058,11 @@ XfdesktopIconView.view .rubberband { border-radius: 0; }
 
 .nautilus-window .searchbar-container { margin-top: -1px; }
 
-.nautilus-window paned > separator { background-image: none; background-size: 0; background-color: transparent; }
+.nautilus-window paned > separator { background-image: none; background-size: 0; background-color: #383b3d; }
 
 .nautilus-window .sidebar-row + separator { background-color: transparent; }
+
+.nautilus-window .sidebar { background-color: #2e3132; }
 
 .nautilus-window notebook scrolledwindow { background-color: #383b3d; }
 
@@ -2098,7 +2100,7 @@ XfdesktopIconView.view .rubberband { border-radius: 0; }
 
 .thunar .standard-view { border-width: 0; }
 
-.thunar .sidebar .view, .thunar .sidebar iconview { background-color: #2b2e30; }
+.thunar .sidebar .view, .thunar .sidebar iconview { background-color: #2e3132; }
 
 .thunar .sidebar .view:hover, .thunar .sidebar iconview:hover { background-color: rgba(246, 246, 247, 0.05); }
 
