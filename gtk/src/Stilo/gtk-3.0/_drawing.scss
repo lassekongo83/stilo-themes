@@ -202,7 +202,7 @@ $_normal_shadow_active: inset 0 0 0 1px transparentize(black, 0.92), inset 0 2px
     border-color: transparent;
     $button_fill: if($variant == 'light', lighten($c, 9%), lighten($c, 9%)) !global;
     background-color: $button_fill;
-    @include _shadows(inset 0 1px $_hilight_color, $_button_edge, $_button_shadow);
+    @include _shadows($_button_shadow);
   }
 
   @else if $t==hover {
@@ -214,11 +214,11 @@ $_normal_shadow_active: inset 0 0 0 1px transparentize(black, 0.92), inset 0 2px
     border-color: transparent;
     @if $variant == 'light' {
       $button_fill: if($variant == 'light', lighten($c, 12%), lighten($c, 12%)) !global;
-      @include _shadows(inset 0 1px _button_hilight_color(lighten($c, 6%)), $_button_edge, $_button_shadow_hover);
+      @include _shadows($_button_shadow_hover);
     }
     @else {
       $button_fill: if($variant == 'light', lighten($c, 12%), lighten($c, 12%)) !global;
-      @include _shadows(inset 0 1px _button_hilight_color(darken($c, 2%)), $_button_edge, $_button_shadow_hover);
+      @include _shadows($_button_shadow_hover);
     }
     background-color: $button_fill;
   }
@@ -232,11 +232,11 @@ $_normal_shadow_active: inset 0 0 0 1px transparentize(black, 0.92), inset 0 2px
     border-color: transparent;
     @if $variant == 'light' {
       background-image: linear-gradient(to bottom, lighten($c, 9%), lighten($c, 9%));
-      @include _shadows(inset 0 1px _button_hilight_color(lighten($c, 6%)),$_button_edge, $_button_shadow);
+      @include _shadows($_button_shadow);
     }
     @else {
       background-image: linear-gradient(to bottom, lighten($c, 9%), lighten($c, 9%));
-      @include _shadows(inset 0 1px $_hilight_color, $_button_edge, $_button_shadow);
+      @include _shadows($_button_shadow);
     }
   }
 
@@ -249,11 +249,11 @@ $_normal_shadow_active: inset 0 0 0 1px transparentize(black, 0.92), inset 0 2px
     border-color: transparent;
     @if $variant == 'light' {
       $button_fill: if($variant == 'light', lighten($c, 12%), lighten($c, 12%)) !global;
-      @include _shadows(inset 0 1px _button_hilight_color(lighten($c, 6%)),$_button_edge, $_button_shadow);
+      @include _shadows($_button_shadow);
     }
     @else {
       $button_fill: if($variant == 'light', lighten($c, 12%), lighten($c, 12%)) !global;
-      @include _shadows(inset 0 1px $_hilight_color, $_button_edge, $_button_shadow);
+      @include _shadows($_button_shadow);
     }
     background-image: $button_fill;
   }
@@ -267,7 +267,7 @@ $_normal_shadow_active: inset 0 0 0 1px transparentize(black, 0.92), inset 0 2px
     border-color: if($c != $bg_color, _border_color($c), darken($borders_color, 12%));
     $button_fill: if($variant == 'light', image(darken($c, 8%)), image(darken($c, 8%))) !global;
     background-image: $button_fill;
-    @include _shadows(inset 0 1px transparentize($_hilight_color, 1), $_normal_shadow_active);
+    @include _shadows($_normal_shadow_active);
 
     text-shadow: none;
     -gtk-icon-shadow: none;

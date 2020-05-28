@@ -27,6 +27,7 @@ $_switch_margin: if($_sizevariant=='default', 4px, 4px); // custom theme note: S
 // custom variables
 $titlebutton_width: 30px;
 $titlebutton_height: 20px;
+$deceleration_curve: cubic-bezier(0.0, 0.0, 0.2, 1);
 // duration
 $shortest_duration: 50ms;
 $shorter_duration: 100ms;
@@ -2367,7 +2368,7 @@ notebook {
   > header {
     padding: 0;
     border-width: 0;
-    background-color: if($variant=='light', $dark_fill, darken($base_color, 4%));
+    background-color: $dark_fill;
 
     tabs { margin: 0; }
 
@@ -2382,7 +2383,7 @@ notebook {
 
     &.top, &.bottom, &.left, &.right {
       & > tabs > tab {
-        &:checked { background-color: $sidebar_bg_color; }
+        &:checked { background-color: if($variant == 'light', $sidebar_bg_color, $base_color); }
       }
     }
 
@@ -2617,9 +2618,9 @@ notebook {
   }
 
   > stack:not(:only-child) { // the :not(:only-child) is for "hidden" notebooks
-    background-color: $sidebar_bg_color;
+    background-color: if($variant == 'light', $sidebar_bg_color, $base_color);
 
-    &:backdrop { background-color: $sidebar_bg_color; }
+    &:backdrop { background-color: if($variant == 'light', $sidebar_bg_color, $base_color); }
   }
 }
 
@@ -2991,7 +2992,7 @@ treeview.view radio:selected { &:focus, & { @extend %radio; }} // This is a work
 //----------//
 %scale_trough {
   border: 1px solid $dark_fill;
-  border-radius: $button_radius;
+  border-radius: 99px;
   background-color: $dark_fill;
 
   &:disabled { background-color: $insensitive_bg_color; }
@@ -3123,25 +3124,29 @@ scale {
   }
 
   slider {
-    @include button(normal-alt);
+    transition: all 100ms $deceleration_curve, box-shadow $shorter_duration $deceleration_curve;
+    @include button(normal);
+    border: 1px solid transparent; // border needed here, or trough highlight color won't work
+    @if $variant == 'dark' { background-color: lighten($bg_color, 18%); }
 
-    border: 1px solid darken($alt_borders_color, 3%);
     border-radius: 100%;
-    transition: $button_transition;
-    transition-property: background, border, box-shadow;
 
     &:hover {
-      @include button(hover-alt);
-      box-shadow: 0 0 0 3px transparentize($selected_bg_color, 0.7);
-      border-color: $selected_bg_color;
+      @include button(hover);
+      background-color: lighten($bg_color, 28%);
+      box-shadow: 0 0 0 4px if($variant == 'light', transparentize($selected_bg_color, 0.7), transparentize(white, 0.96));
     }
 
-    &:active { border-color: $progress_border_color; }
+    &:active {
+      border-color: if($variant == 'light', $selected_borders_color, $selected_bg_color);
+      box-shadow: none;
+      @if $variant == 'dark' { background-color: $selected_bg_color; }
+    }
 
-    &:disabled { @include button(insensitive); }
+    &:disabled { @include button (insensitive); }
 
     // ...on selected list rows
-    row:selected & { &:disabled, & { border-color: $selected_borders_color; } }
+    row:selected & { &, &:disabled { border-color: $selected_borders_color; } }
 
     // OSD
     .osd & {
@@ -3149,30 +3154,11 @@ scale {
       border-color: darken($osd_borders_color, 3%);
       background-color: opacify($osd_bg_color, 1); // solid background needed here
 
-      &:hover {
-        @include button(osd-hover);
-        background-color: opacify($osd_bg_color, 1); // solid background needed here
-      }
+      &:hover { @include button(osd-hover); }
 
-      &:active {
-        @include button(osd-active);
-        background-color: opacify($osd_bg_color, 1); // solid background needed here
-      }
+      &:active { @include button(osd-active); }
 
-      &:disabled {
-        @include button(osd-insensitive);
-        background-color: opacify($osd_bg_color, 1); // solid background needed here
-      }
-
-      &:backdrop {
-        @include button(osd-backdrop);
-        background-color: opacify($osd_bg_color, 1); // solid background needed here
-
-        &:disabled {
-          @include button(osd-backdrop-insensitive);
-          background-color: opacify($osd_bg_color, 1); // solid background needed here
-        }
-      }
+      &:disabled { @include button(osd-insensitive); }
     }
   }
 
