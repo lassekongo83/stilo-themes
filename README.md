@@ -6,17 +6,17 @@ Minimalistic GTK themes
 
 ### Requirements
 
-- GNOME Shell 3.30+
-- GTK 3.24.6+
+- GNOME Shell 3.36+
+- GTK 3.24.13+
 
 <sub>I can't guarantee that the themes will look as intended on older versions.</sub>
 
 Some of these packages may already be installed by default on some distros.
 
-* Debian/Ubuntu/Mint - `apt install gtk2-engines-murrine gtk2-engines-pixbuf fonts-roboto ninja-build git meson sassc`
-* Arch/Manjaro/Antergos - Available in the Arch User Repository: [`stilo-themes-git`](https://aur.archlinux.org/packages/stilo-themes-git/)
-* Opensuse - `zypper in gtk2-engine-murrine gtk2-engines google-roboto-fonts ninja git meson sassc`
-* Fedora - `dnf install gtk-murrine-engine gtk2-engines google-roboto-fonts ninja-build git meson sassc`
+* Debian/Ubuntu/Mint - `apt install gtk2-engines-murrine gtk2-engines-pixbuf ninja-build git meson sassc`
+* Arch/Manjaro - `pacman -S gtk-engines gtk-engine-murrine ninja git meson sassc`
+* Opensuse - `zypper in gtk2-engine-murrine gtk2-engines ninja git meson sassc`
+* Fedora - `dnf install gtk-murrine-engine gtk2-engines ninja-build git meson sassc`
 
 Other distros may have named the above packages differently.
 
@@ -57,6 +57,8 @@ gsettings set org.gnome.desktop.interface gtk-theme Adwaita
 Xfce users can change themes in `Settings > Appearance` and `Settings > Window manager`
 
 #### Removing the themes
+
+To be safe from any gnome-shell crashes or weird behavior, change the gnome-shell theme to another one before removing the theme.
 
 As root, remove the `Stilo Stiloetto Stilo-dark Stiloetto-dark` folders located in `/usr/share/themes`
 
