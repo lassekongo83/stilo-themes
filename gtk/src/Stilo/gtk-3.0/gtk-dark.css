@@ -1934,7 +1934,7 @@ scrollbar.horizontal button.up:disabled { -gtk-icon-source: -gtk-scaled(url("ass
 
 scrollbar.horizontal button.down:disabled { -gtk-icon-source: -gtk-scaled(url("assets/scrollarrow-right-dark.png"), url("assets/scrollarrow-right-dark@2.png")); }
 
-.primary-toolbar button:hover, .primary-toolbar buttom.image-button:hover, .primary-toolbar button.text-button:hover, .primary-toolbar button.toggle:hover { border-color: #212425; }
+.primary-toolbar button:hover:not(:active):not(:checked), .primary-toolbar buttom.image-button:hover:not(:active):not(:checked), .primary-toolbar button.text-button:hover:not(:active):not(:checked), .primary-toolbar button.toggle:hover:not(:active):not(:checked) { border-color: transparent; }
 
 .xfce4-panel.background button, .gnome-panel-menu-bar button:not(#tasklist-button), .mate-panel-menu-bar button:not(#tasklist-button) { background-image: none; background-color: transparent; border: none; border-radius: 0; border-color: transparent; box-shadow: none; padding: 0 1px; color: rgba(246, 246, 247, 0.95); }
 

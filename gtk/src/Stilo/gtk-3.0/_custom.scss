@@ -329,7 +329,7 @@ $_button_border_color: darken($alt_headerbar_bg, 10%) !global;
   buttom.image-button,
   button.text-button,
   button.toggle {
-    &:hover { border-color: $borders_color; }
+    &:hover:not(:active):not(:checked) { border-color: transparent; }
   }
 }
 
