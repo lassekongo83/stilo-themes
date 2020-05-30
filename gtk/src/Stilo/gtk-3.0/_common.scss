@@ -1778,8 +1778,8 @@ headerbar {
   }
   switch {
     // FIXME: Switches may look a bit disorted with these margins. It is to prevent the headerbar from "jumping".
-    margin-top: $_switch_margin + 4;
-    margin-bottom: $_switch_margin + 4;
+    margin-top: $_switch_margin + 2;
+    margin-bottom: $_switch_margin + 2;
   }
 
   &.titlebar headerbar:not(.titlebar) {

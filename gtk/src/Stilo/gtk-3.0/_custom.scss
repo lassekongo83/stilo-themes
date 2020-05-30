@@ -624,6 +624,8 @@ XfdesktopIconView.view {
 
   notebook scrolledwindow { background-color: $base_color; }
 
+  .linked > button { @extend %linked_only_child; } // makes sure buttons have a border radius on all edges when hovering
+
   // pathbar
   @if $alt_header == 'false' {
     .titlebar button:not(.titlebutton) {

@@ -383,7 +383,7 @@ button.circular:hover:not(.osd):not(:checked):not(:active):not(:disabled):not(:b
 
 toolbar.inline-toolbar toolbutton > button.flat, .linked:not(.vertical) > spinbutton:not(.vertical), .linked:not(.vertical) > entry, .inline-toolbar button, .linked > button, .xfce4-panel.background menu .linked button, .linked:not(.vertical) > combobox > box > button.combo { border-right-style: none; border-radius: 0; -gtk-outline-radius: 0; }
 
-toolbar.inline-toolbar toolbutton:only-child > button.flat, .linked:not(.vertical) > spinbutton:only-child:not(.vertical), .linked:not(.vertical) > entry:only-child, .inline-toolbar button:only-child, .linked > button:only-child, .xfce4-panel.background menu .linked button:only-child, .linked:not(.vertical) > combobox:only-child > box > button.combo, :not(.nautilus-window) .titlebar .linked > button { border-style: solid; border-radius: 2px; -gtk-outline-radius: 2px; }
+toolbar.inline-toolbar toolbutton:only-child > button.flat, .linked:not(.vertical) > spinbutton:only-child:not(.vertical), .linked:not(.vertical) > entry:only-child, .inline-toolbar button:only-child, .linked > button:only-child, .xfce4-panel.background menu .linked button:only-child, .linked:not(.vertical) > combobox:only-child > box > button.combo, :not(.nautilus-window) .titlebar .linked > button, .nautilus-window .linked > button { border-style: solid; border-radius: 2px; -gtk-outline-radius: 2px; }
 
 toolbar.inline-toolbar toolbutton:first-child > button.flat, .linked:not(.vertical) > spinbutton:first-child:not(.vertical), .linked:not(.vertical) > entry:first-child, .inline-toolbar button:first-child, .linked > button:first-child, .xfce4-panel.background menu .linked button:first-child, combobox.linked button:nth-child(2):dir(rtl), .linked:not(.vertical) > combobox:first-child > box > button.combo { border-top-left-radius: 2px; border-bottom-left-radius: 2px; -gtk-outline-top-left-radius: 2px; -gtk-outline-bottom-left-radius: 2px; }
 
@@ -627,7 +627,7 @@ searchbar > revealer > box { margin: -6px; padding: 6px; }
 
 headerbar entry, headerbar spinbutton, headerbar separator:not(.sidebar), headerbar button { margin-top: 4px; margin-bottom: 4px; }
 
-headerbar switch { margin-top: 8px; margin-bottom: 8px; }
+headerbar switch { margin-top: 6px; margin-bottom: 6px; }
 
 headerbar.titlebar headerbar:not(.titlebar) { background: none; box-shadow: none; }
 
