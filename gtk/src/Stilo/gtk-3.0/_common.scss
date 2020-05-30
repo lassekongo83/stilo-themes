@@ -3745,15 +3745,15 @@ messagedialog { // Message Dialog styling
     background-image: none;
     background-color: $bg_color;
     border-style: none;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
+    border-top-left-radius: if($stiloetto == 'false', 0, 7px);
+    border-top-right-radius: if($stiloetto == 'false', 0, 7px);
   }
 
   &.csd { // rounded bottom border styling for csd version
     &.background {
       // bigger radius for better antialiasing
-      border-bottom-left-radius: $window_radius; //$window_radius+1;
-      border-bottom-right-radius: $window_radius; //$window_radius+1;
+      border-bottom-left-radius: if($stiloetto == 'false', $window_radius, $window_radius+1);
+      border-bottom-right-radius: if($stiloetto == 'false', $window_radius, $window_radius+1);
     }
 
     .dialog-action-area button {

@@ -1421,7 +1421,7 @@ calendar:backdrop { color: #333333; border-color: #c3c3c5; }
 
 calendar:indeterminate { color: alpha(currentColor,0.1); }
 
-messagedialog .titlebar { min-height: 20px; background-image: none; background-color: #e2e2e3; border-style: none; border-top-left-radius: 7px; border-top-right-radius: 7px; }
+messagedialog .titlebar { min-height: 20px; background-image: none; background-color: #e2e2e3; border-style: none; border-top-left-radius: 0; border-top-right-radius: 0; }
 
 messagedialog.csd.background { border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
 

@@ -1423,7 +1423,7 @@ calendar:indeterminate { color: alpha(currentColor,0.1); }
 
 messagedialog .titlebar { min-height: 20px; background-image: none; background-color: #e2e2e3; border-style: none; border-top-left-radius: 7px; border-top-right-radius: 7px; }
 
-messagedialog.csd.background { border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; }
+messagedialog.csd.background { border-bottom-left-radius: 6px; border-bottom-right-radius: 6px; }
 
 messagedialog.csd .dialog-action-area button { padding: 10px 14px; border-right-style: none; border-bottom-style: none; border-radius: 0; -gtk-outline-radius: 0; }
 
