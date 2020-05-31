@@ -274,6 +274,17 @@ $_button_border_color: darken($alt_headerbar_bg, 10%) !global;
   }
 
   image { color: transparent; }
+
+  row:selected & {
+    @if $variant == 'light' {
+      box-shadow: none;
+      border: 1px solid $checkradio_borders_color;
+
+      &:backdrop { border-color: $checkradio_borders_color; }
+
+      > slider { &:checked, & { border-color: $checkradio_borders_color; } }
+    }
+  }
 }
 
 //-------------------//
@@ -771,4 +782,17 @@ list.tweak-categories separator {
   @extend %column_header_button;
   padding: 4px 0 4px 0;
   min-height: 24px;
+}
+
+// Nemo
+.nemo-window {
+  // Rename entry
+  .nemo-window-pane widget.entry {
+    border: 1px solid;
+    border-radius: $button_radius;
+
+    @include entry(focus);
+
+    &:selected { &:focus, & { @extend %selected_items; }}
+  }
 }
