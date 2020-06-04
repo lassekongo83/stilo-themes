@@ -2992,7 +2992,7 @@ treeview.view radio:selected { &:focus, & { @extend %radio; }} // This is a work
 //----------//
 %scale_trough {
   border: 1px solid $dark_fill;
-  border-radius: 99px;
+  border-radius: $button_radius;
   background-color: $dark_fill;
 
   &:disabled { background-color: $insensitive_bg_color; }
