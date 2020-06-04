@@ -3011,7 +3011,7 @@ treeview.view radio:selected { &:focus, & { @extend %radio; }} // This is a work
 
 %scale_highlight {
   border: 1px solid $progress_bg_color;
-  border-radius: $button_radius;
+  border-radius: if($stiloetto == 'false', $button_radius, $button_radius + 1);
   background-color: $progress_bg_color;
 
   &:disabled {
