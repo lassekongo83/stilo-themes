@@ -87,3 +87,5 @@ $alt_headerbar_border: darken($alt_headerbar_bg, 8%);
 $alt_headerbar_backdrop_fg: mix($alt_headerbar_fg, $alt_headerbar_bg, 60%);
 $light_selection: if($variant == 'dark', transparentize($selected_bg_color, 0.7), lighten($selected_bg_color, 35%));
 $light_selection_border: if($variant == 'dark', $selected_bg_color, lighten($selected_bg_color, 25%));
+$panel_bg: darken(#2b2e30, 6%);
+$panel_fg: #f6f6f7;
