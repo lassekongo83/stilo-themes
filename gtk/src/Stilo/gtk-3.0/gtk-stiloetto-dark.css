@@ -2017,7 +2017,7 @@ XfdesktopIconView.view .label { text-shadow: 1px 1px 2px black; }
 
 XfdesktopIconView.view .rubberband { border-radius: 0; }
 
-#XfceNotifyWindow { background-color: #1d1f20; border-radius: 5px; }
+#XfceNotifyWindow { background-color: #1d1f20; border-radius: 5px; color: #f6f6f7; }
 
 #XfceNotifyWindow buttonbox { padding: 0; }
 
