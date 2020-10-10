@@ -6,7 +6,7 @@ Minimalistic GTK themes
 
 ### Requirements
 
-- GNOME Shell 3.36+
+- GNOME Shell 3.38 (Older versions can be found under the releases section.)
 - GTK 3.24.13+
 
 <sub>I can't guarantee that the themes will look as intended on older versions.</sub>
