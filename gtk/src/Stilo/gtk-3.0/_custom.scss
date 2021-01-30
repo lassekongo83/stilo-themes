@@ -875,4 +875,46 @@ list.tweak-categories separator {
 
     &:selected { &:focus, & { @extend %selected_items; }}
   }
+
+  .sidebar {
+    scrolledwindow.frame.nemo-places-sidebar {
+      // get rid of double border in sidebar
+      border: none;
+    }
+  }
+
+  .primary-toolbar {
+    button {
+      @include button(undecorated);
+
+      &:hover {
+        @include button(hover);
+      }
+
+      &:active, &:checked, &:hover:active, &:hover:checked {
+        @include button(active);
+      }
+    }
+  }
+
+  .path-bar {
+    button {
+      @include button(undecorated);
+      border-radius: $button_radius;
+      border: 1px solid transparent;
+      margin: 0 2px;
+      &:hover {
+        background-color: $light_selection;
+        border: 1px solid $light_selection_border;
+        color: $fg_color;
+        box-shadow: none;
+      }
+      &:active, &:checked, &:hover:active, &:hover:checked {
+        @include button(undecorated);
+        background-color: $selected_bg_color;
+        color: $selected_fg_color;
+        box-shadow: none;
+      }
+    }
+  }
 }
