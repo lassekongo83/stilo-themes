@@ -227,11 +227,11 @@ $_normal_shadow_active: inset 0 0 0 1px transparentize(black, 0.92), inset 0 2px
     outline-color: transparentize($tc, 0.7);
     border-color: transparent;
     @if $variant == 'light' {
-      background-image: linear-gradient(to bottom, lighten($c, 9%), lighten($c, 9%));
+      background-color: lighten($c, 9%);
       @include _shadows($_button_shadow);
     }
     @else {
-      background-image: linear-gradient(to bottom, lighten($c, 9%), lighten($c, 9%));
+      background-color: lighten($c, 9%);
       @include _shadows($_button_shadow);
     }
   }
@@ -244,11 +244,11 @@ $_normal_shadow_active: inset 0 0 0 1px transparentize(black, 0.92), inset 0 2px
     outline-color: transparentize($tc, 0.7);
     border-color: transparent;
     @if $variant == 'light' {
-      background-image: if($variant == 'light', lighten($c, 12%), lighten($c, 12%));
+      background-color: lighten($c, 12%);
       @include _shadows($_button_shadow);
     }
     @else {
-      background-image: if($variant == 'light', lighten($c, 12%), lighten($c, 12%));
+      background-color: lighten($c, 12%);
       @include _shadows($_button_shadow);
     }
   }
@@ -260,14 +260,14 @@ $_normal_shadow_active: inset 0 0 0 1px transparentize(black, 0.92), inset 0 2px
     color: $tc;
     outline-color: transparentize($tc, 0.7);
     border-color: if($c != $bg_color, _border_color($c), darken($borders_color, 12%));
-    background-image: if($variant == 'light', image(darken($c, 8%)), image(darken($c, 8%)));
+    background-color: if($variant == 'light', darken($c, 8%), darken($c, 8%));
     @include _shadows($_normal_shadow_active);
 
     text-shadow: none;
     -gtk-icon-shadow: none;
 
     &:hover {
-      background-image: if($variant == 'light', image(darken($c, 12%)), image(darken($c, 12%)));
+      background-color: if($variant == 'light', darken($c, 12%), darken($c, 12%));
     }
   }
 
@@ -297,7 +297,7 @@ $_normal_shadow_active: inset 0 0 0 1px transparentize(black, 0.92), inset 0 2px
 
     color: if($c != $bg_color, mix($tc, $_bg, 60%), $insensitive_fg_color);
     border-color: $_bc;
-    background-image: image($_bg);
+    background-color: $_bg;
     // white with 0 alpha to avoid an ugly transition, since no color means
     // black with 0 alpha
     @include _shadows(inset 0 1px transparentize(white, 1), $_button_edge);

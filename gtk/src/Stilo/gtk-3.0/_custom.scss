@@ -628,6 +628,9 @@ XfdesktopIconView.view {
   searchbar { border-top: 1px solid $borders_color; }
   .searchbar-container { margin-top: -1px; }
 
+  // Border radius on .nautilus-window since version 40
+  border-radius: $window_radius $window_radius 0 0;
+
   // sidebar separator
   paned {
     > separator {
@@ -658,22 +661,22 @@ XfdesktopIconView.view {
       &:hover { @include button(hover); }
       &:active, &:checked { @include button(active); }
     }
-    .nautilus-path-bar button { // so the last button gets decorated
-      border-radius: $button_radius;
-      margin-right: 4px;
-      border: 1px solid transparent;
-      &:hover:not(:last-child) {
-        background-color: $light_selection;
-        border: 1px solid $light_selection_border;
-        color: $fg_color;
-        box-shadow: none;
-      }
-      &:last-child, &:hover:last-child {
-        background-color: $selected_bg_color;
-        color: $selected_fg_color;
-        box-shadow: none;
-      }
-    }
+    //.nautilus-path-bar button { // so the last button gets decorated
+    //  border-radius: $button_radius;
+    //  margin-right: 4px;
+    //  border: 1px solid transparent;
+    //  &:hover:not(:last-child) { // FIXME background-color stopped working in Nautilus 40 for some reason
+    //    background-color: $light_selection;
+    //    border: 1px solid $light_selection_border;
+    //    color: $fg_color;
+    //    box-shadow: none;
+    //  }
+    //  &:last-child, &:hover:last-child {
+    //    background: $selected_bg_color;
+    //    color: $selected_fg_color;
+    //    box-shadow: none;
+    //  }
+    //}
   }
   @else {
     .titlebar button:not(.titlebutton) {

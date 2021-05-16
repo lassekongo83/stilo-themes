@@ -9,15 +9,15 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="46"
-   height="22"
-   viewBox="0 0 12.170833 5.8208337"
+   width="56"
+   height="24"
+   viewBox="0 0 52.500001 22.5"
+   id="svg4686"
    version="1.1"
-   id="svg8"
-   inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
+   inkscape:version="0.92.4 5da689c313, 2019-01-14"
    sodipodi:docname="toggle-off-dark.svg">
   <defs
-     id="defs2" />
+     id="defs4688" />
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -25,24 +25,28 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="16"
-     inkscape:cx="26.017445"
-     inkscape:cy="12.304203"
+     inkscape:zoom="15.839192"
+     inkscape:cx="28.600417"
+     inkscape:cy="17.66916"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
-     showgrid="false"
-     units="px"
+     showgrid="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
      inkscape:window-width="1920"
-     inkscape:window-height="900"
+     inkscape:window-height="915"
      inkscape:window-x="0"
      inkscape:window-y="0"
-     inkscape:window-maximized="1">
+     inkscape:window-maximized="1"
+     units="px">
     <inkscape:grid
        type="xygrid"
-       id="grid10" />
+       id="grid822" />
   </sodipodi:namedview>
   <metadata
-     id="metadata5">
+     id="metadata4691">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -57,23 +61,28 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(0,-291.17916)">
+     transform="translate(-507.85714,-510.43363)">
     <g
-       id="g4798">
+       id="g831">
       <rect
-         ry="2.9104168"
-         y="291.17917"
-         x="0"
-         height="5.8208337"
-         width="12.170834"
-         id="rect4773"
-         style="fill:#1a1a1a;fill-opacity:1;stroke:none;stroke-width:0.26458335" />
+         style="opacity:1;fill:#000000;fill-opacity:0.62745098;stroke:none;stroke-width:0.97288954;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect6973"
+         width="52.5"
+         height="22.499994"
+         x="507.85715"
+         y="510.43362"
+         ry="11.249997" />
       <circle
-         r="2.3812501"
-         cy="294.08957"
-         cx="2.9104168"
-         id="path4775"
-         style="fill:#999999;fill-opacity:1;stroke:none;stroke-width:0.24431112" />
+         r="9.375"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.93749994;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="circle6977"
+         cx="519.10712"
+         cy="521.68365" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path7035"
+         d="m 550.04464,525.43363 h -1.875 l -1.875,-1.875 -1.875,1.875 h -1.875 v -1.875 l 1.875,-1.875 -1.875,-1.87499 v -1.87501 h 1.875 l 1.875,1.87501 1.875,-1.87501 h 1.875 v 1.87501 l -1.875,1.87499 1.875,1.875 z"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.93749946" />
     </g>
   </g>
 </svg>

@@ -4396,20 +4396,6 @@ headerbar,
     min-height: $titlebutton_height;
     margin: 0 4px;
   }
-
-  // separator for the titlebutton area
-  .right.horizontal {
-    border-left: 1px solid if($alt_header=='true', transparentize(black, 0.8), $borders_color);
-    @if $variant=='dark' { border-left: 0; }
-    padding-left: 4px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-  }
-  .left.horizontal {
-    border-right: 1px solid if($alt_header=='true', transparentize(black, 0.8), $borders_color);
-    @if $variant=='dark' { border-right: 0; }
-    padding-right: 4px;
-  }
 }
 
 // Window Close button

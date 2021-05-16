@@ -69,16 +69,22 @@ endforeach
 
 # static files to copy
 data_sources = [
+  'activities-active.svg',
+  'activities.svg',
   'calendar-today.svg',
+  'carousel-arrow-back-24-symbolic.svg',
+  'carousel-arrow-next-24-symbolic.svg',
   'checkbox-focused.svg',
   'checkbox-off-focused.svg',
   'checkbox-off.svg',
   'checkbox.svg',
+  'color-pick.svg',
   'd2p-activities-active.svg',
   'd2p-activities.svg',
   'dash-placeholder.svg',
   'eye-not-looking-symbolic.svg',
   'eye-open-negative-filled-symbolic.svg',
+  'gnome-shell-start.svg',
   'keyboard-caps-lock-filled-symbolic.svg',
   'keyboard-enter-symbolic.svg',
   'keyboard-hide-symbolic.svg',
@@ -99,6 +105,8 @@ data_sources = [
   'toggle-on-dark.svg',
   'toggle-on-hc.svg',
   'toggle-on.svg',
+  'window-close-24-symbolic.svg',
+  'workspace-placeholder.svg',
   'transparent.png'
 ]
 
