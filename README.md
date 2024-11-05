@@ -1,3 +1,5 @@
+# THIS THEME IS NO LONGER MAINTAINED
+
 # stilo-themes
 Minimalistic GTK themes
 
